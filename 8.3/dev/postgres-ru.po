@@ -26,7 +26,7 @@ msgstr ""
 "Project-Id-Version: PostgreSQL 8.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-01-16 09:05+0000\n"
-"PO-Revision-Date: 2009-03-29 05:02+0400\n"
+"PO-Revision-Date: 2009-04-02 02:04+0400\n"
 "Last-Translator: Serguei A. Mokhov <mokhov@cs.concordia.ca>\n"
 "Language-Team: pgsql-ru-general <pgsql-ru-general@postgresql.org>\n"
 "MIME-Version: 1.0\n"
@@ -1082,7 +1082,7 @@ msgstr "Для предотвращения остановки базы данных, запустите VACUUM целиком для в
 #: access/transam/varsup.c:282
 #, c-format
 msgid "transaction ID wrap limit is %u, limited by database \"%s\""
-msgstr ""
+msgstr "максимальный ID транзакции после которого произойдёт его переполнение равен %u, ограничено базой данных \"%s\""
 
 #: access/transam/xact.c:618
 msgid "cannot have more than 2^32-1 commands in a transaction"
@@ -1091,11 +1091,11 @@ msgstr "нельзя иметь более 2^32-1 команд в одной транзакции"
 #: access/transam/xact.c:1112
 #, c-format
 msgid "maximum number of committed subtransactions (%d) exceeded"
-msgstr ""
+msgstr "максимальное число зафиксированных подтранзакций (%d) превышено"
 
 #: access/transam/xact.c:1863
 msgid "cannot PREPARE a transaction that has operated on temporary tables"
-msgstr ""
+msgstr "нельзя подготовить (PREPARE) транзакцию которая оперирует с временными таблицами"
 
 #. translator: %s represents an SQL statement name
 #: access/transam/xact.c:2647
@@ -1107,7 +1107,7 @@ msgstr "%s не может выполняться внутри транзакционного блока"
 #: access/transam/xact.c:2657
 #, c-format
 msgid "%s cannot run inside a subtransaction"
-msgstr ""
+msgstr "%s не может выполняться внутри подтранзакций"
 
 #. translator: %s represents an SQL statement name
 #: access/transam/xact.c:2667
@@ -1133,7 +1133,7 @@ msgstr "нет транзакции в процессе выполнения"
 #: access/transam/xact.c:3309 access/transam/xact.c:3353
 #: access/transam/xact.c:3401 access/transam/xact.c:3407
 msgid "no such savepoint"
-msgstr ""
+msgstr "нет такой точки сохранения"
 
 #: access/transam/xact.c:4037
 msgid "cannot have more than 2^32-1 subtransactions in a transaction"
@@ -1248,12 +1248,12 @@ msgstr "не получилось удалить файл \"%s\": %m"
 #: access/transam/xlog.c:2591
 #, c-format
 msgid "archive file \"%s\" has wrong size: %lu instead of %lu"
-msgstr ""
+msgstr "файл журнала транзакций из архива \"%s\" имеет неверный размер: %lu вместо %lu"
 
 #: access/transam/xlog.c:2598
 #, c-format
 msgid "restored log file \"%s\" from archive"
-msgstr ""
+msgstr "файл \"%s\" журнала транзакций восстановлен из архива"
 
 #: access/transam/xlog.c:2638
 #, c-format
@@ -1369,20 +1369,20 @@ msgstr ""
 #: access/transam/xlog.c:3372 access/transam/xlog.c:3380
 #: access/transam/xlog.c:3387
 msgid "WAL file is from different system"
-msgstr ""
+msgstr "WAL файл создан на другой платформе"
 
 #: access/transam/xlog.c:3373
 #, c-format
 msgid "WAL file SYSID is %s, pg_control SYSID is %s"
-msgstr ""
+msgstr "SYSID из файла WAL %s, SYSID из файла pg_control %s"
 
 #: access/transam/xlog.c:3381
 msgid "Incorrect XLOG_SEG_SIZE in page header."
-msgstr ""
+msgstr "Неверный XLOG_SEG_SIZE в заголовке страницы."
 
 #: access/transam/xlog.c:3388
 msgid "Incorrect XLOG_BLCKSZ in page header."
-msgstr ""
+msgstr "Неверный XLOG_BLCKSZ в заголовке страницы."
 
 #: access/transam/xlog.c:3406
 #, c-format
@@ -1406,29 +1406,29 @@ msgstr ""
 #: access/transam/xlog.c:3505
 #, c-format
 msgid "syntax error in history file: %s"
-msgstr ""
+msgstr "синтаксическая ошибка в файле хронологии восстановления: %s"
 
 #: access/transam/xlog.c:3506
 msgid "Expected a numeric timeline ID."
-msgstr ""
+msgstr "Ожидался числовой идентификатор хронологии (timeline ID)"
 
 #: access/transam/xlog.c:3511
 #, c-format
 msgid "invalid data in history file: %s"
-msgstr ""
+msgstr "неверные данные в файле хронологии восстановления: %s"
 
 #: access/transam/xlog.c:3512
 msgid "Timeline IDs must be in increasing sequence."
-msgstr ""
+msgstr "Идентификаторы хронологии восстановления (timeline IDs) должны идти в порядке возрастания."
 
 #: access/transam/xlog.c:3525
 #, c-format
 msgid "invalid data in history file \"%s\""
-msgstr ""
+msgstr "неверные данные в файле хронологии восстановления \"%s\""
 
 #: access/transam/xlog.c:3526
 msgid "Timeline IDs must be less than child timeline's ID."
-msgstr ""
+msgstr "Идентификаторы хронологии восстановления (timeline IDs) должны быть меньше чем дочернии идентификаторы хронологии восстановления."
 
 #: access/transam/xlog.c:3763
 #, c-format
@@ -1469,7 +1469,7 @@ msgstr "не получилось синхронизировать (fsync) файл управления: %m"
 #: access/transam/xlog.c:3885 access/transam/xlog.c:4112
 #, c-format
 msgid "could not close control file: %m"
-msgstr ""
+msgstr "не удалось закрыть файл pg_control: %m"
 
 #: access/transam/xlog.c:3903 access/transam/xlog.c:4090
 #, c-format
@@ -1505,7 +1505,7 @@ msgstr ""
 msgid ""
 "This could be a problem of mismatched byte ordering.  It looks like you need "
 "to initdb."
-msgstr ""
+msgstr "Это может быть проблема несовпадения порядка байт в слове.  Похоже что Вам нужно initdb."
 
 #: access/transam/xlog.c:3932
 #, c-format
@@ -1547,7 +1547,7 @@ msgstr ""
 msgid ""
 "The database cluster appears to use a different floating-point number format "
 "than the server executable."
-msgstr ""
+msgstr "Кластер баз данных кажется использует отличающийся формат чисел с плавающей запятой, от использованного в выполняемом файле сервера."
 
 #: access/transam/xlog.c:3981
 #, c-format
@@ -1685,26 +1685,26 @@ msgstr ""
 #: access/transam/xlog.c:4308
 #, c-format
 msgid "could not close bootstrap transaction log file: %m"
-msgstr ""
+msgstr "не удалось закрыть файл журнала транзакций при начальной инициализации: %m"
 
 #: access/transam/xlog.c:4369
 #, c-format
 msgid "could not open recovery command file \"%s\": %m"
-msgstr ""
+msgstr "не получилось открыть файл конфигурации восстановления \"%s\": %m"
 
 #: access/transam/xlog.c:4374
 msgid "starting archive recovery"
-msgstr ""
+msgstr "начинается восстановление журнала транзакций из архива"
 
 #: access/transam/xlog.c:4419
-#, fuzzy, c-format
+#, c-format
 msgid "restore_command = '%s'"
-msgstr "restore_command = \"%s\""
+msgstr "restore_command = '%s'"
 
 #: access/transam/xlog.c:4433
 #, c-format
 msgid "recovery_target_timeline is not a valid number: \"%s\""
-msgstr ""
+msgstr "recovery_target_timeline содержит некорректное число: \"%s\""
 
 #: access/transam/xlog.c:4438
 #, c-format
@@ -1718,7 +1718,7 @@ msgstr "recovery_target_timeline = latest"
 #: access/transam/xlog.c:4449
 #, c-format
 msgid "recovery_target_xid is not a valid number: \"%s\""
-msgstr ""
+msgstr "recovery_target_xid содержит некорректное число: \"%s\""
 
 #: access/transam/xlog.c:4452
 #, c-format
@@ -1738,26 +1738,26 @@ msgstr "recovery_target_inclusive = %s"
 #: access/transam/xlog.c:4508
 #, c-format
 msgid "log_restartpoints = %s"
-msgstr ""
+msgstr "log_restartpoints = %s"
 
 #: access/transam/xlog.c:4512
 #, c-format
 msgid "unrecognized recovery parameter \"%s\""
-msgstr ""
+msgstr "нераспознанный параметр восстановления \"%s\""
 
 #: access/transam/xlog.c:4520
 #, c-format
 msgid "syntax error in recovery command file: %s"
-msgstr ""
+msgstr "синтаксическая ошибка в файле конфигурации восстановления: %s"
 
 #: access/transam/xlog.c:4522
 msgid "Lines should have the format parameter = 'value'."
-msgstr ""
+msgstr "Строка должна иметь формат: параметр = 'значение'."
 
 #: access/transam/xlog.c:4527
 #, c-format
 msgid "recovery command file \"%s\" did not specify restore_command"
-msgstr ""
+msgstr "в файле конфигурации восстановления \"%s\" не указана команда получения из архива (restore_command)"
 
 #: access/transam/xlog.c:4546
 #, fuzzy, c-format
@@ -1766,27 +1766,27 @@ msgstr "recovery_target_timeline = latest"
 
 #: access/transam/xlog.c:4655
 msgid "archive recovery complete"
-msgstr ""
+msgstr "завершено восстановление журнала транзакций из архива"
 
 #: access/transam/xlog.c:4745
 #, c-format
 msgid "recovery stopping after commit of transaction %u, time %s"
-msgstr ""
+msgstr "восстановление остановилось после фиксации транзакции %u, время %s"
 
 #: access/transam/xlog.c:4750
 #, c-format
 msgid "recovery stopping before commit of transaction %u, time %s"
-msgstr ""
+msgstr "восстановление остановилось перед фиксацией транзакции %u, время %s"
 
 #: access/transam/xlog.c:4758
 #, c-format
 msgid "recovery stopping after abort of transaction %u, time %s"
-msgstr ""
+msgstr "восстановление остановилось после отмены транзакции %u, время %s"
 
 #: access/transam/xlog.c:4763
 #, c-format
 msgid "recovery stopping before abort of transaction %u, time %s"
-msgstr ""
+msgstr "восстановление остановилось перед отменой транзакции %u, время %s"
 
 #: access/transam/xlog.c:4811
 msgid "control file contains invalid data"
@@ -1837,7 +1837,7 @@ msgstr "система была прервана: %s"
 #: access/transam/xlog.c:4867
 #, c-format
 msgid "requested timeline %u is not a child of database system timeline %u"
-msgstr ""
+msgstr "запрошенная хронология %u не является дочерней для хронологии базы данных %u"
 
 #: access/transam/xlog.c:4881 access/transam/xlog.c:4905
 #, c-format
@@ -1846,7 +1846,7 @@ msgstr "контрольная точка: %X/%X"
 
 #: access/transam/xlog.c:4888
 msgid "could not locate required checkpoint record"
-msgstr ""
+msgstr "не получилось найти требуемую контрольную точку"
 
 #: access/transam/xlog.c:4889
 #, c-format
@@ -1862,7 +1862,7 @@ msgstr "используется предыдущая контрольная точка: %X/%X"
 
 #: access/transam/xlog.c:4921
 msgid "could not locate a valid checkpoint record"
-msgstr "не получилось  найти корректную контрольную точку"
+msgstr "не получилось найти корректную контрольную точку"
 
 #: access/transam/xlog.c:4930
 #, fuzzy, c-format
