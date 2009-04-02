@@ -1,0 +1,273 @@
+# LANGUAGE message translation file for plpython
+# Copyright (C) 2009 PostgreSQL Global Development Group
+# This file is distributed under the same license as the PostgreSQL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2009.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PostgreSQL 8.4\n"
+"Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
+"POT-Creation-Date: 2009-04-02 05:23+0000\n"
+"PO-Revision-Date: 2009-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: plpython.c:420 plpython.c:445
+msgid "unexpected return value from trigger procedure"
+msgstr ""
+
+#: plpython.c:421
+msgid "Expected None or a string."
+msgstr ""
+
+#: plpython.c:435
+msgid ""
+"PL/Python trigger function returned \"MODIFY\" in a DELETE trigger -- ignored"
+msgstr ""
+
+#: plpython.c:446
+msgid "Expected None, \"OK\", \"SKIP\", or \"MODIFY\"."
+msgstr ""
+
+#: plpython.c:493
+msgid "TD[\"new\"] deleted, cannot modify row"
+msgstr ""
+
+#: plpython.c:496
+msgid "TD[\"new\"] is not a dictionary"
+msgstr ""
+
+#: plpython.c:515
+#, c-format
+msgid "name of TD[\"new\"] attribute at ordinal position %d is not a string"
+msgstr ""
+
+#: plpython.c:519
+#, c-format
+msgid ""
+"key \"%s\" found in TD[\"new\"] does not exist as a column in the triggering "
+"row"
+msgstr ""
+
+#: plpython.c:540
+#, c-format
+msgid ""
+"could not compute string representation of Python object in PL/Python "
+"function \"%s\" while modifying trigger row"
+msgstr ""
+
+#: plpython.c:622
+msgid "could not create new dictionary while building trigger arguments"
+msgstr ""
+
+#: plpython.c:830
+msgid "unsupported set function return mode"
+msgstr ""
+
+#: plpython.c:831
+msgid ""
+"PL/Python set-returning functions only support returning only value per call."
+msgstr ""
+
+#: plpython.c:843
+msgid "returned object cannot be iterated"
+msgstr ""
+
+#: plpython.c:844
+msgid "PL/Python set-returning functions must return an iterable object."
+msgstr ""
+
+#: plpython.c:872
+msgid "error fetching next item from iterator"
+msgstr ""
+
+#: plpython.c:890
+msgid "PL/Python function with return type \"void\" did not return None"
+msgstr ""
+
+#: plpython.c:937
+#, c-format
+msgid ""
+"could not create string representation of Python object in PL/Python "
+"function \"%s\" while creating return value"
+msgstr ""
+
+#: plpython.c:986
+#, c-format
+msgid "PL/Python function \"%s\" failed"
+msgstr ""
+
+#: plpython.c:1058
+#, c-format
+msgid ""
+"PyDict_SetItemString() failed for PL/Python function \"%s\" while setting up "
+"arguments"
+msgstr ""
+
+#: plpython.c:1235
+msgid "trigger functions can only be called as triggers"
+msgstr ""
+
+#: plpython.c:1239
+#, c-format
+msgid "PL/Python functions cannot return type %s"
+msgstr ""
+
+#: plpython.c:1318
+#, c-format
+msgid "PL/Python functions cannot accept type %s"
+msgstr ""
+
+#: plpython.c:1412
+#, c-format
+msgid "could not compile PL/Python function \"%s\""
+msgstr ""
+
+#: plpython.c:1724
+msgid "could not create new dictionary"
+msgstr ""
+
+#: plpython.c:1811 plpython.c:1900 plpython.c:1971
+msgid "could not compute string representation of Python object"
+msgstr ""
+
+#: plpython.c:1825
+#, c-format
+msgid "key \"%s\" not found in mapping"
+msgstr ""
+
+#: plpython.c:1826
+msgid ""
+"To return null in a column, add the value None to the mapping with the key "
+"named after the column."
+msgstr ""
+
+#: plpython.c:1870
+msgid "length of returned sequence did not match number of columns in row"
+msgstr ""
+
+#: plpython.c:1984
+#, c-format
+msgid "attribute \"%s\" does not exist in Python object"
+msgstr ""
+
+#: plpython.c:1985
+msgid ""
+"To return null in a column, let the returned object have an attribute named "
+"after column with value None."
+msgstr ""
+
+#: plpython.c:2207
+msgid "plan.status takes no arguments"
+msgstr ""
+
+#: plpython.c:2337 plpython.c:2476
+msgid "transaction aborted"
+msgstr ""
+
+#: plpython.c:2344
+msgid "invalid arguments for plpy.prepare"
+msgstr ""
+
+#: plpython.c:2351
+msgid "second argument of plpy.prepare must be a sequence"
+msgstr ""
+
+#: plpython.c:2396
+#, c-format
+msgid "plpy.prepare: type name at ordinal position %d is not a string"
+msgstr ""
+
+#: plpython.c:2423
+msgid "plpy.prepare does not support composite types"
+msgstr ""
+
+#: plpython.c:2451
+msgid "unrecognized error in PLy_spi_prepare"
+msgstr ""
+
+#: plpython.c:2453 plpython.c:2615 plpython.c:2662
+#, c-format
+msgid "in PL/Python function \"%s\""
+msgstr ""
+
+#: plpython.c:2489
+msgid "plpy.execute expected a query or a plan"
+msgstr ""
+
+#: plpython.c:2506
+msgid "plpy.execute takes a sequence as its second argument"
+msgstr ""
+
+#: plpython.c:2522 plpython.c:2549
+#, c-format
+msgid "PL/Python function \"%s\" could not execute plan"
+msgstr ""
+
+#: plpython.c:2526
+#, c-format
+msgid "Expected sequence of %d argument, got %d: %s"
+msgid_plural "Expected sequence of %d arguments, got %d: %s"
+msgstr[0] ""
+msgstr[1] ""
+
+#: plpython.c:2613
+msgid "unrecognized error in PLy_spi_execute_plan"
+msgstr ""
+
+#: plpython.c:2634
+#, c-format
+msgid "SPI_execute_plan failed: %s"
+msgstr ""
+
+#: plpython.c:2660
+msgid "unrecognized error in PLy_spi_execute_query"
+msgstr ""
+
+#: plpython.c:2671
+#, c-format
+msgid "SPI_execute failed: %s"
+msgstr ""
+
+#: plpython.c:2731
+msgid "unrecognized error in PLy_spi_execute_fetch_result"
+msgstr ""
+
+#: plpython.c:2767
+msgid "untrapped error in initialization"
+msgstr ""
+
+#: plpython.c:2770
+msgid "could not create procedure cache"
+msgstr ""
+
+#: plpython.c:2782
+msgid "could not import \"__main__\" module"
+msgstr ""
+
+#: plpython.c:2789
+msgid "could not initialize globals"
+msgstr ""
+
+#: plpython.c:2891
+msgid "could not parse error message in plpy.elog"
+msgstr ""
+
+#: plpython.c:2987
+#, c-format
+msgid "PL/Python: %s"
+msgstr ""
+
+#: plpython.c:2988
+#, c-format
+msgid "%s"
+msgstr "%s"
+
+#: plpython.c:3078
+msgid "out of memory"
+msgstr "не хватает памяти"

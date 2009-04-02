@@ -1,0 +1,194 @@
+=== A ===
+* ACID (Atomicy, Concurrency, Isolation, Durability) - оставлять без перевода ("принципы ACID" и т.п.)
+* API (application programming interface) - программный интерфейс приложения (можно оставлять без перевода: API)
+* assertions ???
+
+=== B ===
+* backend - серверный процесс; серверная часть системы; бакенд(???), процесс сервера баз данных, обслуживающий клиентов, работающих с базой данных // имеется в виду серверная часть системы архитектуры "клиент-сервер", сервер=backend, клиент=frontend
+* bitmap scan -- операция сканирования с использованием битовых масок
+* ? BKI (Backend Interface)
+* byte ordering - порядок байт в слове
+* bootstrap - начальная инициализация (bootstrap transaction log file: журнал транзакций при начальной инициализации)
+
+=== C ===
+* checkpoint -- контрольная точка // (момент, когда данные в памяти синхронизируются с данными на диске)
+* chip - микросхема
+* chunk (size of a TOAST chunk) - порция [данных] (размер порции TOAST) 
+* CLI (Command Line Interface) - ИЛИ интерфейс командной строки
+* CPU (central processing unit) - процессор (ЦП, центральный процессор)
+* CPU cache - кэш процессора
+* CPU registers - регистры процессора
+* command-line - командная строка (терминал, консоль)
+* сommand-line flag (command-line parameter, command-line option) -- опции интерфейса командной строки
+* commit -- операция успешного завершения транзакции, фиксации транзакции
+* counters - счётчики
+* cross compilation
+* CVS (Concurrent Version System) - система контроля версий CVS; система CVS (+сноска при первом упоминании)
+* connect (network) - подключение
+* core (file, produce core files) - core-файл (генерировать core-файлы)
+* control file (pg_control) - файл управления (оставлять без перевода: "не получилось открыть файл pg_control")
+
+=== D ===
+* DB, database - БД, база данных
+* DBA (Database Administrator) - администратор баз данных
+* DBMS (Database Management System) - СУБД; система управления базами данных
+* DDL (Data Definition Language) - оставлять без перевода ("DDL-инструкции", "команды DDL"; +сноска при первом упоминании) ИЛИ переводить как "SQL-команды определения объектов БД" // речь идёт о всяких ALTER.
+* directory (filesystem) - директория (файловой системы)
+* DML (Data Manipulation Language) - оставлять без перевода ("DML-инструкции", "команды DML"; +сноска при первом упоминании) ИЛИ переводить как "SQL-команды изменения/обновления данных" // речь идёт прежде всего о тройке UPDATE/DELETE/INSERT
+* DSN (Data Source Name) - DSN-строка (+сноска при первом упоминании: "строка, описывающая параметры подключения к источнику данных")
+* default (default value) - по умолчанию (значение по умолчанию)
+* declared (constraint declared) - объявлен (ограничение объявленное)
+
+=== E ===
+* ECPG (Embedded SQL in C) - оставлять без перевода (+сноска при первом упоминании: "реализация языка SQL, встроенного в язык C, для PostgreSQL")
+* exception (e.g. terminated by exception) - исключение (пример: завершён по исключению)
+
+=== F ===
+* FIFO (first in, first out) - принцип FIFO (сноска: про "первым вошёл -- первым вышел")
+* filesystem - файловая система
+* front-end
+
+=== G ===
+* GSSAPI (Generic Security Services Application Programming Interface)
+* GUC (Global User Configuration)
+
+=== H ===
+* hash join - операция соединения с использованием техники хэширования, соединение методом хэширования
+* heap - куча
+* HDD (hard disk drives), disk drives - диски, жёсткие диски, винчестеры
+* host - узел [сети]
+* HOT (Heap Oriented Tuples)
+
+=== I ===
+* ID - ID, идентификационный номер (ID транзакции, ID пользователя) 
+* IEC (International Electrotechnical Commission)
+* index - индекс
+* index scans -- операции сканирования по индексам, индексное сканирование
+* integrity constraints -- ограничения целостности
+* ISO (International Standards Organization)
+
+=== J ===
+* JDBC (Java Database Connectivity)
+* JRT (Java Routines and Types)
+* join - операция соединения (SQL)
+
+=== K ===
+
+=== L ===
+* LDAP (Lightweight Directory Access Protocol)
+* LIFO (last in, first out) - принцип LIFO (сноска: про "последним вошёл -- первым вышел")
+* linker - линковщик
+* log (e.g. transaction log) - журнал (пример: журнал транзакций)
+* locale - локаль (система правил, связанных с языком, страной, временной зоной пользователя)
+
+=== M ===
+* major update - обновление старшего номера версии, капитальное обновление
+* MED (Management of External Data)
+* memory pages - страницы памяти
+* merge join - операция соединения методом слияния
+* multitransaction - мультитранзакция
+* MVCC (Multi Version Concurrency Control)
+
+=== N ===
+* nested loops -- вложенные циклы
+* NLS (Natural Language Support)
+
+=== O ===
+* ODBC (Open Database Connectivity)
+* OID (Object Identifier)
+* OLAP (Online Analytical Processing)
+* OLB (Object Language Bindings)
+* Open Source, OSS (Open Source Software) - открытое ПО (программное обеспечение); ПО с открытыми исходными текстами
+* options (e.g. configure options) - опции (пример: опции скрипта configure)
+* ORDBMS - ОРСУБД, объектно-реляционная система управления базами данных
+* OS (operating system) - ОС (операционная система) // Примеры ОС: Windows, Unix, Linux, Mac OS
+* OS kernel - ядро операционной системы
+* overcommit
+
+=== P ===
+* PAM (Pluggable Authentication Modules)
+* parser
+* performance -- производительность (СУБД)
+* performance tuning - тонкая настройка производительности
+* PITR (Point In Time Recovery)
+* pointers - указатели (на данные)
+* POSIX (Portable Operating System Interface)
+* PostgeSQL, Postgres, pgsql - оставлять без перевода // "Пост-грэс-Ку-Эл", "Постгрес" (свободно распространяемая СУБД, система управления базами данных)
+* postmaster - ''оставлять без перевода'' // основной серверный процесс (backend) Постгреса
+* prepared (e.g. prepared transaction, prepared statement) - подготовленный (пример: подготовленная транзакция, подготовленный запрос)
+* process - процесс
+* programming interfaces --программные интерфейсы
+* PSM (Persistent Stored Modules)
+
+=== Q ===
+* queue - очередь (структура для хранения данных, использующая принцип FIFO)
+
+=== R ===
+* RAID controllers - RAID контроллеры // (устройство, использующееся для одновременной работы с несколькими дисками, с дисковым массивом (disk array) -- для организации зеркалирования данных (mirroring) с целью повышения надёжности системы, для улучшения производительности и т.д.)
+* RAM (random access memory), memory - память, оперативная память
+* RDBMS - РСУБД; реляционная система управления базами данных
+* regression tests - тест на обратную совместимость
+* referential integrity constraints -- ссылочные ограничения целостности
+* reliability -- надёжность (СУБД)
+* rollback -- откат, операция завершения транзакции с отказом (отмена всех изменений), операция отката транзакции
+* row, table row - строка таблицы
+* RPM (Redhat Package Manager)
+
+=== S ===
+* sequential scan, seqscan -- операция последовательного сканирования, последовательное сканирование (поиск)
+* service (e.g. could not start service) - сервис, служба (пример: запуск сервиса невозможен)
+* shared buffers - разделяемые буфера памяти (часть памяти, которую могут одновременно использовать различные процессы)
+* shared library - разделяемая библиотека
+* socket (network socket) - сокет (сетевой сокет)
+* SSPI (Security Support Provider Interface)
+* SQL (Structured Query Language) 
+* SSL (Secure Sockets Layer)
+* stack - стек (возможная сноска: структура для хранения данных, использующая принцип LIFO)
+* STONITH (Shoot The Other Node In The Head)
+* storage - система хранения, хранилище
+* stored procedures -- хранимые (в базе данных) процедуры
+* swap - swap-файл, файл подкачки / swap-раздел ("своп", файл или раздел на диске, который используется при нехватке основной, физической памяти)
+* symbolic links (symlinks) - символьные ссылки ("симлинки")
+* system-wide (e.g. system-wide configuration files) - общесистемный (пример: общесистемные конфигурационные файлы)
+* subtransactions - подтранзакции
+* savepoint - точка сохранения
+
+=== T ===
+* table - таблица
+* time zone database - база данных часовых поясов
+* TOAST (The Oversize Attribute Storage Technique)
+* transactions -- транзакции (в СУБД) // (группа последовательных операций, которая представляет из себя логическую единицу работы с данными) 
+* tuple - кортеж (строка на физическом уровне)
+* two-phase (e.g. two-phase transaction, two-phase protocol, TPC) - двухфазный (примеры: двухфазная транзакция, двухфазный протокол, TPC)
+* timeline history file [http://www.postgresql.org/docs/8.3/static/continuous-archiving.html#BACKUP-TIMELINES] - файл хронологии восстановления
+
+=== U ===
+* union - операция объединения (SQL)
+* UUID (Universally Unique Identifier)
+* unrecognized - нераспознанный
+
+=== V ===
+* vacuum - вакуум (процесс сборки мусора) // в некоторых случаях можно оставлять без перевода
+* views - представления // («вью», «вьюхи», «вьюшки»), виртуальная (логическая) таблица, результат запроса из базы данных
+
+=== W ===
+* WAL (write-ahead log) - WAL-журнал // основной журнал базы данных (работающий по принципу "сначала пишем в журнал, только потом завершаем транзакцию")
+* wraparound (e.g. wraparound data loss) - циклическое переполнение // циклическое переполнение счётчика транзакций, приводящее к неработоспособности сервера и возможной потере данных
+
+=== X ===
+* XID (Transaction Identifier)
+* XML (Extensible Markup Language)
+
+=== Дополнительно ===
+==== Продукты ====
+* Oracle, MS SQL Server (MS SQL; Microsoft SQL Server; SQL Server), Informix, DB2 (IBM DB2) -- примеры коммерческих СУБД
+* MySQL, Firebird -- примеры открытых СУБД
+
+
+==== Пояснения к некоторым командам SQL ====
+* CREATE INDEX - операция (команда) создания индекса
+* VACUUM, VACUUM FULL - операции (команды) «вакуумизации» базы данных (чистка страниц данных), проведение VACUUM-а
+* CLUSTER - операция (команда) «кластеризации» данных по индексу (перераспределение порядка хранения данных на физическом уровне, с целью оптимизации использования индекса) 
+* ANALYZE - операция (команда) сбора статистики по данным в базе
+* EXPLAIN - операция (команда), выводящая план запроса, используется для анализа и оптимизации запросов
+* EXPLAIN ANALYZE - операция (команда) вывода плана запроса и информации по реальному выполнению запроса

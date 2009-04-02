@@ -1,0 +1,12 @@
+
+* закончить перевод postgres-ru.po
+* перевод libpq-ru.po
+* перевод pg_controldata-ru.po
+* перевод pg_dump-ru.po
+* перевод pgscripts-ru.po
+* перевод psql-ru.po
+
+* проверить и исправить все ошибки по show-err.sh
+
+* перевод HEAD (8.4)
+
