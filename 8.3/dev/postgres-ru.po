@@ -26,7 +26,7 @@ msgstr ""
 "Project-Id-Version: PostgreSQL 8.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-01-16 09:05+0000\n"
-"PO-Revision-Date: 2009-04-02 02:04+0400\n"
+"PO-Revision-Date: 2009-04-04 05:42+0400\n"
 "Last-Translator: Serguei A. Mokhov <mokhov@cs.concordia.ca>\n"
 "Language-Team: pgsql-ru-general <pgsql-ru-general@postgresql.org>\n"
 "MIME-Version: 1.0\n"
@@ -1853,7 +1853,7 @@ msgstr "не получилось найти требуемую контрольную точку"
 msgid ""
 "If you are not restoring from a backup, try removing the file \"%s/"
 "backup_label\"."
-msgstr ""
+msgstr "Если вы в данный момент не производите восстановление из архива, попробуйте удалить файл \"%s/backup_label\"."
 
 #: access/transam/xlog.c:4915
 #, c-format
@@ -1896,7 +1896,7 @@ msgstr ""
 
 #: access/transam/xlog.c:4996
 msgid "automatic recovery in progress"
-msgstr ""
+msgstr "производится автоматическое восстановление"
 
 #: access/transam/xlog.c:5002
 msgid ""
@@ -1926,16 +1926,16 @@ msgstr "REDO (повторить) не требуется"
 
 #: access/transam/xlog.c:5166
 msgid "requested recovery stop point is before end time of backup dump"
-msgstr ""
+msgstr "требуемая точка окончания восстановления расположена до момента завершения резервного копирования"
 
 #: access/transam/xlog.c:5169
 msgid "WAL ends before end time of backup dump"
-msgstr ""
+msgstr "WAL обрывается до того как резервное копирование было завершено"
 
 #: access/transam/xlog.c:5190
 #, c-format
 msgid "selected new timeline ID: %u"
-msgstr ""
+msgstr "выбран новый идентификатор хронологии (timeline ID): %u"
 
 #: access/transam/xlog.c:5374
 msgid "invalid primary checkpoint link in control file"
@@ -1947,7 +1947,7 @@ msgstr "неверная вторичная контрольная точка в контрольном файле"
 
 #: access/transam/xlog.c:5382
 msgid "invalid checkpoint link in backup_label file"
-msgstr ""
+msgstr "файл backup_label указывает на неверную контрольную точку"
 
 #: access/transam/xlog.c:5396
 msgid "invalid primary checkpoint record"
@@ -2020,12 +2020,12 @@ msgstr "REDO (повторить) начинается с %X/%X"
 #: access/transam/xlog.c:6184
 #, c-format
 msgid "unexpected timeline ID %u (after %u) in checkpoint record"
-msgstr ""
+msgstr "неожиданный идентификатор хронологии (timeline ID) %u (после %u) в информации из контрольной точки"
 
 #: access/transam/xlog.c:6216
 #, c-format
 msgid "unexpected timeline ID %u (should be %u) in checkpoint record"
-msgstr ""
+msgstr "неожиданный идентификатор хронологии (timeline ID) %u (должен быть %u) в информации из контрольной точки"
 
 #: access/transam/xlog.c:6353 access/transam/xlog.c:6378
 #, c-format
@@ -2044,36 +2044,35 @@ msgstr "не удалось синхронизировать (fdatasync) лог-файл: %u, сегмент: %u: %m"
 
 #: access/transam/xlog.c:6437 access/transam/xlog.c:6608
 msgid "must be superuser to run a backup"
-msgstr ""
+msgstr "вы должны быть администратором что бы выполнять резервное копирование"
 
 #: access/transam/xlog.c:6442 access/transam/xlog.c:6448
 msgid "WAL archiving is not active"
-msgstr ""
+msgstr "архивирование WAL в данный момент не активно"
 
 #: access/transam/xlog.c:6443
-#, fuzzy
 msgid "archive_mode must be enabled at server start."
-msgstr "нельзя поменять параметр \"%s\" после запуска сервера"
+msgstr "параметр archive_mode должен быть включен при запуске сервера."
 
 #: access/transam/xlog.c:6449
 msgid ""
 "archive_command must be defined before online backups can be made safely."
-msgstr ""
+msgstr "для безопасного резервного копирования онлайн должен быть определён параметр archive_command."
 
 #: access/transam/xlog.c:6478 access/transam/xlog.c:6532
 msgid "a backup is already in progress"
-msgstr ""
+msgstr "резервное копирование уже выполняется"
 
 #: access/transam/xlog.c:6479
 msgid "Run pg_stop_backup() and try again."
-msgstr ""
+msgstr "Выполните pg_stop_backup() и попробуйте снова."
 
 #: access/transam/xlog.c:6533
 #, c-format
 msgid ""
 "If you're sure there is no backup in progress, remove file \"%s\" and try "
 "again."
-msgstr ""
+msgstr "Если вы уверены что резервное копирование не выполняется в данный момент, удалить файл \"%s\" и попробуйте снова."
 
 #: access/transam/xlog.c:6554 access/transam/xlog.c:6683
 #, c-format
@@ -2082,7 +2081,7 @@ msgstr "не получилось записать файл \"%s\": %m"
 
 #: access/transam/xlog.c:6646
 msgid "a backup is not in progress"
-msgstr ""
+msgstr "резервное копирование в данный момент не выполняется"
 
 #: access/transam/xlog.c:6658 access/transam/xlog.c:6982
 #: access/transam/xlog.c:6988 access/transam/xlog.c:7019
@@ -2104,7 +2103,7 @@ msgstr "не удалось открыть директорию журнала транзакций \"%s\": %m"
 #: access/transam/xlog.c:7053
 #, c-format
 msgid "xlog redo %s"
-msgstr ""
+msgstr "xlog redo %s"
 
 #: access/gin/ginarrayproc.c:30
 #, fuzzy
@@ -2118,7 +2117,7 @@ msgstr "hash-индексы не поддерживают сканирование целиковых индексов"
 
 #: access/gin/ginscan.c:190
 msgid "GIN index does not support search with void query"
-msgstr ""
+msgstr "GIN индекс не поддерживает поиск с пустым запросом"
 
 #: access/nbtree/nbtinsert.c:297
 #, fuzzy, c-format
@@ -2136,6 +2135,8 @@ msgid ""
 "Consider a function index of an MD5 hash of the value, or use full text "
 "indexing."
 msgstr ""
+"Нельзя построить индекс для значений с размером больше чем 1/3 страницы буфера.\n"
+"Подумайте об использовании функционального индекса по MD5 хэшу значения, или используйте полнотекстовое индексирование."
 
 #: access/nbtree/nbtpage.c:157 access/nbtree/nbtpage.c:361
 #, c-format
@@ -2193,7 +2194,7 @@ msgstr "размер строки индекса %lu превышает hash-максимум %lu"
 
 #: access/hash/hashinsert.c:83
 msgid "Values larger than a buffer page cannot be indexed."
-msgstr ""
+msgstr "Нельзя построить индекс для значений с размером больше чем страница буфера."
 
 #: access/hash/hashovfl.c:544
 #, c-format
@@ -2236,17 +2237,17 @@ msgstr "закрытие существующего курсора \"%s\""
 
 #: utils/mmgr/portalmem.c:580
 msgid "cannot PREPARE a transaction that has created a cursor WITH HOLD"
-msgstr ""
+msgstr "невозможно подготовить (PREPARE) транзакцию которая создала курсор с параметром WITH HOLD"
 
 #: utils/mmgr/portalmem.c:879 utils/fmgr/funcapi.c:60 commands/prepare.c:729
 #: executor/execQual.c:1179 executor/execQual.c:1222 executor/execQual.c:1514
 #: executor/execQual.c:4621 executor/functions.c:680 executor/functions.c:719
 msgid "set-valued function called in context that cannot accept a set"
-msgstr ""
+msgstr "функция возвращающая множество вызвана в контексте не принимающем множество"
 
 #: utils/mmgr/portalmem.c:883 commands/prepare.c:733
 msgid "materialize mode required, but it is not allowed in this context"
-msgstr ""
+msgstr "требуется режим материализации (materialize mode), но он не разрешён в этом контексте"
 
 #: utils/adt/acl.c:145 utils/adt/name.c:87
 msgid "identifier too long"
