@@ -26,7 +26,7 @@ msgstr ""
 "Project-Id-Version: PostgreSQL 8.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-01-16 09:05+0000\n"
-"PO-Revision-Date: 2009-04-04 05:42+0400\n"
+"PO-Revision-Date: 2009-04-05 08:09+0400\n"
 "Last-Translator: Serguei A. Mokhov <mokhov@cs.concordia.ca>\n"
 "Language-Team: pgsql-ru-general <pgsql-ru-general@postgresql.org>\n"
 "MIME-Version: 1.0\n"
@@ -2291,11 +2291,11 @@ msgstr "имя должно следовать за знаком \"/\""
 #: utils/adt/acl.c:325
 #, c-format
 msgid "defaulting grantor to user ID %u"
-msgstr ""
+msgstr "по умолчанию, идентификатор пользователя выдавшего права доступа %u"
 
 #: utils/adt/acl.c:374
 msgid "ACL array contains wrong data type"
-msgstr ""
+msgstr "массив ACL содержит неверный тип данных"
 
 #: utils/adt/acl.c:378
 #, fuzzy
@@ -2313,7 +2313,7 @@ msgstr "дополнительный мусор в конце ACL-спецификации"
 
 #: utils/adt/acl.c:912
 msgid "grant options cannot be granted back to your own grantor"
-msgstr ""
+msgstr "опции выдачи прав доступа не могут передаваться обратно, к выдавшему вам права доступа"
 
 #: utils/adt/acl.c:973
 msgid "dependent privileges exist"
@@ -2329,7 +2329,7 @@ msgstr "smallint больше не поддерживается"
 
 #: utils/adt/acl.c:1263
 msgid "aclremove is no longer supported"
-msgstr ""
+msgstr "aclremove больше не поддерживается"
 
 #: utils/adt/acl.c:1350 utils/adt/acl.c:1574 utils/adt/acl.c:1791
 #: utils/adt/acl.c:1995 utils/adt/acl.c:2199 utils/adt/acl.c:2408
@@ -2473,7 +2473,7 @@ msgstr "отсутствует оператор присвоения"
 
 #: utils/adt/arrayfuncs.c:278 utils/adt/arrayfuncs.c:284
 msgid "array dimensions incompatible with array literal"
-msgstr ""
+msgstr "размерность массива не соответствует размерности в его переданном текстовом представлении"
 
 #: utils/adt/arrayfuncs.c:387 utils/adt/arrayfuncs.c:402
 #: utils/adt/arrayfuncs.c:411 utils/adt/arrayfuncs.c:425
@@ -2485,13 +2485,13 @@ msgstr ""
 #: utils/adt/arrayfuncs.c:775
 #, c-format
 msgid "malformed array literal: \"%s\""
-msgstr ""
+msgstr "некорректное текстовое представление массива: \"%s\""
 
 #: utils/adt/arrayfuncs.c:485 executor/execQual.c:2563
 #: executor/execQual.c:2590
 msgid ""
 "multidimensional arrays must have array expressions with matching dimensions"
-msgstr ""
+msgstr "массивы внутри многомерных массивов должны иметь одинаковое количество размерностей"
 
 #: utils/adt/arrayfuncs.c:814 utils/adt/arrayfuncs.c:1408
 #: utils/adt/arrayfuncs.c:2688 utils/adt/arrayfuncs.c:2836
@@ -2512,26 +2512,26 @@ msgstr "неверный тип элемента"
 #: utils/adt/arrayfuncs.c:1242 utils/cache/lsyscache.c:2352
 #, c-format
 msgid "no binary input function available for type %s"
-msgstr ""
+msgstr "нет доступной функции двоичного ввода для типа %s"
 
 #: utils/adt/arrayfuncs.c:1382
 #, c-format
 msgid "improper binary format in array element %d"
-msgstr ""
+msgstr "неподходящий двоичный формат %d-го элемента массива"
 
 #: utils/adt/arrayfuncs.c:1464 utils/cache/lsyscache.c:2387
 #, c-format
 msgid "no binary output function available for type %s"
-msgstr ""
+msgstr "нет доступной функции двоичного вывода для типа %s"
 
 #: utils/adt/arrayfuncs.c:1800
 msgid "slices of fixed-length arrays not implemented"
-msgstr ""
+msgstr "срезы для массивов фиксированного размера не реализованы"
 
 #: utils/adt/arrayfuncs.c:1973 utils/adt/arrayfuncs.c:1995
 #: utils/adt/arrayfuncs.c:2029 utils/adt/arrayfuncs.c:2315
 msgid "wrong number of array subscripts"
-msgstr ""
+msgstr "неверное количество индексов массива"
 
 #: utils/adt/arrayfuncs.c:1978 utils/adt/arrayfuncs.c:2071
 #: utils/adt/arrayfuncs.c:2366
@@ -2541,11 +2541,11 @@ msgstr "bigint вне диапазона"
 
 #: utils/adt/arrayfuncs.c:1983
 msgid "cannot assign null value to an element of a fixed-length array"
-msgstr ""
+msgstr "нельзя присваивать null значение элементам массива фиксированного размера"
 
 #: utils/adt/arrayfuncs.c:2269
 msgid "updates on slices of fixed-length arrays not implemented"
-msgstr ""
+msgstr "изменение элементов среза полученного из фиксированного размера массивов не реализовано"
 
 #: utils/adt/arrayfuncs.c:2305 utils/adt/arrayfuncs.c:2392
 msgid "source array too small"
@@ -2565,7 +2565,7 @@ msgstr "нельзя сравнивать массивы с разнотипными элементами"
 #: parser/parse_oper.c:219
 #, c-format
 msgid "could not identify an equality operator for type %s"
-msgstr ""
+msgstr "не удалось найти оператор равенства для типа %s"
 
 #: utils/adt/arrayfuncs.c:3228 executor/execQual.c:4265
 #, c-format
@@ -2574,7 +2574,7 @@ msgstr "не в состоянии определить функцию сравнения для типа %s"
 
 #: utils/adt/arrayutils.c:209
 msgid "typmod array must be type cstring[]"
-msgstr ""
+msgstr "массив typmod должен быть типа cstring[]"
 
 #: utils/adt/arrayutils.c:214
 #, fuzzy
@@ -2683,7 +2683,7 @@ msgstr "timestamp вне диапазона"
 
 #: utils/adt/date.c:876
 msgid "cannot convert reserved abstime value to date"
-msgstr ""
+msgstr "нельзя преобразовать зарезервированные значения типа abstime в тип date"
 
 #: utils/adt/date.c:1666 utils/adt/date.c:1685
 #, c-format
@@ -2704,12 +2704,12 @@ msgstr "временная зона \"%s\" не распознана"
 #: utils/adt/date.c:2535
 #, c-format
 msgid "\"interval\" time zone \"%s\" not valid"
-msgstr ""
+msgstr "неверная временная зона \"%s\" в типе \"interval\""
 
 #: utils/adt/datetime.c:2164 utils/adt/formatting.c:3523
 #, c-format
 msgid "inconsistent use of year %04d and \"BC\""
-msgstr ""
+msgstr "несовместимое использование года %04d и \"BC\""
 
 #: utils/adt/datetime.c:3120 utils/adt/datetime.c:3127
 #, c-format
@@ -2718,7 +2718,7 @@ msgstr "значение поля типа date/time вне диапазона: \"%s\""
 
 #: utils/adt/datetime.c:3129
 msgid "Perhaps you need a different \"datestyle\" setting."
-msgstr ""
+msgstr "Возможно вам нужно другое значение \"datestyle\"."
 
 #: utils/adt/datetime.c:3134
 #, c-format
@@ -2763,7 +2763,7 @@ msgstr "домен %s не позволяет нулевые (null) значения"
 #: utils/adt/domains.c:163 executor/execQual.c:3368
 #, c-format
 msgid "value for domain %s violates check constraint \"%s\""
-msgstr ""
+msgstr "значение для домена %s нарушает ограничение целостности \"%s\""
 
 #: utils/adt/encode.c:55 utils/adt/encode.c:91
 #, c-format
@@ -2858,7 +2858,7 @@ msgstr "нельзя брать квадратный корень отрицательного числа"
 
 #: utils/adt/float.c:1340 utils/adt/numeric.c:1853
 msgid "invalid argument for power function"
-msgstr ""
+msgstr "неверный аргумент функции возведения в степень"
 
 #: utils/adt/float.c:1406 utils/adt/float.c:1436 utils/adt/numeric.c:4695
 msgid "cannot take logarithm of zero"
@@ -2885,7 +2885,7 @@ msgstr "нижний предел не может быть равен верхнему"
 
 #: utils/adt/float.c:2686
 msgid "lower and upper bounds must be finite"
-msgstr ""
+msgstr "нижняя и верхняя граница должна быть конечной"
 
 #: utils/adt/float.c:2724 utils/adt/numeric.c:925
 msgid "lower bound cannot equal upper bound"
@@ -2893,11 +2893,11 @@ msgstr "нижний предел не может быть равен верхнему"
 
 #: utils/adt/formatting.c:458
 msgid "invalid format specification for an interval value"
-msgstr ""
+msgstr "указан неверный формат для значения типа interval"
 
 #: utils/adt/formatting.c:459
 msgid "Intervals are not tied to specific calendar dates."
-msgstr ""
+msgstr "Интервалы никак не связаны с какой-либо конкретной календарной датой."
 
 #: utils/adt/formatting.c:1040
 msgid "\"9\" must be ahead of \"PR\""
@@ -2913,7 +2913,7 @@ msgstr "многочисленные десятичные запятые"
 
 #: utils/adt/formatting.c:1095 utils/adt/formatting.c:1199
 msgid "cannot use \"V\" and decimal point together"
-msgstr ""
+msgstr "нельзя использовать \"V\" и десятичную точку вместе"
 
 #: utils/adt/formatting.c:1110
 msgid "not unique \"S\""
