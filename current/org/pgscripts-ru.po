@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PostgreSQL 8.0\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
-"POT-Creation-Date: 2009-04-02 05:22+0000\n"
+"POT-Creation-Date: 2009-04-15 21:08+0000\n"
 "PO-Revision-Date: 2004-11-14 18:37-0500\n"
 "Last-Translator: Serguei A. Mokhov <mokhov@cs.concordia.ca>\n"
 "Language-Team: pgsql-rus <pgsql-rus@yahoogroups.com>\n"
@@ -874,78 +874,78 @@ msgstr ""
 "\n"
 "Читайте описание SQL-команды CLUSTER для более подробной информации.\n"
 
-#: common.c:49
+#: common.c:45
 #, c-format
 msgid "%s: could not obtain information about current user: %s\n"
 msgstr "%s: не удалось получить информацию о текущем пользователе: %s\n"
 
-#: common.c:60
+#: common.c:56
 #, c-format
 msgid "%s: could not get current user name: %s\n"
 msgstr "%s: не удалось получить имя текущего пользователя: %s\n"
 
-#: common.c:107 common.c:131
+#: common.c:103 common.c:127
 msgid "Password: "
 msgstr "Пароль: "
 
-#: common.c:120
+#: common.c:116
 #, c-format
 msgid "%s: could not connect to database %s\n"
 msgstr "%s: не удалось соединиться к базе %s\n"
 
-#: common.c:142
+#: common.c:138
 #, c-format
 msgid "%s: could not connect to database %s: %s"
 msgstr "%s: не удалось соединиться к базе %s: %s"
 
-#: common.c:166 common.c:194
+#: common.c:162 common.c:190
 #, c-format
 msgid "%s: query failed: %s"
 msgstr "%s: запрос не удался: %s"
 
-#: common.c:168 common.c:196
+#: common.c:164 common.c:192
 #, c-format
 msgid "%s: query was: %s\n"
 msgstr "%s: запрос был: %s\n"
 
-#: common.c:242
+#: common.c:238
 #, fuzzy, c-format
 msgid "pg_strdup: cannot duplicate null pointer (internal error)\n"
 msgstr ""
 "%s: xstrdup: невозможно сделать копию нулевого указателя (внутренняя "
 "ошибка)\n"
 
-#: common.c:248
+#: common.c:244
 #, c-format
 msgid "out of memory\n"
 msgstr "не хватает памяти\n"
 
 #. translator: abbreviation for "yes"
-#: common.c:259
+#: common.c:255
 msgid "y"
 msgstr "y"
 
 #. translator: abbreviation for "no"
-#: common.c:261
+#: common.c:257
 msgid "n"
 msgstr "n"
 
-#: common.c:272
+#: common.c:268
 #, c-format
 msgid "%s (%s/%s) "
 msgstr ""
 
-#: common.c:293
+#: common.c:289
 #, c-format
 msgid "Please answer \"%s\" or \"%s\".\n"
 msgstr ""
 
-#: common.c:371 common.c:404
+#: common.c:367 common.c:400
 #, c-format
 msgid "Cancel request sent\n"
 msgstr ""
 
-#: common.c:373 common.c:406
+#: common.c:369 common.c:402
 #, fuzzy, c-format
 msgid "Could not send cancel request: %s"
 msgstr "не удалось отправить начальный пакет: %s\n"

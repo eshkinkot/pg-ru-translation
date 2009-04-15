@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PostgreSQL 8.0\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
-"POT-Creation-Date: 2009-03-24 21:11+0000\n"
+"POT-Creation-Date: 2009-04-15 21:09+0000\n"
 "PO-Revision-Date: 2005-01-17 15:22-0500\n"
 "Last-Translator: Serguei A. Mokhov <mokhov@cs.concordia.ca>\n"
 "Language-Team: pgsql-ru-general <pgsql-ru-general@postgresql.org>\n"
@@ -29,7 +29,7 @@ msgstr ""
 #: pg_config.c:307 pg_config.c:323 pg_config.c:339 pg_config.c:355
 #, c-format
 msgid "not recorded\n"
-msgstr ""
+msgstr "не сохранено\n"
 
 #: pg_config.c:411
 #, c-format
@@ -160,6 +160,8 @@ msgstr "  --help                   показать эту подсказку и выйти\n"
 msgid ""
 "  --cppflags            show CPPFLAGS value used when PostgreSQL was built\n"
 msgstr ""
+"  --cppflags            показать значение CPPFLAGS использованное при "
+"компиляции PostgreSQL\n"
 
 #: pg_config.c:433
 #, fuzzy, c-format
@@ -172,6 +174,8 @@ msgstr "  --version             показать версию PostgreSQL и выйти\n"
 msgid ""
 "  --cflags_sl           show CFLAGS_SL value used when PostgreSQL was built\n"
 msgstr ""
+"  --cflags_sl           показать значение CFLAGS_SL использованное при "
+"компиляции PostgreSQL\n"
 
 #: pg_config.c:435
 #, fuzzy, c-format
@@ -185,6 +189,8 @@ msgid ""
 "  --ldflags_sl          show LDFLAGS_SL value used when PostgreSQL was "
 "built\n"
 msgstr ""
+"  --ldflags_sl          показать значение LDFLAGS_SL использованное при "
+"компиляции PostgreSQL\n"
 
 #: pg_config.c:437
 #, fuzzy, c-format
@@ -211,6 +217,9 @@ msgid ""
 "With no arguments, all known items are shown.\n"
 "\n"
 msgstr ""
+"\n"
+"При запуске без аргументов, будут показаны все известные значения.\n"
+"\n"
 
 #: pg_config.c:441
 #, c-format
@@ -270,7 +279,7 @@ msgstr "дочерний процесс завершился с кодом возврата %d"
 #: ../../port/exec.c:590
 #, c-format
 msgid "child process was terminated by exception 0x%X"
-msgstr ""
+msgstr "дочерний процесс завершён исключением 0x%X"
 
 #: ../../port/exec.c:599
 #, fuzzy, c-format
@@ -288,6 +297,16 @@ msgid "child process exited with unrecognized status %d"
 msgstr "дочерний процесс завершился с нераспознанным статусом %d"
 
 #~ msgid ""
+#~ "  %s [ OPTION ... ]\n"
+#~ "\n"
+#~ msgstr ""
+#~ "  %s [ ОПЦИЯ ... ]\n"
+#~ "\n"
+
+#~ msgid "%s: argument required\n"
+#~ msgstr "%s: требуется аргумент\n"
+
+#~ msgid ""
 #~ "  %s OPTION...\n"
 #~ "\n"
 #~ msgstr ""
@@ -300,9 +319,6 @@ msgstr "дочерний процесс завершился с нераспознанным статусом %d"
 #~ msgstr ""
 #~ "\n"
 #~ "Наберите \"%s --help\" для более подробной информации\n"
-
-#~ msgid "%s: argument required\n"
-#~ msgstr "%s: требуется аргумент\n"
 
 #~ msgid "%s: could not find own executable\n"
 #~ msgstr "%s: не удалось найти свой собственный выполняемый файл\n"

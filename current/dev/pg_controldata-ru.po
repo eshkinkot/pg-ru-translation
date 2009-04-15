@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PostgreSQL 8.0\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
-"POT-Creation-Date: 2009-03-24 21:11+0000\n"
+"POT-Creation-Date: 2009-04-15 21:08+0000\n"
 "PO-Revision-Date: 2004-09-24 17:10-0500\n"
 "Last-Translator: Serguei A. Mokhov <mokhov@cs.concordia.ca>\n"
 "Language-Team: pgsql-rus <pgsql-rus@yahoogroups.com>\n"
@@ -292,11 +292,20 @@ msgstr "Формат хранения даты/времени:         %s\n"
 #~ msgid "Current log file ID:                  %u\n"
 #~ msgstr "Текущий ID файла журнала:             %u\n"
 
+#~ msgid "Next log file segment:                %u\n"
+#~ msgstr "Следующий сегмент файла журнала:      %u\n"
+
 #~ msgid "Latest checkpoint's UNDO location:    %X/%X\n"
 #~ msgstr "Положение UNDO последней checkpoint:            %X/%X\n"
 
+#~ msgid "Latest checkpoint's NextXID:          %u\n"
+#~ msgstr "NextXID последней checkpoint:         %u\n"
+
 #~ msgid "Maximum number of function arguments: %u\n"
 #~ msgstr "Максимальное число аргументов функции: %u\n"
+
+#~ msgid "Maximum length of locale name:        %u\n"
+#~ msgstr "Максимальная длина имени локали:      %u\n"
 
 #~ msgid "LC_COLLATE:                           %s\n"
 #~ msgstr "LC_COLLATE:                           %s\n"

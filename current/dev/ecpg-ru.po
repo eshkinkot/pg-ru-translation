@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PostgreSQL 8.4\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
-"POT-Creation-Date: 2009-04-02 05:22+0000\n"
+"POT-Creation-Date: 2009-04-15 21:18+0000\n"
 "PO-Revision-Date: 2009-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -302,12 +302,12 @@ msgstr "курсор \"%s\" не существует"
 msgid "initializer not allowed in type definition"
 msgstr ""
 
-#: preproc.y:347 preproc.y:10618
+#: preproc.y:347 preproc.y:10614
 #, c-format
 msgid "type \"%s\" is already defined"
 msgstr ""
 
-#: preproc.y:370 preproc.y:11217 preproc.y:11731 variable.c:584
+#: preproc.y:370 preproc.y:11213 preproc.y:11728 variable.c:584
 msgid "multidimensional arrays for simple data types are not supported"
 msgstr ""
 
@@ -343,9 +343,9 @@ msgstr ""
 msgid "AT option not allowed in WHENEVER statement"
 msgstr ""
 
-#: preproc.y:1911 preproc.y:2907 preproc.y:3809 preproc.y:3818 preproc.y:4049
-#: preproc.y:5858 preproc.y:5863 preproc.y:5868 preproc.y:8033 preproc.y:8563
-#: preproc.y:8568
+#: preproc.y:1911 preproc.y:2907 preproc.y:3805 preproc.y:3814 preproc.y:4045
+#: preproc.y:5854 preproc.y:5859 preproc.y:5864 preproc.y:8029 preproc.y:8559
+#: preproc.y:8564
 msgid "unsupported feature will be passed to server"
 msgstr ""
 
@@ -365,116 +365,116 @@ msgstr ""
 msgid "COPY FROM STDIN is not implemented"
 msgstr ""
 
-#: preproc.y:3749 preproc.y:3760
+#: preproc.y:3745 preproc.y:3756
 msgid "constraint declared INITIALLY DEFERRED must be DEFERRABLE"
 msgstr ""
 "ограничение задекларированное как INITIALLY DEFERRED также должно быть "
 "DEFERRABLE"
 
-#: preproc.y:6567 preproc.y:10234
+#: preproc.y:6563 preproc.y:10230
 #, c-format
 msgid "cursor \"%s\" is already defined"
 msgstr ""
 
-#: preproc.y:6920
+#: preproc.y:6916
 msgid "no longer supported LIMIT #,# syntax passed to server"
 msgstr ""
 
-#: preproc.y:7162
+#: preproc.y:7158
 msgid "subquery in FROM must have an alias"
 msgstr "подзапрос в FROM должен иметь алиас"
 
-#: preproc.y:9923
+#: preproc.y:9919
 msgid "OLD used in query that is not in a rule"
 msgstr "OLD использован в запросе не являющемся правилом"
 
-#: preproc.y:9930
+#: preproc.y:9926
 msgid "NEW used in query that is not in a rule"
 msgstr "NEW использован в запросе не являющемся правилом"
 
-#: preproc.y:9962
+#: preproc.y:9958
 #, fuzzy
 msgid "CREATE TABLE AS cannot specify INTO"
 msgstr "CREATE TABLE AS не может указывать INTO"
 
-#: preproc.y:10009
+#: preproc.y:10005
 #, c-format
 msgid "expected \"@\", found \"%s\""
 msgstr ""
 
-#: preproc.y:10021
+#: preproc.y:10017
 msgid ""
 "only protocols \"tcp\" and \"unix\" and database type \"postgresql\" are "
 "supported"
 msgstr ""
 
-#: preproc.y:10024
+#: preproc.y:10020
 #, c-format
 msgid "expected \"://\", found \"%s\""
 msgstr ""
 
-#: preproc.y:10029
+#: preproc.y:10025
 #, c-format
 msgid "Unix-domain sockets only work on \"localhost\" but not on \"%s\""
 msgstr ""
 
-#: preproc.y:10055
+#: preproc.y:10051
 #, c-format
 msgid "expected \"postgresql\", found \"%s\""
 msgstr ""
 
-#: preproc.y:10058
+#: preproc.y:10054
 #, c-format
 msgid "invalid connection type: %s"
 msgstr ""
 
-#: preproc.y:10067
+#: preproc.y:10063
 #, c-format
 msgid "expected \"@\" or \"://\", found \"%s\""
 msgstr ""
 
-#: preproc.y:10142 preproc.y:10159
+#: preproc.y:10138 preproc.y:10155
 msgid "invalid data type"
 msgstr ""
 
-#: preproc.y:10170 preproc.y:10185
+#: preproc.y:10166 preproc.y:10181
 msgid "incomplete statement"
 msgstr ""
 
-#: preproc.y:10173 preproc.y:10188
+#: preproc.y:10169 preproc.y:10184
 #, c-format
 msgid "unrecognized token \"%s\""
 msgstr ""
 
-#: preproc.y:10437
+#: preproc.y:10433
 msgid "only data types numeric and decimal have precision/scale argument"
 msgstr ""
 
-#: preproc.y:10449
+#: preproc.y:10445
 msgid "interval specification not allowed here"
 msgstr ""
 
-#: preproc.y:10593 preproc.y:10645
+#: preproc.y:10589 preproc.y:10641
 msgid "too many levels in nested structure/union definition"
 msgstr ""
 
-#: preproc.y:10776
+#: preproc.y:10772
 msgid "pointers to varchar are not implemented"
 msgstr ""
 
-#: preproc.y:10940 preproc.y:10947 preproc.y:10954
+#: preproc.y:10936 preproc.y:10943 preproc.y:10950
 msgid "using unsupported DESCRIBE statement"
 msgstr ""
 
-#: preproc.y:11185
+#: preproc.y:11181
 msgid "initializer not allowed in EXEC SQL VAR command"
 msgstr ""
 
-#: preproc.y:11700
+#: preproc.y:11697
 msgid "arrays of indicators are not allowed on input"
 msgstr ""
 
-#: preproc.y:11928
+#: preproc.y:11925
 #, c-format
 msgid "%s at or near \"%s\""
 msgstr "%s в или рядом \"%s\""

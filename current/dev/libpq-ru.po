@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PostgreSQL 8.0\n"
 "Report-Msgid-Bugs-To: pgsql-bugs@postgresql.org\n"
-"POT-Creation-Date: 2009-04-02 05:23+0000\n"
+"POT-Creation-Date: 2009-04-15 21:19+0000\n"
 "PO-Revision-Date: 2007-09-17 10:06+0500\n"
 "Last-Translator: Andrey S. Zevakin <azevakin@gmail.com>\n"
 "Language-Team: pgsql-rus <pgsql-rus@yahoogroups.com>\n"
@@ -673,21 +673,21 @@ msgstr "PQgetline: не производится текстовый COPY OUT\n"
 msgid "could not establish SSL connection: %s\n"
 msgstr "не удалось установить SSL-соединение: %s\n"
 
-#: fe-secure.c:320 fe-secure.c:404 fe-secure.c:1114
+#: fe-secure.c:320 fe-secure.c:404 fe-secure.c:1115
 #, c-format
 msgid "SSL SYSCALL error: %s\n"
 msgstr "ошибка SSL SYSCALL: %s\n"
 
-#: fe-secure.c:326 fe-secure.c:410 fe-secure.c:1118
+#: fe-secure.c:326 fe-secure.c:410 fe-secure.c:1119
 msgid "SSL SYSCALL error: EOF detected\n"
 msgstr "ошибка SSL SYSCALL: обнаружен конец файла (EOF)\n"
 
-#: fe-secure.c:338 fe-secure.c:421 fe-secure.c:1137
+#: fe-secure.c:338 fe-secure.c:421 fe-secure.c:1138
 #, c-format
 msgid "SSL error: %s\n"
 msgstr "ошибка SSL: %s\n"
 
-#: fe-secure.c:348 fe-secure.c:431 fe-secure.c:1147
+#: fe-secure.c:348 fe-secure.c:431 fe-secure.c:1148
 #, c-format
 msgid "unrecognized SSL error code: %d\n"
 msgstr "нераспознанный код ошибки SSL: %d\n"
@@ -782,20 +782,23 @@ msgid "SSL library does not support CRL certificates (file \"%s\")\n"
 msgstr "Библиотека SSL не поддерживает CRL сертификаты (файл \"%s\")\n"
 
 #: fe-secure.c:1070
-#, fuzzy, c-format
-msgid "root certificate file \"%s\" does not exist"
-msgstr "портал \"%s\" не существует"
+#, c-format
+msgid ""
+"root certificate file \"%s\" does not exist\n"
+"Either supply the file or set sslverify to \"none\" to disable server "
+"certificate verification.\n"
+msgstr ""
 
-#: fe-secure.c:1166
+#: fe-secure.c:1167
 #, c-format
 msgid "certificate could not be obtained: %s\n"
 msgstr "не удалось получить сертификат: %s\n"
 
-#: fe-secure.c:1240
+#: fe-secure.c:1241
 msgid "no SSL error reported"
 msgstr "нераспознанный код ошибки SSL"
 
-#: fe-secure.c:1249
+#: fe-secure.c:1250
 #, c-format
 msgid "SSL error code %lu"
 msgstr "ошибка SSL: %lu"
@@ -853,3 +856,7 @@ msgstr "ошибка SSL: %lu"
 
 #~ msgid "error while writing to file \"%s\"\n"
 #~ msgstr "ошибка при записи в файл \"%s\"\n"
+
+#, fuzzy
+#~ msgid "root certificate file \"%s\" does not exist"
+#~ msgstr "портал \"%s\" не существует"

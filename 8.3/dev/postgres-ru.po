@@ -25,7 +25,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PostgreSQL 8.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-01-16 09:05+0000\n"
+"POT-Creation-Date: 2009-04-15 21:20+0000\n"
 "PO-Revision-Date: 2009-04-05 08:09+0400\n"
 "Last-Translator: Serguei A. Mokhov <mokhov@cs.concordia.ca>\n"
 "Language-Team: pgsql-ru-general <pgsql-ru-general@postgresql.org>\n"
@@ -34,785 +34,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Poedit-Language: Russian\n"
 "X-Poedit-Country: RUSSIAN FEDERATION\n"
-
-#: libpq/auth.c:129
-#, c-format
-msgid "Kerberos initialization returned error %d"
-msgstr "ошибка Kerberos при инициализации: %d"
-
-#: libpq/auth.c:139
-#, c-format
-msgid "Kerberos keytab resolving returned error %d"
-msgstr "ошибка Kerberos при обработке keytab %d"
-
-#: libpq/auth.c:163
-#, fuzzy, c-format
-msgid "Kerberos sname_to_principal(\"%s\", \"%s\") returned error %d"
-msgstr "ошибка Kerberos при инициализации: %d"
-
-#: libpq/auth.c:211
-#, c-format
-msgid "Kerberos recvauth returned error %d"
-msgstr "ошибка Kerberos recvauth %d"
-
-#: libpq/auth.c:234
-#, c-format
-msgid "Kerberos unparse_name returned error %d"
-msgstr "ошибка Kerberos unparse_name %d"
-
-#: libpq/auth.c:285
-#, c-format
-msgid ""
-"unexpected Kerberos user name received from client (received \"%s\", "
-"expected \"%s\")"
-msgstr "неожиданное имя пользователя Kerberos получено от клиента (получено \"%s\", ожидалось \"%s\")"
-
-#: libpq/auth.c:305
-msgid "Kerberos 5 not implemented on this server"
-msgstr "Kerberos 5 не реализован в этом сервере"
-
-#: libpq/auth.c:378
-#, c-format
-msgid "%s: %s"
-msgstr "%s: %s"
-
-#: libpq/auth.c:404
-#, fuzzy
-msgid "GSSAPI is not supported in protocol version 2"
-msgstr "оператор %s не поддерживает строчные выражения"
-
-#: libpq/auth.c:423 libpq/auth.c:801 libpq/auth.c:869 libpq/auth.c:1266
-#: utils/mmgr/aset.c:360 utils/mmgr/aset.c:539 utils/mmgr/aset.c:714
-#: utils/mmgr/aset.c:909 utils/adt/oracle_compat.c:76
-#: utils/adt/oracle_compat.c:128 utils/adt/oracle_compat.c:176
-#: utils/adt/regexp.c:209 utils/adt/varlena.c:2854 utils/adt/varlena.c:2877
-#: utils/mb/mbutils.c:279 utils/mb/mbutils.c:543 utils/hash/dynahash.c:363
-#: utils/hash/dynahash.c:435 utils/hash/dynahash.c:929 utils/misc/guc.c:2527
-#: utils/misc/guc.c:2540 utils/misc/guc.c:2553 utils/init/miscinit.c:211
-#: utils/init/miscinit.c:232 utils/init/miscinit.c:242 utils/fmgr/dfmgr.c:221
-#: commands/sequence.c:903 lib/stringinfo.c:245 storage/buffer/buf_init.c:162
-#: storage/buffer/localbuf.c:307 storage/file/fd.c:327 storage/file/fd.c:685
-#: storage/file/fd.c:803 storage/ipc/procarray.c:377
-#: storage/ipc/procarray.c:696 storage/ipc/procarray.c:703
-#: postmaster/postmaster.c:1771 postmaster/postmaster.c:1804
-#: postmaster/postmaster.c:2794 postmaster/postmaster.c:3494
-#: postmaster/postmaster.c:3575 postmaster/postmaster.c:4132
-msgid "out of memory"
-msgstr "не хватает памяти"
-
-#: libpq/auth.c:459
-#, fuzzy, c-format
-msgid "expected GSS response, got message type %d"
-msgstr "ожидался ответ с паролем, но вместо него получено сообщение типа %d"
-
-#: libpq/auth.c:522
-msgid "accepting GSS security context failed"
-msgstr "ошибка получения контекста безопасности GSS"
-
-#: libpq/auth.c:548
-msgid "retrieving GSS user name failed"
-msgstr "ошибка извлечения имени пользователя GSS"
-
-#: libpq/auth.c:619
-#, fuzzy
-msgid "GSSAPI not implemented on this server"
-msgstr "Kerberos 4 не реализован в этом сервере"
-
-#: libpq/auth.c:644
-#, fuzzy, c-format
-msgid "SSPI error %x"
-msgstr "ошибка SSL: %s"
-
-#: libpq/auth.c:648
-#, c-format
-msgid "%s (%x)"
-msgstr "%s (%x)"
-
-#: libpq/auth.c:688
-#, fuzzy
-msgid "SSPI is not supported in protocol version 2"
-msgstr "оператор %s не поддерживает строчные выражения"
-
-#: libpq/auth.c:704
-msgid "could not acquire SSPI credentials handle"
-msgstr "не удалось получить дескриптор мандата SSPI"
-
-#: libpq/auth.c:721
-#, fuzzy, c-format
-msgid "expected SSPI response, got message type %d"
-msgstr "ожидался ответ с паролем, но вместо него получено сообщение типа %d"
-
-#: libpq/auth.c:793
-#, fuzzy
-msgid "could not accept SSPI security context"
-msgstr "не удалось создать контекст SSL: %s"
-
-#: libpq/auth.c:849
-#, fuzzy
-msgid "could not get security token from context"
-msgstr "не удалось создать контекст SSL: %s"
-
-#: libpq/auth.c:924
-#, fuzzy
-msgid "SSPI not implemented on this server"
-msgstr "Kerberos 4 не реализован в этом сервере"
-
-#: libpq/auth.c:964
-#, c-format
-msgid "authentication failed for user \"%s\": host rejected"
-msgstr "ошибка аутентификации пользователя \"%s\": узел отвергнут"
-
-#: libpq/auth.c:967
-#, c-format
-msgid "Kerberos 5 authentication failed for user \"%s\""
-msgstr "ошибка аутентификации Kerberos 5 пользователя \"%s\""
-
-#: libpq/auth.c:970
-#, fuzzy, c-format
-msgid "GSSAPI authentication failed for user \"%s\""
-msgstr ""
-"ошибка при аутентификации для пользователя \"%s\": не верный метод "
-"аутентификации"
-
-#: libpq/auth.c:973
-#, fuzzy, c-format
-msgid "SSPI authentication failed for user \"%s\""
-msgstr ""
-"ошибка при аутентификации для пользователя \"%s\": не верный метод "
-"аутентификации"
-
-#: libpq/auth.c:976
-#, c-format
-msgid "\"trust\" authentication failed for user \"%s\""
-msgstr "ошибка \"trust\" аутентификации пользователя \"%s\""
-
-#: libpq/auth.c:979
-#, c-format
-msgid "Ident authentication failed for user \"%s\""
-msgstr "ошибка Ident аутентификации пользователя \"%s\""
-
-#: libpq/auth.c:984
-#, c-format
-msgid "password authentication failed for user \"%s\""
-msgstr "ошибка аутентификации по паролю пользователя \"%s\""
-
-#: libpq/auth.c:988
-#, c-format
-msgid "PAM authentication failed for user \"%s\""
-msgstr "ошибка PAM аутентификации пользователя \"%s\""
-
-#: libpq/auth.c:993
-#, fuzzy, c-format
-msgid "LDAP authentication failed for user \"%s\""
-msgstr ""
-"ошибка при аутентификации для пользователя \"%s\": не верный метод "
-"аутентификации"
-
-#: libpq/auth.c:997
-#, c-format
-msgid "authentication failed for user \"%s\": invalid authentication method"
-msgstr ""
-"ошибка при аутентификации для пользователя \"%s\": не верный метод "
-"аутентификации"
-
-#: libpq/auth.c:1026
-msgid "missing or erroneous pg_hba.conf file"
-msgstr "отсутствует или ошибочный файл pg_hba.conf"
-
-#: libpq/auth.c:1027
-msgid "See server log for details."
-msgstr "Смотрите подробности в журнале сервера."
-
-#: libpq/auth.c:1055
-msgid "SSL on"
-msgstr "SSL вкл."
-
-#: libpq/auth.c:1055
-msgid "SSL off"
-msgstr "SSL выкл."
-
-#: libpq/auth.c:1053
-#, c-format
-msgid "no pg_hba.conf entry for host \"%s\", user \"%s\", database \"%s\", %s"
-msgstr ""
-"отсутствует запись в pg_hba.conf для хоста \"%s\", пользователя \"%s\", базы "
-"\"%s\", %s"
-
-#: libpq/auth.c:1059
-#, c-format
-msgid "no pg_hba.conf entry for host \"%s\", user \"%s\", database \"%s\""
-msgstr ""
-"отсутствует запись в pg_hba.conf для хоста \"%s\", пользователя \"%s\", базы "
-"\"%s\""
-
-#: libpq/auth.c:1103
-#, c-format
-msgid "could not enable credential reception: %m"
-msgstr "не удалось включить получение ident сокета: %m"
-
-#: libpq/auth.c:1214
-#, c-format
-msgid "error from underlying PAM layer: %s"
-msgstr "ошибка базового уровня PAM: %s"
-
-#: libpq/auth.c:1219
-#, c-format
-msgid "unsupported PAM conversation %d/%s"
-msgstr "неподдерживаемый диалог PAM %d/%s"
-
-#: libpq/auth.c:1251
-msgid "empty password returned by client"
-msgstr "возвращёт пустой пароль от клиента"
-
-#: libpq/auth.c:1311
-#, c-format
-msgid "could not create PAM authenticator: %s"
-msgstr "не удалось создать аутентификатор PAM: %s"
-
-#: libpq/auth.c:1322
-#, c-format
-msgid "pam_set_item(PAM_USER) failed: %s"
-msgstr "ошибка pam_set_item(PAM_USER): %s"
-
-#: libpq/auth.c:1333
-#, c-format
-msgid "pam_set_item(PAM_CONV) failed: %s"
-msgstr "ошибка pam_set_item(PAM_CONV): %s"
-
-#: libpq/auth.c:1344
-#, c-format
-msgid "pam_authenticate failed: %s"
-msgstr "ошибка pam_authenticate: %s"
-
-#: libpq/auth.c:1355
-#, c-format
-msgid "pam_acct_mgmt failed: %s"
-msgstr "ошибка pam_acct_mgmt: %s"
-
-#: libpq/auth.c:1366
-#, c-format
-msgid "could not release PAM authenticator: %s"
-msgstr "не удалось удалить аутентификатор PAM: %s"
-
-#: libpq/auth.c:1397
-#, fuzzy
-msgid "LDAP configuration URL not specified"
-msgstr "не указано тело функции"
-
-#: libpq/auth.c:1449
-#, fuzzy, c-format
-msgid "invalid LDAP URL: \"%s\""
-msgstr "неверное значение cidr: \"%s\""
-
-#: libpq/auth.c:1465 libpq/auth.c:1469
-#, fuzzy, c-format
-msgid "could not initialize LDAP: error code %d"
-msgstr "не удалось инициализировать SSL-подсоединение: %s"
-
-#: libpq/auth.c:1479
-#, c-format
-msgid "could not set LDAP protocol version: error code %d"
-msgstr "не удалось установить версию протокола LDAP: код ошибки %d"
-
-#: libpq/auth.c:1508
-msgid "could not load wldap32.dll"
-msgstr "не удалось загрузить wldap32.dll"
-
-#: libpq/auth.c:1516
-msgid "could not load function _ldap_start_tls_sA in wldap32.dll"
-msgstr "не удалось подключить функцию _ldap_start_tls_sA из wldap32.dll"
-
-#: libpq/auth.c:1517
-#, fuzzy
-msgid "LDAP over SSL is not supported on this platform."
-msgstr "tablespaces  не поддерживаются на этой платформе"
-
-#: libpq/auth.c:1532
-#, c-format
-msgid "could not start LDAP TLS session: error code %d"
-msgstr "не получилось начать LDAP TLS сессию: код ошибки %d"
-
-#: libpq/auth.c:1547
-#, c-format
-msgid "LDAP login failed for user \"%s\" on server \"%s\": error code %d"
-msgstr "ошибка начала сеанса LDAP для пользователя \"%s\" на сервере \"%s\": код ошибки %d"
-
-#: libpq/auth.c:1583
-#, c-format
-msgid "expected password response, got message type %d"
-msgstr "ожидался ответ с паролем, но вместо него получено сообщение типа %d"
-
-#: libpq/auth.c:1611
-msgid "invalid password packet size"
-msgstr "неверный размер пакета с паролем"
-
-#: libpq/auth.c:1615
-msgid "received password packet"
-msgstr "получент пакет с паролем"
-
-#: libpq/be-fsstubs.c:125 libpq/be-fsstubs.c:155 libpq/be-fsstubs.c:170
-#: libpq/be-fsstubs.c:195 libpq/be-fsstubs.c:242 libpq/be-fsstubs.c:469
-#, c-format
-msgid "invalid large-object descriptor: %d"
-msgstr "неверный дескриптор большого объекта: %d"
-
-#: libpq/be-fsstubs.c:175
-#, c-format
-msgid "large object descriptor %d was not opened for writing"
-msgstr "дескриптор большого объекта %d не открыт для записи"
-
-#: libpq/be-fsstubs.c:335
-msgid "must be superuser to use server-side lo_import()"
-msgstr "нужно быть администратором для использования server-side lo_import()"
-
-#: libpq/be-fsstubs.c:336
-msgid "Anyone can use the client-side lo_import() provided by libpq."
-msgstr "Каждый может использовать на стороне клиента lo_import() предоставляемую libpq."
-
-#: libpq/be-fsstubs.c:353
-#, c-format
-msgid "could not open server file \"%s\": %m"
-msgstr "не получилось отктрыть файл сервера \"%s\": %m"
-
-#: libpq/be-fsstubs.c:375
-#, c-format
-msgid "could not read server file \"%s\": %m"
-msgstr "не получилось считать файл сервера \"%s\": %m"
-
-#: libpq/be-fsstubs.c:405
-msgid "must be superuser to use server-side lo_export()"
-msgstr "нужно быть администратором для использования server-side lo_export()"
-
-#: libpq/be-fsstubs.c:406
-msgid "Anyone can use the client-side lo_export() provided by libpq."
-msgstr "Каждый может использовать на стороне клиента lo_export() предоставляемую libpq."
-
-#: libpq/be-fsstubs.c:434
-#, c-format
-msgid "could not create server file \"%s\": %m"
-msgstr "не получилось создать файл сервера \"%s\": %m"
-
-#: libpq/be-fsstubs.c:446
-#, c-format
-msgid "could not write server file \"%s\": %m"
-msgstr "не получилось записать файл сервера \"%s\": %m"
-
-#: libpq/be-secure.c:299 libpq/be-secure.c:393
-#, c-format
-msgid "SSL error: %s"
-msgstr "ошибка SSL: %s"
-
-#: libpq/be-secure.c:308 libpq/be-secure.c:402 libpq/be-secure.c:919
-#, c-format
-msgid "unrecognized SSL error code: %d"
-msgstr "нераспознанный код ошибки SSL: %d"
-
-#: libpq/be-secure.c:347 libpq/be-secure.c:351 libpq/be-secure.c:361
-msgid "SSL renegotiation failure"
-msgstr "ошибка пересогласования SSL"
-
-#: libpq/be-secure.c:355
-msgid "SSL failed to send renegotiation request"
-msgstr "ошибка отправки запроса на пересогласование SSL"
-
-#: libpq/be-secure.c:724
-#, c-format
-msgid "could not create SSL context: %s"
-msgstr "не удалось создать контекст SSL: %s"
-
-#: libpq/be-secure.c:735
-#, c-format
-msgid "could not load server certificate file \"%s\": %s"
-msgstr "не удалось загрузить сертификат сервера \"%s\": %s"
-
-#: libpq/be-secure.c:741
-#, c-format
-msgid "could not access private key file \"%s\": %m"
-msgstr "не удалось получить доступ к файлу \"%s\" с секретным ключом: %m"
-
-#: libpq/be-secure.c:757
-#, c-format
-msgid "unsafe permissions on private key file \"%s\""
-msgstr "небезопасные права доступа у файла секретного ключа \"%s\""
-
-#: libpq/be-secure.c:759
-msgid ""
-"File must be owned by the database user and must have no permissions for "
-"\"group\" or \"other\"."
-msgstr "Владельцем файла должен быть владелец сервера и у \"группа\" и \"другие\" не должно быть прав доступа."
-
-#: libpq/be-secure.c:766
-#, c-format
-msgid "could not load private key file \"%s\": %s"
-msgstr "не удалось загрузить секретный ключ из файла \"%s\": %s"
-
-#: libpq/be-secure.c:771
-#, c-format
-msgid "check of private key failed: %s"
-msgstr "ошибка проверки секретного ключа: %s"
-
-#: libpq/be-secure.c:790
-#, c-format
-msgid "could not load root certificate file \"%s\": %s"
-msgstr "не получилось загрузить файл корневых сертификатов \"%s\": %s"
-
-#: libpq/be-secure.c:792
-msgid "Will not verify client certificates."
-msgstr "Сертификаты клиентов проверяться не будут"
-
-#: libpq/be-secure.c:813
-#, c-format
-msgid "SSL certificate revocation list file \"%s\" ignored"
-msgstr "файл \"%s\" со списком отозванных сертификатов SSL проигнорирован"
-
-#: libpq/be-secure.c:815
-msgid "SSL library does not support certificate revocation lists."
-msgstr "библиотека SSL не поддерживает списки отозванных сертификатов"
-
-#: libpq/be-secure.c:821
-#, c-format
-msgid "SSL certificate revocation list file \"%s\" not found, skipping: %s"
-msgstr "файл \"%s\" со списком отозванных сертификатов SSL не найден, проигнорировано: %s"
-
-#: libpq/be-secure.c:823
-msgid "Certificates will not be checked against revocation list."
-msgstr "Сертификаты не будут проверяться по списку отозванных сертификатов"
-
-#: libpq/be-secure.c:864
-#, c-format
-msgid "could not initialize SSL connection: %s"
-msgstr "не удалось инициализировать SSL-подсоединение: %s"
-
-#: libpq/be-secure.c:873
-#, c-format
-msgid "could not set SSL socket: %s"
-msgstr "не удалось создать SSL-сокет: %s"
-
-#: libpq/be-secure.c:899
-#, c-format
-msgid "could not accept SSL connection: %m"
-msgstr "не получилось принять SSL подсоединение: %m"
-
-#: libpq/be-secure.c:903 libpq/be-secure.c:914
-msgid "could not accept SSL connection: EOF detected"
-msgstr "не получилось принять SSL подсоединение: обнаружен конец файла (EOF)"
-
-#: libpq/be-secure.c:908
-#, c-format
-msgid "could not accept SSL connection: %s"
-msgstr "не получилось принять SSL подсоединение: %s"
-
-#: libpq/be-secure.c:946
-#, c-format
-msgid "SSL connection from \"%s\""
-msgstr "SSL подсоединение от \"%s\""
-
-#: libpq/be-secure.c:990
-#, fuzzy
-msgid "no SSL error reported"
-msgstr "нераспознанный код ошибки SSL: %d"
-
-#: libpq/be-secure.c:994
-#, fuzzy, c-format
-msgid "SSL error code %lu"
-msgstr "ошибка SSL: %s"
-
-#: libpq/crypt.c:60
-msgid ""
-"cannot use authentication method \"crypt\" because password is MD5-encrypted"
-msgstr "невозможно использовать метод аутентификации \"crypt\" потому что пароль зашифрован MD5"
-
-#: libpq/hba.c:160
-#, c-format
-msgid "authentication file token too long, skipping: \"%s\""
-msgstr "слово в файле аутентификации слишком длинное, проигнорировано: \"%s\""
-
-#: libpq/hba.c:349
-#, c-format
-msgid "could not open secondary authentication file \"@%s\" as \"%s\": %m"
-msgstr "не удалось открыть вторичный файл аутентификации \"@%s\" как \"%s\": %m"
-
-#: libpq/hba.c:771
-#, c-format
-msgid "invalid IP address \"%s\" in file \"%s\" line %d: %s"
-msgstr "неверный IP адрес \"%s\" в файле \"%s\" строка %d: %s"
-
-#: libpq/hba.c:807
-#, c-format
-msgid "invalid IP mask \"%s\" in file \"%s\" line %d: %s"
-msgstr "неверная IP маска \"%s\" в файле \"%s\" строка %d: %s"
-
-#: libpq/hba.c:822
-#, c-format
-msgid "IP address and mask do not match in file \"%s\" line %d"
-msgstr "IP адрес и маска не совпадают в файле \"%s\" строка %d"
-
-#: libpq/hba.c:880
-#, c-format
-msgid "invalid entry in file \"%s\" at line %d, token \"%s\""
-msgstr "неверный элемент в файле \"%s\" на строке %d, слово \"%s\""
-
-#: libpq/hba.c:886
-#, c-format
-msgid "missing field in file \"%s\" at end of line %d"
-msgstr "пропущено поле в файле \"%s\" в конце строки %d"
-
-#: libpq/hba.c:954 access/transam/xlog.c:2092 access/transam/xlog.c:3476
-#: access/transam/xlog.c:3566 access/transam/xlog.c:3664
-#: utils/init/miscinit.c:993 utils/init/miscinit.c:1099
-#: utils/init/postinit.c:90 utils/init/postinit.c:130 utils/error/elog.c:1224
-#: postmaster/autovacuum.c:1786 ../port/copydir.c:119
-#, c-format
-msgid "could not open file \"%s\": %m"
-msgstr "не получилось открыть файл \"%s\": %m"
-
-#: libpq/hba.c:995 guc-file.l:392
-#, c-format
-msgid "could not open configuration file \"%s\": %m"
-msgstr "не получилось открыть файл конфигурации \"%s\": %m"
-
-#: libpq/hba.c:1099
-#, c-format
-msgid "missing entry in file \"%s\" at end of line %d"
-msgstr "пропущен элемент в файле \"%s\" в конце строки %d"
-
-#: libpq/hba.c:1129
-msgid "cannot use Ident authentication without usermap field"
-msgstr "невозможно использовать Ident аутентификацию без поля задающего трансляцию имён пользователей"
-
-#: libpq/hba.c:1175
-#, c-format
-msgid "could not open Ident usermap file \"%s\": %m"
-msgstr "не удалось открыть файл трансляции Ident имён пользователей \"%s\": %m"
-
-#: libpq/hba.c:1349
-#, c-format
-msgid "could not create socket for Ident connection: %m"
-msgstr "не получилось создать сокет для Ident-подсоединения: %m"
-
-#: libpq/hba.c:1364
-#, c-format
-msgid "could not bind to local address \"%s\": %m"
-msgstr "не удалось привязать сокет к локальному адресу \"%s\": %m"
-
-#: libpq/hba.c:1376
-#, c-format
-msgid "could not connect to Ident server at address \"%s\", port %s: %m"
-msgstr ""
-"не получилось подсоединиться к Ident-серверу с адресом \"%s\", порт %s: %m"
-
-#: libpq/hba.c:1396
-#, c-format
-msgid "could not send query to Ident server at address \"%s\", port %s: %m"
-msgstr ""
-"не получилось отправить запрос к Ident-серверу с адресом \"%s\", порт %s: %m"
-
-#: libpq/hba.c:1411
-#, c-format
-msgid ""
-"could not receive response from Ident server at address \"%s\", port %s: %m"
-msgstr "не удалось получить ответ от Ident сервера с адреса \"%s\", порт %s: %m"
-
-#: libpq/hba.c:1421
-#, c-format
-msgid "invalidly formatted response from Ident server: \"%s\""
-msgstr "формат ответа от Ident сервера содержит ошибки: \"%s\""
-
-#: libpq/hba.c:1456 libpq/hba.c:1486 libpq/hba.c:1553
-#, c-format
-msgid "could not get peer credentials: %m"
-msgstr "не удалось получить ident сокета: %m"
-
-#: libpq/hba.c:1465 libpq/hba.c:1495 libpq/hba.c:1564
-#, c-format
-msgid "local user with ID %d does not exist"
-msgstr "локальный пользователь с ID %d не существует"
-
-#: libpq/hba.c:1575
-msgid ""
-"Ident authentication is not supported on local connections on this platform"
-msgstr "Ident аутентификация не поддерживается для локальных подключений на этой платформе"
-
-#: libpq/hba.c:1621
-#, c-format
-msgid "Ident protocol identifies remote user as \"%s\""
-msgstr "Ident протокол идентифицирует внешнего пользователя как \"%s\""
-
-#: libpq/pqcomm.c:289
-#, c-format
-msgid "could not translate host name \"%s\", service \"%s\" to address: %s"
-msgstr "не получилось перевести имя узла \"%s\" и службы \"%s\" в адрес: %s"
-
-#: libpq/pqcomm.c:293
-#, c-format
-msgid "could not translate service \"%s\" to address: %s"
-msgstr "не удалось перевести имя службы \"%s\" в адрес: %s"
-
-#: libpq/pqcomm.c:320
-#, c-format
-msgid "could not bind to all requested addresses: MAXLISTEN (%d) exceeded"
-msgstr "не удалось привязаться ко всем требуемым адресам: MAXLISTEN (%d) превышено"
-
-#: libpq/pqcomm.c:329
-msgid "IPv4"
-msgstr "IPv4"
-
-#: libpq/pqcomm.c:333
-msgid "IPv6"
-msgstr "IPv6"
-
-#: libpq/pqcomm.c:338
-msgid "Unix"
-msgstr "Unix"
-
-#: libpq/pqcomm.c:343
-#, c-format
-msgid "unrecognized address family %d"
-msgstr "нераспознанное семейство адресов %d"
-
-#. translator: %s is IPv4, IPv6, or Unix
-#: libpq/pqcomm.c:354
-#, c-format
-msgid "could not create %s socket: %m"
-msgstr "не получилось создать сокет %s: %m"
-
-#: libpq/pqcomm.c:379
-#, c-format
-msgid "setsockopt(SO_REUSEADDR) failed: %m"
-msgstr "setsockopt(SO_REUSEADDR) не удался: %m"
-
-#: libpq/pqcomm.c:394
-#, c-format
-msgid "setsockopt(IPV6_V6ONLY) failed: %m"
-msgstr "setsockopt(IPV6_V6ONLY) не удался: %m"
-
-#. translator: %s is IPv4, IPv6, or Unix
-#: libpq/pqcomm.c:413
-#, c-format
-msgid "could not bind %s socket: %m"
-msgstr "не получилось привязать %s сокет: %m"
-
-#: libpq/pqcomm.c:416
-#, c-format
-msgid ""
-"Is another postmaster already running on port %d? If not, remove socket file "
-"\"%s\" and retry."
-msgstr "Возможно другой postmaster уже запущен на порту %d? Если нет, удалите файл сокета \"%s\" и попробуйте снова."
-
-#: libpq/pqcomm.c:419
-#, c-format
-msgid ""
-"Is another postmaster already running on port %d? If not, wait a few seconds "
-"and retry."
-msgstr "Возможно другой postmaster уже запущен на порту %d? Если нет, подождите несколько секунд и попробуйте снова."
-
-#. translator: %s is IPv4, IPv6, or Unix
-#: libpq/pqcomm.c:452
-#, c-format
-msgid "could not listen on %s socket: %m"
-msgstr "не удалось начать слушать на %s сокете: %m"
-
-#: libpq/pqcomm.c:532
-#, c-format
-msgid "group \"%s\" does not exist"
-msgstr "группа \"%s\" не существует"
-
-#: libpq/pqcomm.c:542
-#, c-format
-msgid "could not set group of file \"%s\": %m"
-msgstr "не получилось установить группу файла \"%s\": %m"
-
-#: libpq/pqcomm.c:553
-#, c-format
-msgid "could not set permissions of file \"%s\": %m"
-msgstr "не получилось установить права доступа для файла \"%s\": %m"
-
-#: libpq/pqcomm.c:583
-#, c-format
-msgid "could not accept new connection: %m"
-msgstr "не получилось принять новое подсоединение: %m"
-
-#: libpq/pqcomm.c:769
-#, c-format
-msgid "could not receive data from client: %m"
-msgstr "не удалось получить данные от клиента: %m"
-
-#: libpq/pqcomm.c:956
-msgid "unexpected EOF within message length word"
-msgstr "нержиданный конец файла (EOF) в слове длины сообщения"
-
-#: libpq/pqcomm.c:967
-msgid "invalid message length"
-msgstr "неверная длина сообщения"
-
-#: libpq/pqcomm.c:989 libpq/pqcomm.c:999
-msgid "incomplete message from client"
-msgstr "неполное сообщение от клиента"
-
-#: libpq/pqcomm.c:1108
-#, c-format
-msgid "could not send data to client: %m"
-msgstr "не получилось послать данные клиенту: %m"
-
-#: libpq/pqformat.c:434
-msgid "no data left in message"
-msgstr "не осталось данных в сообщении"
-
-#: libpq/pqformat.c:500
-#, fuzzy
-msgid "binary value is out of range for type bigint"
-msgstr "значение \"%s\" вне диапазона для типа bigint"
-
-#: libpq/pqformat.c:582 libpq/pqformat.c:600 libpq/pqformat.c:621
-#: utils/adt/arrayfuncs.c:1346 utils/adt/rowtypes.c:534
-msgid "insufficient data left in message"
-msgstr "недостаточно данных осталось в сообщении"
-
-#: libpq/pqformat.c:662
-msgid "invalid string in message"
-msgstr "неверная строка в сообщении"
-
-#: libpq/pqformat.c:678
-msgid "invalid message format"
-msgstr "неверный формат сообщения"
-
-#: access/gist/gistutil.c:405
-#, c-format
-msgid "index \"%s\" needs VACUUM or REINDEX to finish crash recovery"
-msgstr "для завершения восстановления после аварии требуется VACUUM или REINDEX для индекса \"%s\""
-
-#: access/gist/gistutil.c:586 access/nbtree/nbtpage.c:429
-#: access/hash/hashutil.c:158
-#, c-format
-msgid "index \"%s\" contains unexpected zero page at block %u"
-msgstr "индекс \"%s\" содержит неожиданную страницу нулей в блоке %u"
-
-#: access/gist/gistutil.c:589 access/gist/gistutil.c:601
-#: access/nbtree/nbtpage.c:432 access/nbtree/nbtpage.c:444
-#: access/hash/hashutil.c:161 access/hash/hashutil.c:173
-#: access/hash/hashutil.c:185 access/hash/hashutil.c:206
-msgid "Please REINDEX it."
-msgstr "Пожалуйста, выполните REINDEX для него."
-
-#: access/gist/gistutil.c:598 access/nbtree/nbtpage.c:441
-#: access/hash/hashutil.c:170 access/hash/hashutil.c:182
-#, c-format
-msgid "index \"%s\" contains corrupted page at block %u"
-msgstr "индекс \"%s\" содержит повреждённую страницу в блоке %u"
-
-#: access/gist/gistvacuum.c:572
-#, c-format
-msgid "index \"%s\" needs VACUUM FULL or REINDEX to finish crash recovery"
-msgstr "для завершения восстановления после аварии требуется VACUUM FULL или REINDEX для индекса \"%s\""
-
-#: access/gist/gistxlog.c:797
-#, c-format
-msgid "index %u/%u/%u needs VACUUM FULL or REINDEX to finish crash recovery"
-msgstr "для завершения восстановления после аварии требуется VACUUM FULL или REINDEX для индекса %u/%u/%u"
-
-#: access/gist/gistxlog.c:799
-msgid "Incomplete insertion detected during crash replay."
-msgstr "В процессе восстановления обнаружена незавершённая вставка."
 
 #: access/common/heaptuple.c:872 access/common/heaptuple.c:983
 #: access/common/heaptuple.c:1810
@@ -830,8 +51,8 @@ msgstr "число идексированных атрибутов (%d) превышает лимит (%d)"
 msgid "index row requires %lu bytes, maximum size is %lu"
 msgstr "строка индекса требует байт: %lu, при максимуме: %lu"
 
-#: access/common/printtup.c:266 tcop/postgres.c:1644 tcop/fastpath.c:179
-#: tcop/fastpath.c:548
+#: access/common/printtup.c:266 tcop/fastpath.c:179 tcop/fastpath.c:548
+#: tcop/postgres.c:1644
 #, c-format
 msgid "unsupported format code: %d"
 msgstr "неподдерживаемый код формата: %d"
@@ -955,7 +176,9 @@ msgstr "доступ запрещён по созданию базы"
 #: access/transam/twophase.c:410
 msgid ""
 "Connect to the database where the transaction was prepared to finish it."
-msgstr "Подключитесь к базе данных в которой эта транзакция была подготовлена для её завершения."
+msgstr ""
+"Подключитесь к базе данных в которой эта транзакция была подготовлена для её "
+"завершения."
 
 # [SM]: TO REVIEW
 #: access/transam/twophase.c:424
@@ -1060,13 +283,17 @@ msgstr "удаление лога транзакций: \"%s\""
 msgid ""
 "database is not accepting commands to avoid wraparound data loss in database "
 "\"%s\""
-msgstr "для предотвращения повреждения данных из-за циклического переполнения счётчика транзакций в базе данных \"%s\" база данных не принимает команды"
+msgstr ""
+"для предотвращения повреждения данных из-за циклического переполнения "
+"счётчика транзакций в базе данных \"%s\" база данных не принимает команды"
 
 #: access/transam/varsup.c:89
 #, c-format
 msgid ""
 "Stop the postmaster and use a standalone backend to vacuum database \"%s\"."
-msgstr "Остановите postmaster и используйте отдельно backend для vacuum'а базы данных \"%s\"."
+msgstr ""
+"Остановите postmaster и используйте отдельно backend для vacuum'а базы "
+"данных \"%s\"."
 
 #: access/transam/varsup.c:93 access/transam/varsup.c:299
 #, fuzzy, c-format
@@ -1077,65 +304,71 @@ msgstr ""
 #: access/transam/varsup.c:96 access/transam/varsup.c:302
 #, c-format
 msgid "To avoid a database shutdown, execute a full-database VACUUM in \"%s\"."
-msgstr "Для предотвращения остановки базы данных, запустите VACUUM целиком для всей базы данных \"%s\"."
+msgstr ""
+"Для предотвращения остановки базы данных, запустите VACUUM целиком для всей "
+"базы данных \"%s\"."
 
 #: access/transam/varsup.c:282
 #, c-format
 msgid "transaction ID wrap limit is %u, limited by database \"%s\""
-msgstr "максимальный ID транзакции после которого произойдёт его переполнение равен %u, ограничено базой данных \"%s\""
+msgstr ""
+"максимальный ID транзакции после которого произойдёт его переполнение равен %"
+"u, ограничено базой данных \"%s\""
 
-#: access/transam/xact.c:618
+#: access/transam/xact.c:619
 msgid "cannot have more than 2^32-1 commands in a transaction"
 msgstr "нельзя иметь более 2^32-1 команд в одной транзакции"
 
-#: access/transam/xact.c:1112
+#: access/transam/xact.c:1113
 #, c-format
 msgid "maximum number of committed subtransactions (%d) exceeded"
 msgstr "максимальное число зафиксированных подтранзакций (%d) превышено"
 
-#: access/transam/xact.c:1863
+#: access/transam/xact.c:1864
 msgid "cannot PREPARE a transaction that has operated on temporary tables"
-msgstr "нельзя подготовить (PREPARE) транзакцию которая оперирует с временными таблицами"
+msgstr ""
+"нельзя подготовить (PREPARE) транзакцию которая оперирует с временными "
+"таблицами"
 
 #. translator: %s represents an SQL statement name
-#: access/transam/xact.c:2647
+#: access/transam/xact.c:2648
 #, c-format
 msgid "%s cannot run inside a transaction block"
 msgstr "%s не может выполняться внутри транзакционного блока"
 
 #. translator: %s represents an SQL statement name
-#: access/transam/xact.c:2657
+#: access/transam/xact.c:2658
 #, c-format
 msgid "%s cannot run inside a subtransaction"
 msgstr "%s не может выполняться внутри подтранзакций"
 
 #. translator: %s represents an SQL statement name
-#: access/transam/xact.c:2667
+#: access/transam/xact.c:2668
 #, fuzzy, c-format
 msgid "%s cannot be executed from a function or multi-command string"
 msgstr "%s не может выполняться внутри функции"
 
 #. translator: %s represents an SQL statement name
-#: access/transam/xact.c:2718
+#: access/transam/xact.c:2719
 #, fuzzy, c-format
 msgid "%s can only be used in transaction blocks"
 msgstr "%s может выполняться только внутри блоков транзакций"
 
-#: access/transam/xact.c:2900
+#: access/transam/xact.c:2901
 msgid "there is already a transaction in progress"
 msgstr "транзакция уже в процессе выполнения"
 
-#: access/transam/xact.c:3067 access/transam/xact.c:3159
+#: access/transam/xact.c:3068 access/transam/xact.c:3160
 msgid "there is no transaction in progress"
 msgstr "нет транзакции в процессе выполнения"
 
-#: access/transam/xact.c:3253 access/transam/xact.c:3303
-#: access/transam/xact.c:3309 access/transam/xact.c:3353
-#: access/transam/xact.c:3401 access/transam/xact.c:3407
+#: access/transam/xact.c:3254 access/transam/xact.c:3304
+#: access/transam/xact.c:3310 access/transam/xact.c:3354
+#: access/transam/xact.c:3402 access/transam/xact.c:3408
 msgid "no such savepoint"
 msgstr "нет такой точки сохранения"
 
-#: access/transam/xact.c:4037
+#: access/transam/xact.c:4038
 msgid "cannot have more than 2^32-1 subtransactions in a transaction"
 msgstr "нельзя иметь более 2^32-1 подтранзакции в одной транзакции"
 
@@ -1175,11 +408,11 @@ msgid "could not create file \"%s\": %m"
 msgstr "не получилось создать файл \"%s\": %m"
 
 #: access/transam/xlog.c:2010 access/transam/xlog.c:2139
-#: access/transam/xlog.c:3697 access/transam/xlog.c:3735 utils/misc/guc.c:6032
-#: utils/misc/guc.c:6095 utils/init/miscinit.c:1042 utils/init/miscinit.c:1051
-#: commands/copy.c:1274 commands/tablespace.c:703 commands/tablespace.c:709
-#: postmaster/postmaster.c:3303 postmaster/postmaster.c:3313
-#: ../port/copydir.c:148
+#: access/transam/xlog.c:3697 access/transam/xlog.c:3735
+#: utils/init/miscinit.c:1042 utils/init/miscinit.c:1051 utils/misc/guc.c:6036
+#: utils/misc/guc.c:6099 commands/copy.c:1274 commands/tablespace.c:703
+#: commands/tablespace.c:709 postmaster/postmaster.c:3303
+#: postmaster/postmaster.c:3313 ../port/copydir.c:148
 #, c-format
 msgid "could not write to file \"%s\": %m"
 msgstr "не получилось записать файл \"%s\": %m"
@@ -1195,6 +428,15 @@ msgstr "не получилось синхронизировать файл \"%s\" с fsync: %m"
 #, c-format
 msgid "could not close file \"%s\": %m"
 msgstr "не получилось закрыть файл \"%s\": %m"
+
+#: access/transam/xlog.c:2092 access/transam/xlog.c:3476
+#: access/transam/xlog.c:3566 access/transam/xlog.c:3664
+#: utils/init/miscinit.c:993 utils/init/miscinit.c:1099
+#: utils/init/postinit.c:90 utils/init/postinit.c:130 utils/error/elog.c:1246
+#: libpq/hba.c:954 postmaster/autovacuum.c:1786 ../port/copydir.c:119
+#, c-format
+msgid "could not open file \"%s\": %m"
+msgstr "не получилось открыть файл \"%s\": %m"
 
 #: access/transam/xlog.c:2120 access/transam/xlog.c:3676
 #: access/transam/xlog.c:6642 access/transam/xlog.c:6692
@@ -1248,7 +490,9 @@ msgstr "не получилось удалить файл \"%s\": %m"
 #: access/transam/xlog.c:2591
 #, c-format
 msgid "archive file \"%s\" has wrong size: %lu instead of %lu"
-msgstr "файл журнала транзакций из архива \"%s\" имеет неверный размер: %lu вместо %lu"
+msgstr ""
+"файл журнала транзакций из архива \"%s\" имеет неверный размер: %lu вместо %"
+"lu"
 
 #: access/transam/xlog.c:2598
 #, c-format
@@ -1419,7 +663,9 @@ msgstr "неверные данные в файле хронологии восстановления: %s"
 
 #: access/transam/xlog.c:3512
 msgid "Timeline IDs must be in increasing sequence."
-msgstr "Идентификаторы хронологии восстановления (timeline IDs) должны идти в порядке возрастания."
+msgstr ""
+"Идентификаторы хронологии восстановления (timeline IDs) должны идти в "
+"порядке возрастания."
 
 #: access/transam/xlog.c:3525
 #, c-format
@@ -1428,7 +674,9 @@ msgstr "неверные данные в файле хронологии восстановления \"%s\""
 
 #: access/transam/xlog.c:3526
 msgid "Timeline IDs must be less than child timeline's ID."
-msgstr "Идентификаторы хронологии восстановления (timeline IDs) должны быть меньше чем дочернии идентификаторы хронологии восстановления."
+msgstr ""
+"Идентификаторы хронологии восстановления (timeline IDs) должны быть меньше "
+"чем дочернии идентификаторы хронологии восстановления."
 
 #: access/transam/xlog.c:3763
 #, c-format
@@ -1505,7 +753,9 @@ msgstr ""
 msgid ""
 "This could be a problem of mismatched byte ordering.  It looks like you need "
 "to initdb."
-msgstr "Это может быть проблема несовпадения порядка байт в слове.  Похоже что Вам нужно initdb."
+msgstr ""
+"Это может быть проблема несовпадения порядка байт в слове.  Похоже что Вам "
+"нужно initdb."
 
 #: access/transam/xlog.c:3932
 #, c-format
@@ -1547,7 +797,9 @@ msgstr ""
 msgid ""
 "The database cluster appears to use a different floating-point number format "
 "than the server executable."
-msgstr "Кластер баз данных кажется использует отличающийся формат чисел с плавающей запятой, от использованного в выполняемом файле сервера."
+msgstr ""
+"Кластер баз данных кажется использует отличающийся формат чисел с плавающей "
+"запятой, от использованного в выполняемом файле сервера."
 
 #: access/transam/xlog.c:3981
 #, c-format
@@ -1685,7 +937,8 @@ msgstr ""
 #: access/transam/xlog.c:4308
 #, c-format
 msgid "could not close bootstrap transaction log file: %m"
-msgstr "не удалось закрыть файл журнала транзакций при начальной инициализации: %m"
+msgstr ""
+"не удалось закрыть файл журнала транзакций при начальной инициализации: %m"
 
 #: access/transam/xlog.c:4369
 #, c-format
@@ -1757,7 +1010,9 @@ msgstr "Строка должна иметь формат: параметр = 'значение'."
 #: access/transam/xlog.c:4527
 #, c-format
 msgid "recovery command file \"%s\" did not specify restore_command"
-msgstr "в файле конфигурации восстановления \"%s\" не указана команда получения из архива (restore_command)"
+msgstr ""
+"в файле конфигурации восстановления \"%s\" не указана команда получения из "
+"архива (restore_command)"
 
 #: access/transam/xlog.c:4546
 #, fuzzy, c-format
@@ -1837,7 +1092,8 @@ msgstr "система была прервана: %s"
 #: access/transam/xlog.c:4867
 #, c-format
 msgid "requested timeline %u is not a child of database system timeline %u"
-msgstr "запрошенная хронология %u не является дочерней для хронологии базы данных %u"
+msgstr ""
+"запрошенная хронология %u не является дочерней для хронологии базы данных %u"
 
 #: access/transam/xlog.c:4881 access/transam/xlog.c:4905
 #, c-format
@@ -1853,7 +1109,9 @@ msgstr "не получилось найти требуемую контрольную точку"
 msgid ""
 "If you are not restoring from a backup, try removing the file \"%s/"
 "backup_label\"."
-msgstr "Если вы в данный момент не производите восстановление из архива, попробуйте удалить файл \"%s/backup_label\"."
+msgstr ""
+"Если вы в данный момент не производите восстановление из архива, попробуйте "
+"удалить файл \"%s/backup_label\"."
 
 #: access/transam/xlog.c:4915
 #, c-format
@@ -1926,7 +1184,9 @@ msgstr "REDO (повторить) не требуется"
 
 #: access/transam/xlog.c:5166
 msgid "requested recovery stop point is before end time of backup dump"
-msgstr "требуемая точка окончания восстановления расположена до момента завершения резервного копирования"
+msgstr ""
+"требуемая точка окончания восстановления расположена до момента завершения "
+"резервного копирования"
 
 #: access/transam/xlog.c:5169
 msgid "WAL ends before end time of backup dump"
@@ -2020,12 +1280,16 @@ msgstr "REDO (повторить) начинается с %X/%X"
 #: access/transam/xlog.c:6184
 #, c-format
 msgid "unexpected timeline ID %u (after %u) in checkpoint record"
-msgstr "неожиданный идентификатор хронологии (timeline ID) %u (после %u) в информации из контрольной точки"
+msgstr ""
+"неожиданный идентификатор хронологии (timeline ID) %u (после %u) в "
+"информации из контрольной точки"
 
 #: access/transam/xlog.c:6216
 #, c-format
 msgid "unexpected timeline ID %u (should be %u) in checkpoint record"
-msgstr "неожиданный идентификатор хронологии (timeline ID) %u (должен быть %u) в информации из контрольной точки"
+msgstr ""
+"неожиданный идентификатор хронологии (timeline ID) %u (должен быть %u) в "
+"информации из контрольной точки"
 
 #: access/transam/xlog.c:6353 access/transam/xlog.c:6378
 #, c-format
@@ -2057,7 +1321,9 @@ msgstr "параметр archive_mode должен быть включен при запуске сервера."
 #: access/transam/xlog.c:6449
 msgid ""
 "archive_command must be defined before online backups can be made safely."
-msgstr "для безопасного резервного копирования онлайн должен быть определён параметр archive_command."
+msgstr ""
+"для безопасного резервного копирования онлайн должен быть определён параметр "
+"archive_command."
 
 #: access/transam/xlog.c:6478 access/transam/xlog.c:6532
 msgid "a backup is already in progress"
@@ -2072,7 +1338,9 @@ msgstr "Выполните pg_stop_backup() и попробуйте снова."
 msgid ""
 "If you're sure there is no backup in progress, remove file \"%s\" and try "
 "again."
-msgstr "Если вы уверены что резервное копирование не выполняется в данный момент, удалить файл \"%s\" и попробуйте снова."
+msgstr ""
+"Если вы уверены что резервное копирование не выполняется в данный момент, "
+"удалить файл \"%s\" и попробуйте снова."
 
 #: access/transam/xlog.c:6554 access/transam/xlog.c:6683
 #, c-format
@@ -2135,8 +1403,10 @@ msgid ""
 "Consider a function index of an MD5 hash of the value, or use full text "
 "indexing."
 msgstr ""
-"Нельзя построить индекс для значений с размером больше чем 1/3 страницы буфера.\n"
-"Подумайте об использовании функционального индекса по MD5 хэшу значения, или используйте полнотекстовое индексирование."
+"Нельзя построить индекс для значений с размером больше чем 1/3 страницы "
+"буфера.\n"
+"Подумайте об использовании функционального индекса по MD5 хэшу значения, или "
+"используйте полнотекстовое индексирование."
 
 #: access/nbtree/nbtpage.c:157 access/nbtree/nbtpage.c:361
 #, c-format
@@ -2148,6 +1418,61 @@ msgstr "индекс \"%s\" не является b-деревом"
 msgid "version mismatch in index \"%s\": file version %d, code version %d"
 msgstr ""
 "не совпадение версии в индексе \"%s\": версия файла: %d, версия кода: %d"
+
+#: access/nbtree/nbtpage.c:429 access/gist/gistutil.c:586
+#: access/hash/hashutil.c:158
+#, c-format
+msgid "index \"%s\" contains unexpected zero page at block %u"
+msgstr "индекс \"%s\" содержит неожиданную страницу нулей в блоке %u"
+
+#: access/nbtree/nbtpage.c:432 access/nbtree/nbtpage.c:444
+#: access/gist/gistutil.c:589 access/gist/gistutil.c:601
+#: access/hash/hashutil.c:161 access/hash/hashutil.c:173
+#: access/hash/hashutil.c:185 access/hash/hashutil.c:206
+msgid "Please REINDEX it."
+msgstr "Пожалуйста, выполните REINDEX для него."
+
+#: access/nbtree/nbtpage.c:441 access/gist/gistutil.c:598
+#: access/hash/hashutil.c:170 access/hash/hashutil.c:182
+#, c-format
+msgid "index \"%s\" contains corrupted page at block %u"
+msgstr "индекс \"%s\" содержит повреждённую страницу в блоке %u"
+
+#: access/gist/gistsplit.c:371
+#, c-format
+msgid "Picksplit method for %d column of index \"%s\" failed"
+msgstr ""
+
+#: access/gist/gistsplit.c:373
+msgid ""
+"Index is not optimal, to optimize it contact developer or try to use the "
+"column as a second one in create index command"
+msgstr ""
+
+#: access/gist/gistutil.c:405
+#, c-format
+msgid "index \"%s\" needs VACUUM or REINDEX to finish crash recovery"
+msgstr ""
+"для завершения восстановления после аварии требуется VACUUM или REINDEX для "
+"индекса \"%s\""
+
+#: access/gist/gistvacuum.c:572
+#, c-format
+msgid "index \"%s\" needs VACUUM FULL or REINDEX to finish crash recovery"
+msgstr ""
+"для завершения восстановления после аварии требуется VACUUM FULL или REINDEX "
+"для индекса \"%s\""
+
+#: access/gist/gistxlog.c:797
+#, c-format
+msgid "index %u/%u/%u needs VACUUM FULL or REINDEX to finish crash recovery"
+msgstr ""
+"для завершения восстановления после аварии требуется VACUUM FULL или REINDEX "
+"для индекса %u/%u/%u"
+
+#: access/gist/gistxlog.c:799
+msgid "Incomplete insertion detected during crash replay."
+msgstr "В процессе восстановления обнаружена незавершённая вставка."
 
 #: access/heap/heapam.c:954
 #, c-format
@@ -2194,7 +1519,8 @@ msgstr "размер строки индекса %lu превышает hash-максимум %lu"
 
 #: access/hash/hashinsert.c:83
 msgid "Values larger than a buffer page cannot be indexed."
-msgstr "Нельзя построить индекс для значений с размером больше чем страница буфера."
+msgstr ""
+"Нельзя построить индекс для значений с размером больше чем страница буфера."
 
 #: access/hash/hashovfl.c:544
 #, c-format
@@ -2215,39 +1541,262 @@ msgstr "индекс \"%s\" не является hash-индексом"
 msgid "index \"%s\" has wrong hash version"
 msgstr "индекс \"%s\" имеент неправильную hash-версию"
 
-#: utils/mmgr/aset.c:361
+#: utils/init/flatfiles.c:205 utils/init/flatfiles.c:275
+#: utils/init/flatfiles.c:404 utils/init/flatfiles.c:657
 #, c-format
-msgid "Failed while creating memory context \"%s\"."
-msgstr "Ошибка при создании контекста памяти \"%s\"."
+msgid "could not write to temporary file \"%s\": %m"
+msgstr "не получилось записать во временный файл \"%s\": %m"
 
-#: utils/mmgr/aset.c:540 utils/mmgr/aset.c:715 utils/mmgr/aset.c:910
+#: utils/init/flatfiles.c:245
+#, fuzzy, c-format
+msgid "invalid database name \"%s\""
+msgstr "неверное имя пользователя \"%s\""
+
+#: utils/init/flatfiles.c:499
+#, fuzzy, c-format
+msgid "invalid role name \"%s\""
+msgstr "неверное имя группы \"%s\""
+
+#: utils/init/flatfiles.c:506
+#, fuzzy, c-format
+msgid "invalid role password \"%s\""
+msgstr "неверный пароль \"%s\""
+
+#: utils/init/miscinit.c:176
 #, c-format
-msgid "Failed on request of size %lu."
-msgstr "Ошибка при запросе размера %lu."
+msgid "could not change directory to \"%s\": %m"
+msgstr "не получилось поменять директорию на \"%s\": %m"
 
-#: utils/mmgr/portalmem.c:208
+#: utils/init/miscinit.c:211 utils/init/miscinit.c:232
+#: utils/init/miscinit.c:242 utils/adt/oracle_compat.c:76
+#: utils/adt/oracle_compat.c:128 utils/adt/oracle_compat.c:176
+#: utils/adt/regexp.c:209 utils/adt/varlena.c:2854 utils/adt/varlena.c:2877
+#: utils/mb/mbutils.c:279 utils/mb/mbutils.c:543 utils/hash/dynahash.c:363
+#: utils/hash/dynahash.c:435 utils/hash/dynahash.c:929 utils/misc/guc.c:2527
+#: utils/misc/guc.c:2540 utils/misc/guc.c:2553 utils/mmgr/aset.c:360
+#: utils/mmgr/aset.c:539 utils/mmgr/aset.c:714 utils/mmgr/aset.c:909
+#: utils/fmgr/dfmgr.c:221 commands/sequence.c:903 lib/stringinfo.c:245
+#: storage/buffer/buf_init.c:162 storage/buffer/localbuf.c:307
+#: storage/file/fd.c:327 storage/file/fd.c:685 storage/file/fd.c:803
+#: storage/ipc/procarray.c:378 storage/ipc/procarray.c:697
+#: storage/ipc/procarray.c:704 libpq/auth.c:423 libpq/auth.c:801
+#: libpq/auth.c:869 libpq/auth.c:1266 postmaster/postmaster.c:1771
+#: postmaster/postmaster.c:1804 postmaster/postmaster.c:2794
+#: postmaster/postmaster.c:3494 postmaster/postmaster.c:3575
+#: postmaster/postmaster.c:4132
+msgid "out of memory"
+msgstr "не хватает памяти"
+
+#: utils/init/miscinit.c:420 utils/cache/lsyscache.c:2695 commands/user.c:552
+#: commands/user.c:734 commands/user.c:843 commands/user.c:995
+#: commands/variable.c:752 commands/variable.c:882
+#, fuzzy, c-format
+msgid "role \"%s\" does not exist"
+msgstr "правило \"%s\" не существует"
+
+#: utils/init/miscinit.c:450
+#, fuzzy, c-format
+msgid "role \"%s\" is not permitted to log in"
+msgstr "правило \"%s\" не существует"
+
+#: utils/init/miscinit.c:468
+#, fuzzy, c-format
+msgid "too many connections for role \"%s\""
+msgstr "SSL подсоединение от \"%s\""
+
+#: utils/init/miscinit.c:543
+msgid "permission denied to set session authorization"
+msgstr "доступ запрещён по установке авторизации сессии"
+
+#: utils/init/miscinit.c:625
+#, fuzzy, c-format
+msgid "invalid role OID: %u"
+msgstr "неверное ID пользователя: %d"
+
+#: utils/init/miscinit.c:717
 #, c-format
-msgid "cursor \"%s\" already exists"
-msgstr "курсор \"%s\" уже существует"
+msgid "could not create lock file \"%s\": %m"
+msgstr "не удалось создать файл блокировки \"%s\": %m"
 
-#: utils/mmgr/portalmem.c:212
+#: utils/init/miscinit.c:731
 #, c-format
-msgid "closing existing cursor \"%s\""
-msgstr "закрытие существующего курсора \"%s\""
+msgid "could not open lock file \"%s\": %m"
+msgstr "не удалось открыть файл блокировки \"%s\": %m"
 
-#: utils/mmgr/portalmem.c:580
-msgid "cannot PREPARE a transaction that has created a cursor WITH HOLD"
-msgstr "невозможно подготовить (PREPARE) транзакцию которая создала курсор с параметром WITH HOLD"
+#: utils/init/miscinit.c:737
+#, c-format
+msgid "could not read lock file \"%s\": %m"
+msgstr "не удалось считать файл блокировки \"%s\": %m"
 
-#: utils/mmgr/portalmem.c:879 utils/fmgr/funcapi.c:60 commands/prepare.c:729
-#: executor/execQual.c:1179 executor/execQual.c:1222 executor/execQual.c:1514
-#: executor/execQual.c:4621 executor/functions.c:680 executor/functions.c:719
-msgid "set-valued function called in context that cannot accept a set"
-msgstr "функция возвращающая множество вызвана в контексте не принимающем множество"
+#: utils/init/miscinit.c:800
+#, c-format
+msgid "lock file \"%s\" already exists"
+msgstr "файл блокировки \"%s\" уже существует"
 
-#: utils/mmgr/portalmem.c:883 commands/prepare.c:733
-msgid "materialize mode required, but it is not allowed in this context"
-msgstr "требуется режим материализации (materialize mode), но он не разрешён в этом контексте"
+#: utils/init/miscinit.c:804
+#, c-format
+msgid "Is another postgres (PID %d) running in data directory \"%s\"?"
+msgstr "Выполняется ли другой postgres (PID %d) на директории данных \"%s\"?"
+
+#: utils/init/miscinit.c:806
+#, c-format
+msgid "Is another postmaster (PID %d) running in data directory \"%s\"?"
+msgstr "Выполняется ли другой postmaster (PID %d) на директории данных \"%s\"?"
+
+#: utils/init/miscinit.c:809
+#, c-format
+msgid "Is another postgres (PID %d) using socket file \"%s\"?"
+msgstr "Использует ли другой postgres (PID %d) файл сокета \"%s\"?"
+
+#: utils/init/miscinit.c:811
+#, c-format
+msgid "Is another postmaster (PID %d) using socket file \"%s\"?"
+msgstr "Использует ли другой postmaster (PID %d) файл сокета \"%s\"?"
+
+#: utils/init/miscinit.c:839
+#, c-format
+msgid "pre-existing shared memory block (key %lu, ID %lu) is still in use"
+msgstr ""
+
+#: utils/init/miscinit.c:842
+#, c-format
+msgid ""
+"If you're sure there are no old server processes still running, remove the "
+"shared memory block with the command \"ipcclean\", \"ipcrm\", or just delete "
+"the file \"%s\"."
+msgstr ""
+
+#: utils/init/miscinit.c:860
+#, c-format
+msgid "could not remove old lock file \"%s\": %m"
+msgstr "не удалось удалить старый файл блокировки \"%s\": %m"
+
+#: utils/init/miscinit.c:862
+msgid ""
+"The file seems accidentally left over, but it could not be removed. Please "
+"remove the file by hand and try again."
+msgstr ""
+
+#: utils/init/miscinit.c:884 utils/init/miscinit.c:894
+#, c-format
+msgid "could not write lock file \"%s\": %m"
+msgstr "не удалось записать файл блокировки \"%s\": %m"
+
+#: utils/init/miscinit.c:1002 utils/misc/guc.c:6167 commands/copy.c:2163
+#, c-format
+msgid "could not read from file \"%s\": %m"
+msgstr "не получилось считать из файла \"%s\": %m"
+
+#: utils/init/miscinit.c:1093 utils/init/miscinit.c:1106
+#, c-format
+msgid "\"%s\" is not a valid data directory"
+msgstr "\"%s\" не является верной директорией данных"
+
+#: utils/init/miscinit.c:1095
+#, c-format
+msgid "File \"%s\" is missing."
+msgstr "Файл \"%s\" отсутствует."
+
+#: utils/init/miscinit.c:1108
+#, c-format
+msgid "File \"%s\" does not contain valid data."
+msgstr "Файл \"%s\" не содержит верные данные."
+
+#: utils/init/miscinit.c:1110
+#, fuzzy
+msgid "You might need to initdb."
+msgstr "Вам наверное надо выполнить initdb."
+
+#: utils/init/miscinit.c:1118
+#, c-format
+msgid ""
+"The data directory was initialized by PostgreSQL version %ld.%ld, which is "
+"not compatible with this version %s."
+msgstr ""
+"Директория данных была инициализирована с помощью PostgreSQL, версии %ld.%"
+"ld, которая не совместима с этой версией: %s."
+
+#: utils/init/miscinit.c:1162
+#, fuzzy, c-format
+msgid "invalid list syntax in parameter \"%s\""
+msgstr "неверный синтаксис для параметра \"log_destination\""
+
+#: utils/init/miscinit.c:1187
+#, fuzzy, c-format
+msgid "loaded library \"%s\""
+msgstr "подзагруженная библиотека \"%s\""
+
+#: utils/init/postinit.c:171
+#, fuzzy, c-format
+msgid "database \"%s\" has disappeared from pg_database"
+msgstr "база \"%s\", OID %u, исчезла из pg_database"
+
+#: utils/init/postinit.c:173
+#, c-format
+msgid "Database OID %u now seems to belong to \"%s\"."
+msgstr ""
+
+#: utils/init/postinit.c:193
+#, c-format
+msgid "database \"%s\" is not currently accepting connections"
+msgstr "база \"%s\" не принимает подсоединения в данный момент"
+
+#: utils/init/postinit.c:206
+#, fuzzy, c-format
+msgid "permission denied for database \"%s\""
+msgstr "доступ запрещён для базы %s"
+
+#: utils/init/postinit.c:207
+msgid "User does not have CONNECT privilege."
+msgstr ""
+
+#: utils/init/postinit.c:224
+#, fuzzy, c-format
+msgid "too many connections for database \"%s\""
+msgstr "SSL подсоединение от \"%s\""
+
+#: utils/init/postinit.c:377
+#, fuzzy, c-format
+msgid "database %u does not exist"
+msgstr "база данных \"%s\" не существует"
+
+#: utils/init/postinit.c:387 utils/init/postinit.c:506
+#: utils/init/postinit.c:522 utils/adt/acl.c:1749 utils/adt/dbsize.c:144
+#: catalog/aclchk.c:434 commands/comment.c:624 commands/dbcommands.c:633
+#: commands/dbcommands.c:779 commands/dbcommands.c:902
+#: commands/dbcommands.c:974 commands/dbcommands.c:1061
+#, c-format
+msgid "database \"%s\" does not exist"
+msgstr "база данных \"%s\" не существует"
+
+#: utils/init/postinit.c:508
+msgid "It seems to have just been dropped or renamed."
+msgstr ""
+
+#: utils/init/postinit.c:524
+#, c-format
+msgid "The database subdirectory \"%s\" is missing."
+msgstr "Поддиректория баз данных \"%s\" отсутствует."
+
+#: utils/init/postinit.c:529
+#, c-format
+msgid "could not access directory \"%s\": %m"
+msgstr "ошибка при доступе к директории \"%s\": %m"
+
+#: utils/init/postinit.c:562
+#, fuzzy
+msgid "no roles are defined in this database system"
+msgstr "пользователи не определены в этой системе баз данных"
+
+#: utils/init/postinit.c:563
+#, fuzzy, c-format
+msgid "You should immediately run CREATE USER \"%s\" CREATEUSER;."
+msgstr ""
+"Вы должны немедленно выполнить CREATE USER \"%s\" WITH SYSID %d CREATEUSER;."
+
+#: utils/init/postinit.c:593
+msgid "connection limit exceeded for non-superusers"
+msgstr "превышен лимит подсоединений для обычных пользователей"
 
 #: utils/adt/acl.c:145 utils/adt/name.c:87
 msgid "identifier too long"
@@ -2313,7 +1862,9 @@ msgstr "дополнительный мусор в конце ACL-спецификации"
 
 #: utils/adt/acl.c:912
 msgid "grant options cannot be granted back to your own grantor"
-msgstr "опции выдачи прав доступа не могут передаваться обратно, к выдавшему вам права доступа"
+msgstr ""
+"опции выдачи прав доступа не могут передаваться обратно, к выдавшему вам "
+"права доступа"
 
 #: utils/adt/acl.c:973
 msgid "dependent privileges exist"
@@ -2337,15 +1888,6 @@ msgstr "aclremove больше не поддерживается"
 #, c-format
 msgid "unrecognized privilege type: \"%s\""
 msgstr "нераспознанный тип привилегий: \"%s\""
-
-#: utils/adt/acl.c:1749 utils/adt/dbsize.c:144 utils/init/postinit.c:387
-#: utils/init/postinit.c:506 utils/init/postinit.c:522 catalog/aclchk.c:434
-#: commands/comment.c:624 commands/dbcommands.c:633 commands/dbcommands.c:779
-#: commands/dbcommands.c:902 commands/dbcommands.c:974
-#: commands/dbcommands.c:1061
-#, c-format
-msgid "database \"%s\" does not exist"
-msgstr "база данных \"%s\" не существует"
 
 #: utils/adt/acl.c:1968 utils/adt/regproc.c:116 utils/adt/regproc.c:137
 #: utils/adt/regproc.c:288
@@ -2392,8 +1934,8 @@ msgid "neither input type is an array"
 msgstr "входной тип также не является массивом"
 
 #: utils/adt/array_userfuncs.c:103 utils/adt/array_userfuncs.c:113
-#: utils/adt/float.c:1096 utils/adt/float.c:1155 utils/adt/float.c:2699
-#: utils/adt/float.c:2715 utils/adt/int.c:613 utils/adt/int.c:642
+#: utils/adt/float.c:1105 utils/adt/float.c:1164 utils/adt/float.c:2708
+#: utils/adt/float.c:2724 utils/adt/int.c:613 utils/adt/int.c:642
 #: utils/adt/int.c:663 utils/adt/int.c:683 utils/adt/int.c:705
 #: utils/adt/int.c:730 utils/adt/int.c:743 utils/adt/int.c:758
 #: utils/adt/int.c:892 utils/adt/int.c:913 utils/adt/int.c:940
@@ -2473,7 +2015,9 @@ msgstr "отсутствует оператор присвоения"
 
 #: utils/adt/arrayfuncs.c:278 utils/adt/arrayfuncs.c:284
 msgid "array dimensions incompatible with array literal"
-msgstr "размерность массива не соответствует размерности в его переданном текстовом представлении"
+msgstr ""
+"размерность массива не соответствует размерности в его переданном текстовом "
+"представлении"
 
 #: utils/adt/arrayfuncs.c:387 utils/adt/arrayfuncs.c:402
 #: utils/adt/arrayfuncs.c:411 utils/adt/arrayfuncs.c:425
@@ -2491,7 +2035,9 @@ msgstr "некорректное текстовое представление массива: \"%s\""
 #: executor/execQual.c:2590
 msgid ""
 "multidimensional arrays must have array expressions with matching dimensions"
-msgstr "массивы внутри многомерных массивов должны иметь одинаковое количество размерностей"
+msgstr ""
+"массивы внутри многомерных массивов должны иметь одинаковое количество "
+"размерностей"
 
 #: utils/adt/arrayfuncs.c:814 utils/adt/arrayfuncs.c:1408
 #: utils/adt/arrayfuncs.c:2688 utils/adt/arrayfuncs.c:2836
@@ -2513,6 +2059,11 @@ msgstr "неверный тип элемента"
 #, c-format
 msgid "no binary input function available for type %s"
 msgstr "нет доступной функции двоичного ввода для типа %s"
+
+#: utils/adt/arrayfuncs.c:1346 utils/adt/rowtypes.c:534 libpq/pqformat.c:611
+#: libpq/pqformat.c:629 libpq/pqformat.c:650
+msgid "insufficient data left in message"
+msgstr "недостаточно данных осталось в сообщении"
 
 #: utils/adt/arrayfuncs.c:1382
 #, c-format
@@ -2541,11 +2092,14 @@ msgstr "bigint вне диапазона"
 
 #: utils/adt/arrayfuncs.c:1983
 msgid "cannot assign null value to an element of a fixed-length array"
-msgstr "нельзя присваивать null значение элементам массива фиксированного размера"
+msgstr ""
+"нельзя присваивать null значение элементам массива фиксированного размера"
 
 #: utils/adt/arrayfuncs.c:2269
 msgid "updates on slices of fixed-length arrays not implemented"
-msgstr "изменение элементов среза полученного из фиксированного размера массивов не реализовано"
+msgstr ""
+"изменение элементов среза полученного из фиксированного размера массивов не "
+"реализовано"
 
 #: utils/adt/arrayfuncs.c:2305 utils/adt/arrayfuncs.c:2392
 msgid "source array too small"
@@ -2612,13 +2166,13 @@ msgid "invalid input syntax for type money: \"%s\""
 msgstr "неверный входной синтаксис для типа money: \"%s\""
 
 #: utils/adt/cash.c:543 utils/adt/cash.c:594 utils/adt/cash.c:643
-#: utils/adt/cash.c:695 utils/adt/cash.c:745 utils/adt/float.c:758
-#: utils/adt/float.c:823 utils/adt/float.c:2458 utils/adt/float.c:2521
+#: utils/adt/cash.c:695 utils/adt/cash.c:745 utils/adt/float.c:767
+#: utils/adt/float.c:832 utils/adt/float.c:2467 utils/adt/float.c:2530
 #: utils/adt/geo_ops.c:3959 utils/adt/int.c:719 utils/adt/int.c:859
 #: utils/adt/int.c:953 utils/adt/int.c:1037 utils/adt/int.c:1062
 #: utils/adt/int.c:1082 utils/adt/int.c:1097 utils/adt/int.c:1112
 #: utils/adt/int8.c:604 utils/adt/int8.c:650 utils/adt/int8.c:826
-#: utils/adt/int8.c:920 utils/adt/numeric.c:4075 utils/adt/timestamp.c:2899
+#: utils/adt/int8.c:920 utils/adt/numeric.c:4075 utils/adt/timestamp.c:2900
 msgid "division by zero"
 msgstr "деление на ноль"
 
@@ -2662,28 +2216,29 @@ msgstr "\"%s\" вне диапазона для типа real (вещественные числа)"
 #: utils/adt/nabstime.c:484 utils/adt/nabstime.c:527 utils/adt/nabstime.c:557
 #: utils/adt/nabstime.c:600 utils/adt/timestamp.c:210
 #: utils/adt/timestamp.c:248 utils/adt/timestamp.c:470
-#: utils/adt/timestamp.c:510 utils/adt/timestamp.c:2559
-#: utils/adt/timestamp.c:2580 utils/adt/timestamp.c:2593
-#: utils/adt/timestamp.c:2602 utils/adt/timestamp.c:2660
-#: utils/adt/timestamp.c:2683 utils/adt/timestamp.c:2696
-#: utils/adt/timestamp.c:2707 utils/adt/timestamp.c:3137
-#: utils/adt/timestamp.c:3267 utils/adt/timestamp.c:3308
-#: utils/adt/timestamp.c:3396 utils/adt/timestamp.c:3443
-#: utils/adt/timestamp.c:3554 utils/adt/timestamp.c:3874
-#: utils/adt/timestamp.c:4011 utils/adt/timestamp.c:4018
-#: utils/adt/timestamp.c:4032 utils/adt/timestamp.c:4042
-#: utils/adt/timestamp.c:4105 utils/adt/timestamp.c:4245
-#: utils/adt/timestamp.c:4255 utils/adt/timestamp.c:4474
-#: utils/adt/timestamp.c:4553 utils/adt/timestamp.c:4560
-#: utils/adt/timestamp.c:4587 utils/adt/timestamp.c:4591
-#: utils/adt/timestamp.c:4650 utils/adt/xml.c:1710 utils/adt/xml.c:1716
+#: utils/adt/timestamp.c:510 utils/adt/timestamp.c:2560
+#: utils/adt/timestamp.c:2581 utils/adt/timestamp.c:2594
+#: utils/adt/timestamp.c:2603 utils/adt/timestamp.c:2661
+#: utils/adt/timestamp.c:2684 utils/adt/timestamp.c:2697
+#: utils/adt/timestamp.c:2708 utils/adt/timestamp.c:3138
+#: utils/adt/timestamp.c:3268 utils/adt/timestamp.c:3309
+#: utils/adt/timestamp.c:3397 utils/adt/timestamp.c:3444
+#: utils/adt/timestamp.c:3555 utils/adt/timestamp.c:3875
+#: utils/adt/timestamp.c:4012 utils/adt/timestamp.c:4019
+#: utils/adt/timestamp.c:4033 utils/adt/timestamp.c:4043
+#: utils/adt/timestamp.c:4106 utils/adt/timestamp.c:4246
+#: utils/adt/timestamp.c:4256 utils/adt/timestamp.c:4475
+#: utils/adt/timestamp.c:4554 utils/adt/timestamp.c:4561
+#: utils/adt/timestamp.c:4588 utils/adt/timestamp.c:4592
+#: utils/adt/timestamp.c:4651 utils/adt/xml.c:1710 utils/adt/xml.c:1716
 #: utils/adt/xml.c:1736 utils/adt/xml.c:1742
 msgid "timestamp out of range"
 msgstr "timestamp вне диапазона"
 
 #: utils/adt/date.c:876
 msgid "cannot convert reserved abstime value to date"
-msgstr "нельзя преобразовать зарезервированные значения типа abstime в тип date"
+msgstr ""
+"нельзя преобразовать зарезервированные значения типа abstime в тип date"
 
 #: utils/adt/date.c:1666 utils/adt/date.c:1685
 #, c-format
@@ -2696,7 +2251,7 @@ msgid "\"time with time zone\" units \"%s\" not recognized"
 msgstr "единицы типа \"time with time zone\" -- \"%s\" -- не распознаны"
 
 #: utils/adt/date.c:2495 utils/adt/datetime.c:817 utils/adt/datetime.c:1553
-#: utils/adt/timestamp.c:4486 utils/adt/timestamp.c:4661
+#: utils/adt/timestamp.c:4487 utils/adt/timestamp.c:4662
 #, c-format
 msgid "time zone \"%s\" not recognized"
 msgstr "временная зона \"%s\" не распознана"
@@ -2823,71 +2378,71 @@ msgstr "значения типа \"real\" вне диапазона: переполнение"
 msgid "value out of range: underflow"
 msgstr "значения типа \"real\" вне диапазона: переполнение"
 
-#: utils/adt/float.c:196 utils/adt/float.c:237 utils/adt/float.c:288
+#: utils/adt/float.c:205 utils/adt/float.c:246 utils/adt/float.c:297
 #, c-format
 msgid "invalid input syntax for type real: \"%s\""
 msgstr "неверный входной синтаксис для типа real: \"%s\""
 
-#: utils/adt/float.c:232
+#: utils/adt/float.c:241
 #, c-format
 msgid "\"%s\" is out of range for type real"
 msgstr "\"%s\" вне диапазона для типа real (вещественные числа)"
 
-#: utils/adt/float.c:389 utils/adt/float.c:430 utils/adt/float.c:481
+#: utils/adt/float.c:398 utils/adt/float.c:439 utils/adt/float.c:490
 #: utils/adt/numeric.c:3535 utils/adt/numeric.c:3561
 #, c-format
 msgid "invalid input syntax for type double precision: \"%s\""
 msgstr "неверный входной синтаксис для типа double, точность: \"%s\""
 
-#: utils/adt/float.c:425
+#: utils/adt/float.c:434
 #, c-format
 msgid "\"%s\" is out of range for type double precision"
 msgstr ""
 "\"%s\" вне диапазона для типа double (плавающая запятая, двойной точности)"
 
-#: utils/adt/float.c:1114 utils/adt/float.c:1172 utils/adt/int.c:339
+#: utils/adt/float.c:1123 utils/adt/float.c:1181 utils/adt/int.c:339
 #: utils/adt/int.c:774 utils/adt/int.c:803 utils/adt/int.c:824
 #: utils/adt/int.c:844 utils/adt/int.c:871 utils/adt/int.c:1148
 #: utils/adt/int8.c:1037 utils/adt/numeric.c:2035 utils/adt/numeric.c:2046
 msgid "smallint out of range"
 msgstr "smallint вне диапазона"
 
-#: utils/adt/float.c:1298 utils/adt/numeric.c:4477
+#: utils/adt/float.c:1307 utils/adt/numeric.c:4477
 msgid "cannot take square root of a negative number"
 msgstr "нельзя брать квадратный корень отрицательного числа"
 
-#: utils/adt/float.c:1340 utils/adt/numeric.c:1853
+#: utils/adt/float.c:1349 utils/adt/numeric.c:1853
 msgid "invalid argument for power function"
 msgstr "неверный аргумент функции возведения в степень"
 
-#: utils/adt/float.c:1406 utils/adt/float.c:1436 utils/adt/numeric.c:4695
+#: utils/adt/float.c:1415 utils/adt/float.c:1445 utils/adt/numeric.c:4695
 msgid "cannot take logarithm of zero"
 msgstr "нельзя брать логарифм нуля"
 
-#: utils/adt/float.c:1410 utils/adt/float.c:1440 utils/adt/numeric.c:4699
+#: utils/adt/float.c:1419 utils/adt/float.c:1449 utils/adt/numeric.c:4699
 msgid "cannot take logarithm of a negative number"
 msgstr "нельзя брать логарифм отрицательного числа"
 
-#: utils/adt/float.c:1467 utils/adt/float.c:1488 utils/adt/float.c:1509
-#: utils/adt/float.c:1531 utils/adt/float.c:1552 utils/adt/float.c:1573
-#: utils/adt/float.c:1595 utils/adt/float.c:1616
+#: utils/adt/float.c:1476 utils/adt/float.c:1497 utils/adt/float.c:1518
+#: utils/adt/float.c:1540 utils/adt/float.c:1561 utils/adt/float.c:1582
+#: utils/adt/float.c:1604 utils/adt/float.c:1625
 msgid "input is out of range"
 msgstr "ввод вне диапазона"
 
-#: utils/adt/float.c:2675 utils/adt/numeric.c:905
+#: utils/adt/float.c:2684 utils/adt/numeric.c:905
 msgid "count must be greater than zero"
 msgstr "счётчик должен быть больше нуля"
 
-#: utils/adt/float.c:2680 utils/adt/numeric.c:912
+#: utils/adt/float.c:2689 utils/adt/numeric.c:912
 #, fuzzy
 msgid "operand, lower bound and upper bound cannot be NaN"
 msgstr "нижний предел не может быть равен верхнему"
 
-#: utils/adt/float.c:2686
+#: utils/adt/float.c:2695
 msgid "lower and upper bounds must be finite"
 msgstr "нижняя и верхняя граница должна быть конечной"
 
-#: utils/adt/float.c:2724 utils/adt/numeric.c:925
+#: utils/adt/float.c:2733 utils/adt/numeric.c:925
 msgid "lower bound cannot equal upper bound"
 msgstr "нижний предел не может быть равен верхнему"
 
@@ -2963,67 +2518,67 @@ msgstr "неверное значение для %s"
 
 #: utils/adt/formatting.c:3011
 msgid "January"
-msgstr ""
+msgstr "Январь"
 
 #: utils/adt/formatting.c:3014
 msgid "February"
-msgstr ""
+msgstr "Февраль"
 
 #: utils/adt/formatting.c:3017
 msgid "March"
-msgstr ""
+msgstr "Март"
 
 #: utils/adt/formatting.c:3020
 msgid "April"
-msgstr ""
+msgstr "Апрель"
 
 #: utils/adt/formatting.c:3023
 msgid "May"
-msgstr ""
+msgstr "Май"
 
 #: utils/adt/formatting.c:3026
 msgid "June"
-msgstr ""
+msgstr "Июнь"
 
 #: utils/adt/formatting.c:3029
 msgid "July"
-msgstr ""
+msgstr "Июль"
 
 #: utils/adt/formatting.c:3032
 msgid "August"
-msgstr ""
+msgstr "Август"
 
 #: utils/adt/formatting.c:3035
 msgid "September"
-msgstr ""
+msgstr "Сентябрь"
 
 #: utils/adt/formatting.c:3038
 msgid "October"
-msgstr ""
+msgstr "Октябрь"
 
 #: utils/adt/formatting.c:3041
 msgid "November"
-msgstr ""
+msgstr "Ноябрь"
 
 #: utils/adt/formatting.c:3044
 msgid "December"
-msgstr ""
+msgstr "Декабрь"
 
 #: utils/adt/formatting.c:3059
 msgid "Jan"
-msgstr ""
+msgstr "Янв"
 
 #: utils/adt/formatting.c:3062
 msgid "Feb"
-msgstr ""
+msgstr "Фев"
 
 #: utils/adt/formatting.c:3065
 msgid "Mar"
-msgstr ""
+msgstr "Мар"
 
 #: utils/adt/formatting.c:3068
 msgid "Apr"
-msgstr ""
+msgstr "Апр"
 
 #. translator: Translate this as the abbreviation of "May".
 #. In English, it is both the full month name and the
@@ -3032,91 +2587,91 @@ msgstr ""
 #. which will be stripped at run time.
 #: utils/adt/formatting.c:3077
 msgid "S:May"
-msgstr ""
+msgstr "S:Май"
 
 #: utils/adt/formatting.c:3080
 msgid "Jun"
-msgstr ""
+msgstr "Июн"
 
 #: utils/adt/formatting.c:3083
 msgid "Jul"
-msgstr ""
+msgstr "Июл"
 
 #: utils/adt/formatting.c:3086
 msgid "Aug"
-msgstr ""
+msgstr "Авг"
 
 #: utils/adt/formatting.c:3089
 msgid "Sep"
-msgstr ""
+msgstr "Сен"
 
 #: utils/adt/formatting.c:3092
 msgid "Oct"
-msgstr ""
+msgstr "Окт"
 
 #: utils/adt/formatting.c:3095
 msgid "Nov"
-msgstr ""
+msgstr "Ноя"
 
 #: utils/adt/formatting.c:3098
 msgid "Dec"
-msgstr ""
+msgstr "Дек"
 
 #: utils/adt/formatting.c:3113
 msgid "Sunday"
-msgstr ""
+msgstr "Воскресенье"
 
 #: utils/adt/formatting.c:3116
 msgid "Monday"
-msgstr ""
+msgstr "Понедельник"
 
 #: utils/adt/formatting.c:3119
 msgid "Tuesday"
-msgstr ""
+msgstr "Вторник"
 
 #: utils/adt/formatting.c:3122
 msgid "Wednesday"
-msgstr ""
+msgstr "Среда"
 
 #: utils/adt/formatting.c:3125
 msgid "Thursday"
-msgstr ""
+msgstr "Четверг"
 
 #: utils/adt/formatting.c:3128
 msgid "Friday"
-msgstr ""
+msgstr "Пятница"
 
 #: utils/adt/formatting.c:3131
 msgid "Saturday"
-msgstr ""
+msgstr "Суббота"
 
 #: utils/adt/formatting.c:3146
 msgid "Sun"
-msgstr ""
+msgstr "Вск"
 
 #: utils/adt/formatting.c:3149
 msgid "Mon"
-msgstr ""
+msgstr "Пнд"
 
 #: utils/adt/formatting.c:3152
 msgid "Tue"
-msgstr ""
+msgstr "Втр"
 
 #: utils/adt/formatting.c:3155
 msgid "Wed"
-msgstr ""
+msgstr "Срд"
 
 #: utils/adt/formatting.c:3158
 msgid "Thu"
-msgstr ""
+msgstr "Чтв"
 
 #: utils/adt/formatting.c:3161
 msgid "Fri"
-msgstr ""
+msgstr "Птн"
 
 #: utils/adt/formatting.c:3164
 msgid "Sat"
-msgstr ""
+msgstr "Сбт"
 
 #: utils/adt/formatting.c:3458
 msgid "AM/PM hour must be between 1 and 12"
@@ -3570,13 +3125,13 @@ msgid "invalid oidvector data"
 msgstr "неверная запись контрольной точки"
 
 #: utils/adt/oracle_compat.c:102 utils/adt/oracle_compat.c:142
-#: utils/adt/oracle_compat.c:196 tsearch/ts_locale.c:92
-#: tsearch/ts_locale.c:129
+#: utils/adt/oracle_compat.c:196 tsearch/ts_locale.c:93
+#: tsearch/ts_locale.c:122
 msgid "invalid multibyte character for locale"
 msgstr ""
 
 #: utils/adt/oracle_compat.c:103 utils/adt/oracle_compat.c:197
-#: tsearch/ts_locale.c:93 tsearch/ts_locale.c:130
+#: tsearch/ts_locale.c:94 tsearch/ts_locale.c:123
 msgid ""
 "The server's LC_CTYPE locale is probably incompatible with the database "
 "encoding."
@@ -3722,8 +3277,8 @@ msgstr "отсутствует аргумент"
 msgid "Use NONE to denote the missing argument of a unary operator."
 msgstr ""
 
-#: utils/adt/regproc.c:638 utils/adt/regproc.c:1498 utils/adt/ruleutils.c:4333
-#: utils/adt/ruleutils.c:4361
+#: utils/adt/regproc.c:638 utils/adt/regproc.c:1498 utils/adt/ruleutils.c:4338
+#: utils/adt/ruleutils.c:4366
 msgid "too many arguments"
 msgstr "слишком много аргументов"
 
@@ -3737,7 +3292,7 @@ msgid "relation \"%s\" does not exist"
 msgstr "отношение \"%s\" не существует"
 
 #: utils/adt/regproc.c:980 tcop/utility.c:101 commands/functioncmds.c:118
-#: commands/typecmds.c:507 commands/typecmds.c:950 commands/typecmds.c:2366
+#: commands/typecmds.c:509 commands/typecmds.c:953 commands/typecmds.c:2371
 #: parser/parse_func.c:1223 parser/parse_type.c:198
 #, c-format
 msgid "type \"%s\" does not exist"
@@ -3909,7 +3464,7 @@ msgstr ""
 #: commands/tablecmds.c:3383 commands/tablecmds.c:3430
 #: commands/tablecmds.c:3526 commands/tablecmds.c:3587
 #: commands/tablecmds.c:3653 commands/tablecmds.c:4788
-#: commands/tablecmds.c:4921 parser/analyze.c:1556
+#: commands/tablecmds.c:4921 parser/analyze.c:1560
 #: parser/parse_relation.c:1607 parser/parse_relation.c:1662
 #: parser/parse_target.c:764 parser/parse_type.c:116
 #, c-format
@@ -3960,8 +3515,8 @@ msgstr "значение даты/времени \"%s\" больше не поддерживается"
 msgid "timestamp(%d) precision must be between %d and %d"
 msgstr "точность timestamp(%d) должна быть между %d и %d"
 
-#: utils/adt/timestamp.c:624 utils/adt/timestamp.c:3132
-#: utils/adt/timestamp.c:3262 utils/adt/timestamp.c:3647
+#: utils/adt/timestamp.c:624 utils/adt/timestamp.c:3133
+#: utils/adt/timestamp.c:3263 utils/adt/timestamp.c:3648
 msgid "interval out of range"
 msgstr "interval вне диапазона"
 
@@ -3984,52 +3539,52 @@ msgstr "INTERVAL(%d): точность уменьшена до дозволенного максимума: %d"
 msgid "interval(%d) precision must be between %d and %d"
 msgstr "точность interval(%d) должна быть между %d и %d"
 
-#: utils/adt/timestamp.c:2325
+#: utils/adt/timestamp.c:2326
 msgid "cannot subtract infinite timestamps"
 msgstr ""
 
-#: utils/adt/timestamp.c:3388 utils/adt/timestamp.c:3991
-#: utils/adt/timestamp.c:4050
+#: utils/adt/timestamp.c:3389 utils/adt/timestamp.c:3992
+#: utils/adt/timestamp.c:4051
 #, c-format
 msgid "timestamp units \"%s\" not supported"
 msgstr "единицы timestamp \"%s\" не поддерживаются"
 
-#: utils/adt/timestamp.c:3402 utils/adt/timestamp.c:4060
+#: utils/adt/timestamp.c:3403 utils/adt/timestamp.c:4061
 #, c-format
 msgid "timestamp units \"%s\" not recognized"
 msgstr "единицы timestamp \"%s\" не распознаны"
 
-#: utils/adt/timestamp.c:3543 utils/adt/timestamp.c:4222
-#: utils/adt/timestamp.c:4263
+#: utils/adt/timestamp.c:3544 utils/adt/timestamp.c:4223
+#: utils/adt/timestamp.c:4264
 #, c-format
 msgid "timestamp with time zone units \"%s\" not supported"
 msgstr "единицы timestamp with time zone \"%s\" не поддерживаются"
 
-#: utils/adt/timestamp.c:3560 utils/adt/timestamp.c:4272
+#: utils/adt/timestamp.c:3561 utils/adt/timestamp.c:4273
 #, c-format
 msgid "timestamp with time zone units \"%s\" not recognized"
 msgstr "единицы timestamp with time zone \"%s\" не распознаны"
 
-#: utils/adt/timestamp.c:3640 utils/adt/timestamp.c:4378
+#: utils/adt/timestamp.c:3641 utils/adt/timestamp.c:4379
 #, c-format
 msgid "interval units \"%s\" not supported"
 msgstr "единицы interval \"%s\" не поддерживаются"
 
-#: utils/adt/timestamp.c:3656 utils/adt/timestamp.c:4406
+#: utils/adt/timestamp.c:3657 utils/adt/timestamp.c:4407
 #, c-format
 msgid "interval units \"%s\" not recognized"
 msgstr "единицы interval \"%s\" не распознаны"
 
-#: utils/adt/timestamp.c:3679
+#: utils/adt/timestamp.c:3680
 msgid "cannot calculate week number without year information"
 msgstr "нельзя вычислить номер недели без информации о годе"
 
-#: utils/adt/timestamp.c:4479 utils/adt/timestamp.c:4654
+#: utils/adt/timestamp.c:4480 utils/adt/timestamp.c:4655
 #, fuzzy, c-format
 msgid "could not convert to time zone \"%s\""
 msgstr "%s не в состоянии сконвертировать тип %s в %s"
 
-#: utils/adt/timestamp.c:4511 utils/adt/timestamp.c:4687
+#: utils/adt/timestamp.c:4512 utils/adt/timestamp.c:4688
 #, c-format
 msgid "interval time zone \"%s\" must not specify month"
 msgstr ""
@@ -4394,36 +3949,31 @@ msgstr ""
 msgid "empty XPath expression"
 msgstr "многочисленные выражения по умолчанию"
 
-#: utils/adt/xml.c:3394
+#: utils/adt/xml.c:3433
 msgid "neither namespace name nor URI may be null"
 msgstr ""
 
-#: utils/adt/xml.c:3401
+#: utils/adt/xml.c:3440
 #, fuzzy, c-format
 msgid "could not register XML namespace with name \"%s\" and URI \"%s\""
 msgstr "не получилось переименовать файл \"%s\" в \"%s\": %m"
 
-#: utils/adt/xml.c:3414
+#: utils/adt/xml.c:3453
 #, fuzzy
 msgid "could not create XPath object"
 msgstr "не удалось создать аутентификатор PAM: %s"
 
-#: utils/mb/conversion_procs/utf8_and_win/utf8_and_win.c:127
-#: utils/mb/conversion_procs/utf8_and_win/utf8_and_win.c:155
+#: utils/mb/conversion_procs/utf8_and_win/utf8_and_win.c:126
+#: utils/mb/conversion_procs/utf8_and_win/utf8_and_win.c:153
 #, c-format
 msgid "unexpected encoding ID %d for WIN character sets"
 msgstr ""
 
-#: utils/mb/conversion_procs/utf8_and_iso8859/utf8_and_iso8859.c:137
-#: utils/mb/conversion_procs/utf8_and_iso8859/utf8_and_iso8859.c:165
+#: utils/mb/conversion_procs/utf8_and_iso8859/utf8_and_iso8859.c:136
+#: utils/mb/conversion_procs/utf8_and_iso8859/utf8_and_iso8859.c:163
 #, c-format
 msgid "unexpected encoding ID %d for ISO 8859 character sets"
 msgstr ""
-
-#: utils/mb/conv.c:509
-#, c-format
-msgid "invalid encoding number: %d"
-msgstr "неверный номер кодировки: %d"
 
 #: utils/mb/encnames.c:515
 msgid "encoding name too long"
@@ -4461,21 +4011,26 @@ msgstr "неверное имя кодировки назначения: \"%s\""
 msgid "invalid byte value for encoding \"%s\": 0x%02x"
 msgstr "неверная последовательность байт имя кодировки \"%s\": 0x%s"
 
-#: utils/mb/wchar.c:1540
+#: utils/mb/wchar.c:1573
 #, c-format
 msgid "invalid byte sequence for encoding \"%s\": 0x%s"
 msgstr "неверная последовательность байт имя кодировки \"%s\": 0x%s"
 
-#: utils/mb/wchar.c:1543
+#: utils/mb/wchar.c:1576
 msgid ""
 "This error can also happen if the byte sequence does not match the encoding "
 "expected by the server, which is controlled by \"client_encoding\"."
 msgstr ""
 
-#: utils/mb/wchar.c:1585
+#: utils/mb/wchar.c:1605
 #, c-format
 msgid "character 0x%s of encoding \"%s\" has no equivalent in \"%s\""
 msgstr ""
+
+#: utils/mb/conv.c:509
+#, c-format
+msgid "invalid encoding number: %d"
+msgstr "неверный номер кодировки: %d"
 
 #: utils/sort/logtape.c:213
 #, c-format
@@ -4500,8 +4055,8 @@ msgstr "не получилось создать уникальный индекс"
 msgid "Table contains duplicated values."
 msgstr "Таблица содержит дубликаты."
 
-#: utils/hash/dynahash.c:925 storage/lmgr/lock.c:582 storage/lmgr/lock.c:648
-#: storage/lmgr/lock.c:2040 storage/lmgr/lock.c:2328 storage/lmgr/lock.c:2393
+#: utils/hash/dynahash.c:925 storage/lmgr/lock.c:583 storage/lmgr/lock.c:649
+#: storage/lmgr/lock.c:2041 storage/lmgr/lock.c:2329 storage/lmgr/lock.c:2394
 #: storage/lmgr/proc.c:185 storage/lmgr/proc.c:198 storage/ipc/shmem.c:190
 #: storage/ipc/shmem.c:359
 msgid "out of shared memory"
@@ -5833,155 +5388,150 @@ msgid ""
 "option, or by the PGDATA environment variable.\n"
 msgstr ""
 
-#: utils/misc/guc.c:3912 utils/misc/guc.c:4080
+#: utils/misc/guc.c:3916 utils/misc/guc.c:4084
 msgid "Value exceeds integer range."
 msgstr ""
 
-#: utils/misc/guc.c:3935
+#: utils/misc/guc.c:3939
 msgid "Valid units for this parameter are \"kB\", \"MB\", and \"GB\"."
 msgstr ""
 
-#: utils/misc/guc.c:3994
+#: utils/misc/guc.c:3998
 msgid ""
 "Valid units for this parameter are \"ms\", \"s\", \"min\", \"h\", and \"d\"."
 msgstr ""
 
-#: utils/misc/guc.c:4205 utils/misc/guc.c:4718 utils/misc/guc.c:4762
-#: utils/misc/guc.c:4879 utils/misc/guc.c:5348 utils/misc/guc.c:5489
+#: utils/misc/guc.c:4209 utils/misc/guc.c:4722 utils/misc/guc.c:4766
+#: utils/misc/guc.c:4883 utils/misc/guc.c:5352 utils/misc/guc.c:5493
 #: guc-file.l:213
 #, c-format
 msgid "unrecognized configuration parameter \"%s\""
 msgstr "не распознанный параметр конфигурации: \"%s\""
 
-#: utils/misc/guc.c:4232
+#: utils/misc/guc.c:4236
 #, c-format
 msgid "parameter \"%s\" cannot be changed"
 msgstr "параметр \"%s\" нельзя изменить"
 
-#: utils/misc/guc.c:4249 guc-file.l:260
+#: utils/misc/guc.c:4253 guc-file.l:260
 #, fuzzy, c-format
 msgid ""
 "parameter \"%s\" cannot be changed after server start; configuration file "
 "change ignored"
 msgstr "нельзя поменять параметр \"%s\" после запуска сервера"
 
-#: utils/misc/guc.c:4257
+#: utils/misc/guc.c:4261
 #, c-format
 msgid "parameter \"%s\" cannot be changed after server start"
 msgstr "нельзя поменять параметр \"%s\" после запуска сервера"
 
-#: utils/misc/guc.c:4267
+#: utils/misc/guc.c:4271
 #, c-format
 msgid "parameter \"%s\" cannot be changed now"
 msgstr "нельзя поменять параметр \"%s\" сейчас"
 
-#: utils/misc/guc.c:4297
+#: utils/misc/guc.c:4301
 #, c-format
 msgid "parameter \"%s\" cannot be set after connection start"
 msgstr "нельзя установить параметр \"%s\" после запуска подсоединения"
 
-#: utils/misc/guc.c:4307
+#: utils/misc/guc.c:4311
 #, c-format
 msgid "permission denied to set parameter \"%s\""
 msgstr "доступ запрещён по установке параметра \"%s\""
 
-#: utils/misc/guc.c:4360
+#: utils/misc/guc.c:4364
 #, c-format
 msgid "parameter \"%s\" requires a Boolean value"
 msgstr "параметр \"%s\" требует булевское значение"
 
-#: utils/misc/guc.c:4382 utils/misc/guc.c:4457
+#: utils/misc/guc.c:4386 utils/misc/guc.c:4461
 #, c-format
 msgid "invalid value for parameter \"%s\": %d"
 msgstr "неверное значение для параметра \"%s\": %d"
 
-#: utils/misc/guc.c:4426 utils/misc/guc.c:4628 guc-file.l:174
+#: utils/misc/guc.c:4430 utils/misc/guc.c:4632 guc-file.l:174
 #, c-format
 msgid "invalid value for parameter \"%s\": \"%s\""
 msgstr "неверное значение для параметра \"%s\": \"%s\""
 
-#: utils/misc/guc.c:4435
+#: utils/misc/guc.c:4439
 #, c-format
 msgid "%d is outside the valid range for parameter \"%s\" (%d .. %d)"
 msgstr "%d вне диапазона для параметра \"%s\" (%d .. %d)"
 
-#: utils/misc/guc.c:4499
+#: utils/misc/guc.c:4503
 #, c-format
 msgid "parameter \"%s\" requires a numeric value"
 msgstr "параметр \"%s\" требует числовое значение"
 
-#: utils/misc/guc.c:4507
+#: utils/misc/guc.c:4511
 #, c-format
 msgid "%g is outside the valid range for parameter \"%s\" (%g .. %g)"
 msgstr "%g вне диапазона для параметра \"%s\" (%g .. %g)"
 
-#: utils/misc/guc.c:4529
+#: utils/misc/guc.c:4533
 #, c-format
 msgid "invalid value for parameter \"%s\": %g"
 msgstr "неверное значение для параметра \"%s\": %g"
 
-#: utils/misc/guc.c:4722 utils/misc/guc.c:4766 utils/misc/guc.c:5493
+#: utils/misc/guc.c:4726 utils/misc/guc.c:4770 utils/misc/guc.c:5497
 #, c-format
 msgid "must be superuser to examine \"%s\""
 msgstr ""
 
-#: utils/misc/guc.c:4888
+#: utils/misc/guc.c:4892
 #, c-format
 msgid "SET %s takes only one argument"
 msgstr "SET %s принимает только один аргумент"
 
-#: utils/misc/guc.c:5100
+#: utils/misc/guc.c:5104
 msgid "SET requires parameter name"
 msgstr "SET требует имя параметра"
 
-#: utils/misc/guc.c:5197
+#: utils/misc/guc.c:5201
 #, c-format
 msgid "attempt to redefine parameter \"%s\""
 msgstr ""
 
-#: utils/misc/guc.c:6163 utils/init/miscinit.c:1002 commands/copy.c:2163
-#, c-format
-msgid "could not read from file \"%s\": %m"
-msgstr "не получилось считать из файла \"%s\": %m"
-
-#: utils/misc/guc.c:6274
+#: utils/misc/guc.c:6278
 #, c-format
 msgid "could not parse setting for parameter \"%s\""
 msgstr "не получилось проанализировать установки для параметра \"%s\""
 
-#: utils/misc/guc.c:6465
+#: utils/misc/guc.c:6469
 msgid "invalid list syntax for parameter \"log_destination\""
 msgstr "неверный синтаксис для параметра \"log_destination\""
 
-#: utils/misc/guc.c:6489
+#: utils/misc/guc.c:6493
 #, c-format
 msgid "unrecognized \"log_destination\" key word: \"%s\""
 msgstr "не распознанное ключевое слово \"log_destination\": \"%s\""
 
-#: utils/misc/guc.c:6776
+#: utils/misc/guc.c:6780
 msgid "SET AUTOCOMMIT TO OFF is no longer supported"
 msgstr "SET AUTOCOMMIT TO OFF больше не поддерживается"
 
-#: utils/misc/guc.c:6848
+#: utils/misc/guc.c:6852
 msgid "assertion checking is not supported by this build"
 msgstr ""
 
-#: utils/misc/guc.c:6863
+#: utils/misc/guc.c:6867
 #, fuzzy
 msgid "SSL is not supported by this build"
 msgstr "\"E\" не поддерживается"
 
-#: utils/misc/guc.c:6877
+#: utils/misc/guc.c:6881
 msgid "cannot enable parameter when \"log_statement_stats\" is true"
 msgstr ""
 
-#: utils/misc/guc.c:6893
+#: utils/misc/guc.c:6897
 msgid ""
 "cannot enable \"log_statement_stats\" when \"log_parser_stats\", "
 "\"log_planner_stats\", or \"log_executor_stats\" is true"
 msgstr ""
 
-#: utils/misc/guc.c:6911
+#: utils/misc/guc.c:6915
 msgid "cannot set transaction read-write mode inside a read-only transaction"
 msgstr ""
 
@@ -6071,6 +5621,11 @@ msgid ""
 "could not open configuration file \"%s\": maximum nesting depth exceeded"
 msgstr "не получилось открыть файл конфигурации \"%s\": %m"
 
+#: guc-file.l:392 libpq/hba.c:995
+#, c-format
+msgid "could not open configuration file \"%s\": %m"
+msgstr "не получилось открыть файл конфигурации \"%s\": %m"
+
 #: guc-file.l:520
 #, c-format
 msgid "syntax error in file \"%s\" line %u, near end of line"
@@ -6081,228 +5636,44 @@ msgstr "ошибка синтаксиса в фале \"%s\" строка %u, рядом с концом строки"
 msgid "syntax error in file \"%s\" line %u, near token \"%s\""
 msgstr "ошибка синтаксиса в фале \"%s\" строка %u, рядом с \"%s\""
 
-#: utils/init/flatfiles.c:205 utils/init/flatfiles.c:275
-#: utils/init/flatfiles.c:404 utils/init/flatfiles.c:657
+#: utils/mmgr/aset.c:361
 #, c-format
-msgid "could not write to temporary file \"%s\": %m"
-msgstr "не получилось записать во временный файл \"%s\": %m"
+msgid "Failed while creating memory context \"%s\"."
+msgstr "Ошибка при создании контекста памяти \"%s\"."
 
-#: utils/init/flatfiles.c:245
-#, fuzzy, c-format
-msgid "invalid database name \"%s\""
-msgstr "неверное имя пользователя \"%s\""
-
-#: utils/init/flatfiles.c:499
-#, fuzzy, c-format
-msgid "invalid role name \"%s\""
-msgstr "неверное имя группы \"%s\""
-
-#: utils/init/flatfiles.c:506
-#, fuzzy, c-format
-msgid "invalid role password \"%s\""
-msgstr "неверный пароль \"%s\""
-
-#: utils/init/miscinit.c:176
+#: utils/mmgr/aset.c:540 utils/mmgr/aset.c:715 utils/mmgr/aset.c:910
 #, c-format
-msgid "could not change directory to \"%s\": %m"
-msgstr "не получилось поменять директорию на \"%s\": %m"
+msgid "Failed on request of size %lu."
+msgstr "Ошибка при запросе размера %lu."
 
-#: utils/init/miscinit.c:420 utils/cache/lsyscache.c:2695 commands/user.c:552
-#: commands/user.c:734 commands/user.c:843 commands/user.c:995
-#: commands/variable.c:752 commands/variable.c:882
-#, fuzzy, c-format
-msgid "role \"%s\" does not exist"
-msgstr "правило \"%s\" не существует"
-
-#: utils/init/miscinit.c:450
-#, fuzzy, c-format
-msgid "role \"%s\" is not permitted to log in"
-msgstr "правило \"%s\" не существует"
-
-#: utils/init/miscinit.c:468
-#, fuzzy, c-format
-msgid "too many connections for role \"%s\""
-msgstr "SSL подсоединение от \"%s\""
-
-#: utils/init/miscinit.c:543
-msgid "permission denied to set session authorization"
-msgstr "доступ запрещён по установке авторизации сессии"
-
-#: utils/init/miscinit.c:625
-#, fuzzy, c-format
-msgid "invalid role OID: %u"
-msgstr "неверное ID пользователя: %d"
-
-#: utils/init/miscinit.c:717
+#: utils/mmgr/portalmem.c:208
 #, c-format
-msgid "could not create lock file \"%s\": %m"
-msgstr "не удалось создать файл блокировки \"%s\": %m"
+msgid "cursor \"%s\" already exists"
+msgstr "курсор \"%s\" уже существует"
 
-#: utils/init/miscinit.c:731
+#: utils/mmgr/portalmem.c:212
 #, c-format
-msgid "could not open lock file \"%s\": %m"
-msgstr "не удалось открыть файл блокировки \"%s\": %m"
+msgid "closing existing cursor \"%s\""
+msgstr "закрытие существующего курсора \"%s\""
 
-#: utils/init/miscinit.c:737
-#, c-format
-msgid "could not read lock file \"%s\": %m"
-msgstr "не удалось считать файл блокировки \"%s\": %m"
-
-#: utils/init/miscinit.c:800
-#, c-format
-msgid "lock file \"%s\" already exists"
-msgstr "файл блокировки \"%s\" уже существует"
-
-#: utils/init/miscinit.c:804
-#, c-format
-msgid "Is another postgres (PID %d) running in data directory \"%s\"?"
-msgstr "Выполняется ли другой postgres (PID %d) на директории данных \"%s\"?"
-
-#: utils/init/miscinit.c:806
-#, c-format
-msgid "Is another postmaster (PID %d) running in data directory \"%s\"?"
-msgstr "Выполняется ли другой postmaster (PID %d) на директории данных \"%s\"?"
-
-#: utils/init/miscinit.c:809
-#, c-format
-msgid "Is another postgres (PID %d) using socket file \"%s\"?"
-msgstr "Использует ли другой postgres (PID %d) файл сокета \"%s\"?"
-
-#: utils/init/miscinit.c:811
-#, c-format
-msgid "Is another postmaster (PID %d) using socket file \"%s\"?"
-msgstr "Использует ли другой postmaster (PID %d) файл сокета \"%s\"?"
-
-#: utils/init/miscinit.c:839
-#, c-format
-msgid "pre-existing shared memory block (key %lu, ID %lu) is still in use"
+#: utils/mmgr/portalmem.c:580
+msgid "cannot PREPARE a transaction that has created a cursor WITH HOLD"
 msgstr ""
+"невозможно подготовить (PREPARE) транзакцию которая создала курсор с "
+"параметром WITH HOLD"
 
-#: utils/init/miscinit.c:842
-#, c-format
-msgid ""
-"If you're sure there are no old server processes still running, remove the "
-"shared memory block with the command \"ipcclean\", \"ipcrm\", or just delete "
-"the file \"%s\"."
+#: utils/mmgr/portalmem.c:879 utils/fmgr/funcapi.c:60 commands/prepare.c:729
+#: executor/execQual.c:1179 executor/execQual.c:1222 executor/execQual.c:1514
+#: executor/execQual.c:4621 executor/functions.c:680 executor/functions.c:719
+msgid "set-valued function called in context that cannot accept a set"
 msgstr ""
+"функция возвращающая множество вызвана в контексте не принимающем множество"
 
-#: utils/init/miscinit.c:860
-#, c-format
-msgid "could not remove old lock file \"%s\": %m"
-msgstr "не удалось удалить старый файл блокировки \"%s\": %m"
-
-#: utils/init/miscinit.c:862
-msgid ""
-"The file seems accidentally left over, but it could not be removed. Please "
-"remove the file by hand and try again."
+#: utils/mmgr/portalmem.c:883 commands/prepare.c:733
+msgid "materialize mode required, but it is not allowed in this context"
 msgstr ""
-
-#: utils/init/miscinit.c:884 utils/init/miscinit.c:894
-#, c-format
-msgid "could not write lock file \"%s\": %m"
-msgstr "не удалось записать файл блокировки \"%s\": %m"
-
-#: utils/init/miscinit.c:1093 utils/init/miscinit.c:1106
-#, c-format
-msgid "\"%s\" is not a valid data directory"
-msgstr "\"%s\" не является верной директорией данных"
-
-#: utils/init/miscinit.c:1095
-#, c-format
-msgid "File \"%s\" is missing."
-msgstr "Файл \"%s\" отсутствует."
-
-#: utils/init/miscinit.c:1108
-#, c-format
-msgid "File \"%s\" does not contain valid data."
-msgstr "Файл \"%s\" не содержит верные данные."
-
-#: utils/init/miscinit.c:1110
-#, fuzzy
-msgid "You might need to initdb."
-msgstr "Вам наверное надо выполнить initdb."
-
-#: utils/init/miscinit.c:1118
-#, c-format
-msgid ""
-"The data directory was initialized by PostgreSQL version %ld.%ld, which is "
-"not compatible with this version %s."
-msgstr ""
-"Директория данных была инициализирована с помощью PostgreSQL, версии %ld.%"
-"ld, которая не совместима с этой версией: %s."
-
-#: utils/init/miscinit.c:1162
-#, fuzzy, c-format
-msgid "invalid list syntax in parameter \"%s\""
-msgstr "неверный синтаксис для параметра \"log_destination\""
-
-#: utils/init/miscinit.c:1187
-#, fuzzy, c-format
-msgid "loaded library \"%s\""
-msgstr "подзагруженная библиотека \"%s\""
-
-#: utils/init/postinit.c:171
-#, fuzzy, c-format
-msgid "database \"%s\" has disappeared from pg_database"
-msgstr "база \"%s\", OID %u, исчезла из pg_database"
-
-#: utils/init/postinit.c:173
-#, c-format
-msgid "Database OID %u now seems to belong to \"%s\"."
-msgstr ""
-
-#: utils/init/postinit.c:193
-#, c-format
-msgid "database \"%s\" is not currently accepting connections"
-msgstr "база \"%s\" не принимает подсоединения в данный момент"
-
-#: utils/init/postinit.c:206
-#, fuzzy, c-format
-msgid "permission denied for database \"%s\""
-msgstr "доступ запрещён для базы %s"
-
-#: utils/init/postinit.c:207
-msgid "User does not have CONNECT privilege."
-msgstr ""
-
-#: utils/init/postinit.c:224
-#, fuzzy, c-format
-msgid "too many connections for database \"%s\""
-msgstr "SSL подсоединение от \"%s\""
-
-#: utils/init/postinit.c:377
-#, fuzzy, c-format
-msgid "database %u does not exist"
-msgstr "база данных \"%s\" не существует"
-
-#: utils/init/postinit.c:508
-msgid "It seems to have just been dropped or renamed."
-msgstr ""
-
-#: utils/init/postinit.c:524
-#, c-format
-msgid "The database subdirectory \"%s\" is missing."
-msgstr "Поддиректория баз данных \"%s\" отсутствует."
-
-#: utils/init/postinit.c:529
-#, c-format
-msgid "could not access directory \"%s\": %m"
-msgstr "ошибка при доступе к директории \"%s\": %m"
-
-#: utils/init/postinit.c:562
-#, fuzzy
-msgid "no roles are defined in this database system"
-msgstr "пользователи не определены в этой системе баз данных"
-
-#: utils/init/postinit.c:563
-#, fuzzy, c-format
-msgid "You should immediately run CREATE USER \"%s\" CREATEUSER;."
-msgstr ""
-"Вы должны немедленно выполнить CREATE USER \"%s\" WITH SYSID %d CREATEUSER;."
-
-#: utils/init/postinit.c:593
-msgid "connection limit exceeded for non-superusers"
-msgstr "превышен лимит подсоединений для обычных пользователей"
+"требуется режим материализации (materialize mode), но он не разрешён в этом "
+"контексте"
 
 #: utils/error/assert.c:37
 msgid "TRAP: ExceptionalCondition: bad arguments\n"
@@ -6313,100 +5684,100 @@ msgstr ""
 msgid "TRAP: %s(\"%s\", File: \"%s\", Line: %d)\n"
 msgstr "TRAP: %s(\"%s\", Файл: \"%s\", Строка: %d)\n"
 
-#: utils/error/elog.c:1234
+#: utils/error/elog.c:1256
 #, c-format
 msgid "could not reopen file \"%s\" as stderr: %m"
 msgstr "не получилось переоткрыть файл \"%s\" как stderr: %m"
 
-#: utils/error/elog.c:1247
+#: utils/error/elog.c:1269
 #, c-format
 msgid "could not reopen file \"%s\" as stdout: %m"
 msgstr "не получилось переоткрыть файл \"%s\" как stdout: %m"
 
-#: utils/error/elog.c:1508 utils/error/elog.c:1518
+#: utils/error/elog.c:1530 utils/error/elog.c:1540
 msgid "[unknown]"
 msgstr ""
 
-#: utils/error/elog.c:1921 utils/error/elog.c:2176 utils/error/elog.c:2252
+#: utils/error/elog.c:1943 utils/error/elog.c:2218 utils/error/elog.c:2294
 msgid "missing error text"
 msgstr "отсутствует текст ошибки"
 
-#: utils/error/elog.c:1924 utils/error/elog.c:1927 utils/error/elog.c:2255
-#: utils/error/elog.c:2258
+#: utils/error/elog.c:1946 utils/error/elog.c:1949 utils/error/elog.c:2297
+#: utils/error/elog.c:2300
 #, c-format
 msgid " at character %d"
 msgstr " на символе %d"
 
-#: utils/error/elog.c:1937
+#: utils/error/elog.c:1959
 msgid "DETAIL:  "
 msgstr "ПОДРОБНОСТИ:  "
 
-#: utils/error/elog.c:1944
+#: utils/error/elog.c:1966
 msgid "HINT:  "
 msgstr "ПОДСКАЗКА:  "
 
-#: utils/error/elog.c:1951
+#: utils/error/elog.c:1973
 msgid "QUERY:  "
 msgstr "ЗАПРОС:  "
 
-#: utils/error/elog.c:1958
+#: utils/error/elog.c:1980
 msgid "CONTEXT:  "
 msgstr "КОНТЕКСТ:  "
 
-#: utils/error/elog.c:1968
+#: utils/error/elog.c:1990
 #, c-format
 msgid "LOCATION:  %s, %s:%d\n"
 msgstr "ГДЕ:       %s, %s:%d\n"
 
-#: utils/error/elog.c:1975
+#: utils/error/elog.c:1997
 #, c-format
 msgid "LOCATION:  %s:%d\n"
 msgstr "ГДЕ:       %s:%d\n"
 
-#: utils/error/elog.c:1989
+#: utils/error/elog.c:2011
 msgid "STATEMENT:  "
 msgstr "КОМАНДА:  "
 
-#: utils/error/elog.c:2086
+#: utils/error/elog.c:2108
 msgid "Not safe to send CSV data\n"
 msgstr ""
 
 #. translator: This string will be truncated at 47
 #. characters expanded.
-#: utils/error/elog.c:2367
+#: utils/error/elog.c:2409
 #, c-format
 msgid "operating system error %d"
 msgstr "ошибка операционной системы %d"
 
-#: utils/error/elog.c:2394
+#: utils/error/elog.c:2432
 msgid "DEBUG"
 msgstr "DEBUG"
 
-#: utils/error/elog.c:2398
+#: utils/error/elog.c:2436
 msgid "LOG"
 msgstr "LOG"
 
-#: utils/error/elog.c:2401
+#: utils/error/elog.c:2439
 msgid "INFO"
 msgstr "INFO"
 
-#: utils/error/elog.c:2404
+#: utils/error/elog.c:2442
 msgid "NOTICE"
 msgstr "NOTICE"
 
-#: utils/error/elog.c:2407
+#: utils/error/elog.c:2445
 msgid "WARNING"
 msgstr "WARNING"
 
-#: utils/error/elog.c:2413
+#: utils/error/elog.c:2448
 msgid "ERROR"
 msgstr "ERROR"
 
-#: utils/error/elog.c:2419
+#: utils/error/elog.c:2451
 msgid "FATAL"
 msgstr "FATAL"
 
-#: utils/error/elog.c:2425
+#: utils/error/elog.c:2454
 msgid "PANIC"
 msgstr "PANIC"
 
@@ -6697,17 +6068,17 @@ msgstr ""
 msgid "wrong affix file format for flag"
 msgstr ""
 
-#: tsearch/ts_locale.c:284
+#: tsearch/ts_locale.c:277
 #, fuzzy, c-format
 msgid "line %d of configuration file \"%s\": \"%s\""
 msgstr "не получилось открыть файл конфигурации \"%s\": %m"
 
-#: tsearch/ts_locale.c:289
+#: tsearch/ts_locale.c:282
 #, fuzzy, c-format
 msgid "line %d of configuration file \"%s\""
 msgstr "не получилось открыть файл конфигурации \"%s\": %m"
 
-#: tsearch/ts_locale.c:408
+#: tsearch/ts_locale.c:401
 #, c-format
 msgid "conversion from wchar_t to server encoding failed: %m"
 msgstr ""
@@ -6737,27 +6108,200 @@ msgstr "не получилось отктрыть файл сервера \"%s\": %m"
 msgid "text search parser does not support headline creation"
 msgstr ""
 
-#: tsearch/wparser_def.c:1742
+#: tsearch/wparser_def.c:1760
 #, fuzzy, c-format
 msgid "unrecognized headline parameter: \"%s\""
 msgstr "не распознанный параметр конфигурации: \"%s\""
 
-#: tsearch/wparser_def.c:1751
+#: tsearch/wparser_def.c:1769
 msgid "MinWords should be less than MaxWords"
 msgstr ""
 
-#: tsearch/wparser_def.c:1755
+#: tsearch/wparser_def.c:1773
 msgid "MinWords should be positive"
 msgstr ""
 
-#: tsearch/wparser_def.c:1759
+#: tsearch/wparser_def.c:1777
 msgid "ShortWord should be >= 0"
 msgstr ""
 
-#: tcop/postgres.c:323 tcop/postgres.c:346 tcop/fastpath.c:291
+#: tcop/pquery.c:657
+#, c-format
+msgid "bind message has %d result formats but query has %d columns"
+msgstr ""
+
+#: tcop/pquery.c:733 tcop/pquery.c:1336 commands/portalcmds.c:329
+#, c-format
+msgid "portal \"%s\" cannot be run"
+msgstr "портал \"%s\" не может быть запущен"
+
+#: tcop/pquery.c:968
+msgid "cursor can only scan forward"
+msgstr ""
+
+#: tcop/pquery.c:969
+msgid "Declare it with SCROLL option to enable backward scan."
+msgstr ""
+
+#: tcop/utility.c:77
+#, c-format
+msgid "table \"%s\" does not exist"
+msgstr "таблица \"%s\" не существует"
+
+#: tcop/utility.c:78
+#, fuzzy, c-format
+msgid "table \"%s\" does not exist, skipping"
+msgstr "таблица \"%s\" не существует"
+
+#: tcop/utility.c:79 catalog/toasting.c:83 commands/comment.c:514
+#: commands/indexcmds.c:170 commands/indexcmds.c:1327 commands/lockcmds.c:71
+#: commands/tablecmds.c:649 commands/tablecmds.c:2746 commands/trigger.c:107
+#: commands/trigger.c:834
+#, c-format
+msgid "\"%s\" is not a table"
+msgstr "\"%s\" не является таблицей"
+
+#: tcop/utility.c:80
+msgid "Use DROP TABLE to remove a table."
+msgstr "Используйте DROP TABLE для удаления таблицы."
+
+#: tcop/utility.c:83
+#, c-format
+msgid "sequence \"%s\" does not exist"
+msgstr "последовательность \"%s\" не существует"
+
+#: tcop/utility.c:84
+#, fuzzy, c-format
+msgid "sequence \"%s\" does not exist, skipping"
+msgstr "последовательность \"%s\" не существует"
+
+#: tcop/utility.c:85 catalog/aclchk.c:587 commands/comment.c:507
+#: commands/sequence.c:920 commands/tablecmds.c:1659
+#, c-format
+msgid "\"%s\" is not a sequence"
+msgstr "\"%s\" не является последовательностью"
+
+#: tcop/utility.c:86
+msgid "Use DROP SEQUENCE to remove a sequence."
+msgstr "Используйте DROP SEQUENCE для удаления последовательности."
+
+#: tcop/utility.c:89
+#, c-format
+msgid "view \"%s\" does not exist"
+msgstr "представление \"%s\" не существует"
+
+#: tcop/utility.c:90
+#, fuzzy, c-format
+msgid "view \"%s\" does not exist, skipping"
+msgstr "представление \"%s\" не существует"
+
+#: tcop/utility.c:91 commands/comment.c:521 commands/tablecmds.c:1665
+#: commands/view.c:162
+#, c-format
+msgid "\"%s\" is not a view"
+msgstr "\"%s\" не является представлением"
+
+#: tcop/utility.c:92
+msgid "Use DROP VIEW to remove a view."
+msgstr "Используйте DROP VIEW для удаления представления."
+
+#: tcop/utility.c:95
+#, c-format
+msgid "index \"%s\" does not exist"
+msgstr "индекс \"%s\" не существует"
+
+#: tcop/utility.c:96
+#, fuzzy, c-format
+msgid "index \"%s\" does not exist, skipping"
+msgstr "индекс \"%s\" не существует"
+
+#: tcop/utility.c:98
+msgid "Use DROP INDEX to remove an index."
+msgstr "Используйте DROP INDEX для удаления индекса."
+
+#: tcop/utility.c:102 commands/typecmds.c:515 commands/typecmds.c:959
+#, fuzzy, c-format
+msgid "type \"%s\" does not exist, skipping"
+msgstr "тип \"%s\" не существует"
+
+#: tcop/utility.c:103
+#, c-format
+msgid "\"%s\" is not a type"
+msgstr "\"%s\" не является типом"
+
+#: tcop/utility.c:104
+msgid "Use DROP TYPE to remove a type."
+msgstr "Используйте DROP TYPE для удаления типа."
+
+#: tcop/utility.c:207 tcop/utility.c:244 commands/tablecmds.c:660
+#: commands/tablecmds.c:1458 commands/tablecmds.c:1648
+#: commands/tablecmds.c:2758 commands/tablecmds.c:2787
+#: commands/tablecmds.c:3989 commands/trigger.c:113 commands/trigger.c:840
+#, c-format
+msgid "permission denied: \"%s\" is a system catalog"
+msgstr "доступ запрещён: \"%s\" является системным каталогом"
+
+#: tcop/utility.c:362 commands/copy.c:988 executor/execMain.c:475
+msgid "transaction is read-only"
+msgstr "транзакция установлена \"только для чтения\""
+
+#: tcop/utility.c:1143
+msgid "must be superuser to do CHECKPOINT"
+msgstr "нужно быть администратором для выполнения CHECKPOINT"
+
+#: tcop/fastpath.c:108 tcop/fastpath.c:479 tcop/fastpath.c:609
+#, c-format
+msgid "invalid argument size %d in function call message"
+msgstr ""
+
+#: tcop/fastpath.c:222 catalog/aclchk.c:1721 catalog/aclchk.c:2139
+#, c-format
+msgid "function with OID %u does not exist"
+msgstr "функция с OID %u не существует"
+
+#: tcop/fastpath.c:291 tcop/postgres.c:323 tcop/postgres.c:346
 #: commands/copy.c:513 commands/copy.c:532 commands/copy.c:536
 msgid "unexpected EOF on client connection"
 msgstr "неожиданный конец файла (EOF) при подсоединении клиента"
+
+#: tcop/fastpath.c:304 tcop/postgres.c:905 tcop/postgres.c:1211
+#: tcop/postgres.c:1492 tcop/postgres.c:1930 tcop/postgres.c:2248
+#: tcop/postgres.c:2328
+msgid ""
+"current transaction is aborted, commands ignored until end of transaction "
+"block"
+msgstr ""
+
+#: tcop/fastpath.c:332
+#, c-format
+msgid "fastpath function call: \"%s\" (OID %u)"
+msgstr ""
+
+#: tcop/fastpath.c:405 tcop/postgres.c:1073 tcop/postgres.c:1358
+#: tcop/postgres.c:1772 tcop/postgres.c:1987
+#, fuzzy, c-format
+msgid "duration: %s ms"
+msgstr "длительность: %ld.%03ld мс"
+
+#: tcop/fastpath.c:409
+#, c-format
+msgid "duration: %s ms  fastpath function call: \"%s\" (OID %u)"
+msgstr ""
+
+#: tcop/fastpath.c:447 tcop/fastpath.c:574
+#, c-format
+msgid "function call message contains %d arguments but function requires %d"
+msgstr ""
+
+#: tcop/fastpath.c:455
+#, c-format
+msgid "function call message contains %d argument formats but %d arguments"
+msgstr ""
+
+#: tcop/fastpath.c:542 tcop/fastpath.c:625
+#, c-format
+msgid "incorrect binary data format in function argument %d"
+msgstr ""
 
 #: tcop/postgres.c:373 tcop/postgres.c:385 tcop/postgres.c:396
 #: tcop/postgres.c:408 tcop/postgres.c:3856
@@ -6769,20 +6313,6 @@ msgstr ""
 #, c-format
 msgid "statement: %s"
 msgstr "команда: %s"
-
-#: tcop/postgres.c:905 tcop/postgres.c:1211 tcop/postgres.c:1492
-#: tcop/postgres.c:1930 tcop/postgres.c:2248 tcop/postgres.c:2328
-#: tcop/fastpath.c:304
-msgid ""
-"current transaction is aborted, commands ignored until end of transaction "
-"block"
-msgstr ""
-
-#: tcop/postgres.c:1073 tcop/postgres.c:1358 tcop/postgres.c:1772
-#: tcop/postgres.c:1987 tcop/fastpath.c:405
-#, fuzzy, c-format
-msgid "duration: %s ms"
-msgstr "длительность: %ld.%03ld мс"
 
 #: tcop/postgres.c:1078
 #, fuzzy, c-format
@@ -6798,7 +6328,7 @@ msgstr ""
 msgid "cannot insert multiple commands into a prepared statement"
 msgstr ""
 
-#: tcop/postgres.c:1250 commands/prepare.c:121 parser/analyze.c:1945
+#: tcop/postgres.c:1250 commands/prepare.c:121 parser/analyze.c:1949
 #, c-format
 msgid "could not determine data type of parameter $%d"
 msgstr "не определить тип данныз параметра $%d"
@@ -6990,165 +6520,6 @@ msgid ""
 "disconnection: session time: %d:%02d:%02d.%03d user=%s database=%s host=%s%s%"
 "s"
 msgstr "подсоединение авторизировано: пользователь=%s база=%s"
-
-#: tcop/pquery.c:657
-#, c-format
-msgid "bind message has %d result formats but query has %d columns"
-msgstr ""
-
-#: tcop/pquery.c:733 tcop/pquery.c:1336 commands/portalcmds.c:329
-#, c-format
-msgid "portal \"%s\" cannot be run"
-msgstr "портал \"%s\" не может быть запущен"
-
-#: tcop/pquery.c:968
-msgid "cursor can only scan forward"
-msgstr ""
-
-#: tcop/pquery.c:969
-msgid "Declare it with SCROLL option to enable backward scan."
-msgstr ""
-
-#: tcop/utility.c:77
-#, c-format
-msgid "table \"%s\" does not exist"
-msgstr "таблица \"%s\" не существует"
-
-#: tcop/utility.c:78
-#, fuzzy, c-format
-msgid "table \"%s\" does not exist, skipping"
-msgstr "таблица \"%s\" не существует"
-
-#: tcop/utility.c:79 catalog/toasting.c:83 commands/comment.c:514
-#: commands/indexcmds.c:170 commands/indexcmds.c:1327 commands/lockcmds.c:71
-#: commands/tablecmds.c:649 commands/tablecmds.c:2746 commands/trigger.c:107
-#: commands/trigger.c:834
-#, c-format
-msgid "\"%s\" is not a table"
-msgstr "\"%s\" не является таблицей"
-
-#: tcop/utility.c:80
-msgid "Use DROP TABLE to remove a table."
-msgstr "Используйте DROP TABLE для удаления таблицы."
-
-#: tcop/utility.c:83
-#, c-format
-msgid "sequence \"%s\" does not exist"
-msgstr "последовательность \"%s\" не существует"
-
-#: tcop/utility.c:84
-#, fuzzy, c-format
-msgid "sequence \"%s\" does not exist, skipping"
-msgstr "последовательность \"%s\" не существует"
-
-#: tcop/utility.c:85 catalog/aclchk.c:587 commands/comment.c:507
-#: commands/sequence.c:920 commands/tablecmds.c:1659
-#, c-format
-msgid "\"%s\" is not a sequence"
-msgstr "\"%s\" не является последовательностью"
-
-#: tcop/utility.c:86
-msgid "Use DROP SEQUENCE to remove a sequence."
-msgstr "Используйте DROP SEQUENCE для удаления последовательности."
-
-#: tcop/utility.c:89
-#, c-format
-msgid "view \"%s\" does not exist"
-msgstr "представление \"%s\" не существует"
-
-#: tcop/utility.c:90
-#, fuzzy, c-format
-msgid "view \"%s\" does not exist, skipping"
-msgstr "представление \"%s\" не существует"
-
-#: tcop/utility.c:91 commands/comment.c:521 commands/tablecmds.c:1665
-#: commands/view.c:162
-#, c-format
-msgid "\"%s\" is not a view"
-msgstr "\"%s\" не является представлением"
-
-#: tcop/utility.c:92
-msgid "Use DROP VIEW to remove a view."
-msgstr "Используйте DROP VIEW для удаления представления."
-
-#: tcop/utility.c:95
-#, c-format
-msgid "index \"%s\" does not exist"
-msgstr "индекс \"%s\" не существует"
-
-#: tcop/utility.c:96
-#, fuzzy, c-format
-msgid "index \"%s\" does not exist, skipping"
-msgstr "индекс \"%s\" не существует"
-
-#: tcop/utility.c:98
-msgid "Use DROP INDEX to remove an index."
-msgstr "Используйте DROP INDEX для удаления индекса."
-
-#: tcop/utility.c:102 commands/typecmds.c:513 commands/typecmds.c:956
-#, fuzzy, c-format
-msgid "type \"%s\" does not exist, skipping"
-msgstr "тип \"%s\" не существует"
-
-#: tcop/utility.c:103
-#, c-format
-msgid "\"%s\" is not a type"
-msgstr "\"%s\" не является типом"
-
-#: tcop/utility.c:104
-msgid "Use DROP TYPE to remove a type."
-msgstr "Используйте DROP TYPE для удаления типа."
-
-#: tcop/utility.c:207 tcop/utility.c:244 commands/tablecmds.c:660
-#: commands/tablecmds.c:1458 commands/tablecmds.c:1648
-#: commands/tablecmds.c:2758 commands/tablecmds.c:2787
-#: commands/tablecmds.c:3989 commands/trigger.c:113 commands/trigger.c:840
-#, c-format
-msgid "permission denied: \"%s\" is a system catalog"
-msgstr "доступ запрещён: \"%s\" является системным каталогом"
-
-#: tcop/utility.c:362 commands/copy.c:988 executor/execMain.c:475
-msgid "transaction is read-only"
-msgstr "транзакция установлена \"только для чтения\""
-
-#: tcop/utility.c:1143
-msgid "must be superuser to do CHECKPOINT"
-msgstr "нужно быть администратором для выполнения CHECKPOINT"
-
-#: tcop/fastpath.c:108 tcop/fastpath.c:479 tcop/fastpath.c:609
-#, c-format
-msgid "invalid argument size %d in function call message"
-msgstr ""
-
-#: tcop/fastpath.c:222 catalog/aclchk.c:1721 catalog/aclchk.c:2139
-#, c-format
-msgid "function with OID %u does not exist"
-msgstr "функция с OID %u не существует"
-
-#: tcop/fastpath.c:332
-#, c-format
-msgid "fastpath function call: \"%s\" (OID %u)"
-msgstr ""
-
-#: tcop/fastpath.c:409
-#, c-format
-msgid "duration: %s ms  fastpath function call: \"%s\" (OID %u)"
-msgstr ""
-
-#: tcop/fastpath.c:447 tcop/fastpath.c:574
-#, c-format
-msgid "function call message contains %d arguments but function requires %d"
-msgstr ""
-
-#: tcop/fastpath.c:455
-#, c-format
-msgid "function call message contains %d argument formats but %d arguments"
-msgstr ""
-
-#: tcop/fastpath.c:542 tcop/fastpath.c:625
-#, c-format
-msgid "incorrect binary data format in function argument %d"
-msgstr ""
 
 #: bootstrap/bootstrap.c:309 postmaster/postmaster.c:648
 #: postmaster/postmaster.c:661
@@ -7651,137 +7022,137 @@ msgstr "отношение %s"
 msgid "operator family %s for access method %s"
 msgstr "класс операторов %s для метода доступа %s"
 
-#: catalog/heap.c:227
+#: catalog/heap.c:228
 #, c-format
 msgid "permission denied to create \"%s.%s\""
 msgstr "доступ запрещён по созданию \"%s.%s\""
 
-#: catalog/heap.c:229
+#: catalog/heap.c:230
 msgid "System catalog modifications are currently disallowed."
 msgstr "Изменения системного каталога в данный момент не дозволены."
 
-#: catalog/heap.c:346 commands/tablecmds.c:774 commands/tablecmds.c:1087
+#: catalog/heap.c:347 commands/tablecmds.c:774 commands/tablecmds.c:1087
 #: commands/tablecmds.c:3103
 #, c-format
 msgid "tables can have at most %d columns"
 msgstr "максимальное число колонок на таблицу: %d"
 
-#: catalog/heap.c:363
+#: catalog/heap.c:364
 #, c-format
 msgid "column name \"%s\" conflicts with a system column name"
 msgstr "имя колонки \"%s\" конфликтует с системной колонкой"
 
-#: catalog/heap.c:379
+#: catalog/heap.c:380
 #, fuzzy, c-format
 msgid "column name \"%s\" specified more than once"
 msgstr "колонка \"%s\" указана больше одного раза"
 
-#: catalog/heap.c:415
+#: catalog/heap.c:416
 #, c-format
 msgid "column \"%s\" has type \"unknown\""
 msgstr "тип колонки \"%s\" -- \"unknown\""
 
-#: catalog/heap.c:416
+#: catalog/heap.c:417
 msgid "Proceeding with relation creation anyway."
 msgstr "Продолжаем с созданием отношения в любом случае."
 
-#: catalog/heap.c:427
+#: catalog/heap.c:428
 #, c-format
 msgid "column \"%s\" has pseudo-type %s"
 msgstr "колонка \"%s\" имеет псевдо-тип %s"
 
-#: catalog/heap.c:814 catalog/index.c:568 commands/tablecmds.c:1685
+#: catalog/heap.c:817 catalog/index.c:568 commands/tablecmds.c:1685
 #, c-format
 msgid "relation \"%s\" already exists"
 msgstr "объект \"%s\" уже существует"
 
-#: catalog/heap.c:831 catalog/pg_type.c:315 catalog/pg_type.c:591
-#: commands/typecmds.c:180 commands/typecmds.c:643 commands/typecmds.c:1032
+#: catalog/heap.c:834 catalog/pg_type.c:316 catalog/pg_type.c:592
+#: commands/typecmds.c:180 commands/typecmds.c:645 commands/typecmds.c:1035
 #, c-format
 msgid "type \"%s\" already exists"
 msgstr "тип \"%s\" уже существует"
 
-#: catalog/heap.c:832
+#: catalog/heap.c:835
 msgid ""
 "A relation has an associated type of the same name, so you must use a name "
 "that doesn't conflict with any existing type."
 msgstr ""
 
-#: catalog/heap.c:853 catalog/index.c:562 commands/tablecmds.c:5859
+#: catalog/heap.c:856 catalog/index.c:562 commands/tablecmds.c:5859
 msgid "only shared relations can be placed in pg_global tablespace"
 msgstr ""
 
-#: catalog/heap.c:1781
+#: catalog/heap.c:1786
 #, c-format
 msgid "only table \"%s\" can be referenced in check constraint"
 msgstr "только на таблицу \"%s\" можно ссылаться в CHECK-ограничении"
 
-#: catalog/heap.c:1790 commands/typecmds.c:2163
+#: catalog/heap.c:1795 commands/typecmds.c:2168
 msgid "cannot use subquery in check constraint"
 msgstr "нельзя использовать подзапрос в CHECK-ограничении"
 
-#: catalog/heap.c:1794 commands/typecmds.c:2167
+#: catalog/heap.c:1799 commands/typecmds.c:2172
 msgid "cannot use aggregate function in check constraint"
 msgstr "нельзя использовать агрегатную функцию в CHECK-ограничении"
 
-#: catalog/heap.c:1811 catalog/pg_constraint.c:609 commands/tablecmds.c:3910
+#: catalog/heap.c:1816 catalog/pg_constraint.c:609 commands/tablecmds.c:3910
 #, c-format
 msgid "constraint \"%s\" for relation \"%s\" already exists"
 msgstr "констрейнт \"%s\" для связи \"%s\" уже существует"
 
-#: catalog/heap.c:1820
+#: catalog/heap.c:1825
 #, c-format
 msgid "check constraint \"%s\" already exists"
 msgstr "CHECK-ограничение \"%s\" уже существует"
 
-#: catalog/heap.c:1968
+#: catalog/heap.c:1973
 msgid "cannot use column references in default expression"
 msgstr "нельзя использовать ссылки на колонки в выражении по умолчанию"
 
-#: catalog/heap.c:1976
+#: catalog/heap.c:1981
 msgid "default expression must not return a set"
 msgstr "выражение по умолчанию не может возвращать множество"
 
-#: catalog/heap.c:1984
+#: catalog/heap.c:1989
 msgid "cannot use subquery in default expression"
 msgstr "нельзя использовать подзапрос в выражении по умолчанию"
 
-#: catalog/heap.c:1988
+#: catalog/heap.c:1993
 msgid "cannot use aggregate function in default expression"
 msgstr "нельзя использовать агрегатную функцию  в выражении по умолчанию"
 
-#: catalog/heap.c:2006 rewrite/rewriteHandler.c:933
+#: catalog/heap.c:2011 rewrite/rewriteHandler.c:933
 #, c-format
 msgid "column \"%s\" is of type %s but default expression is of type %s"
 msgstr "колонка \"%s\" имеет тип %s но тип выражения по умолчанию %s"
 
-#: catalog/heap.c:2011 commands/prepare.c:357 parser/parse_node.c:298
+#: catalog/heap.c:2016 commands/prepare.c:357 parser/parse_node.c:298
 #: parser/parse_target.c:439 parser/parse_target.c:690
 #: parser/parse_target.c:700 rewrite/rewriteHandler.c:938
 msgid "You will need to rewrite or cast the expression."
 msgstr "Вам придёться переписать или выполнить преобразование выражения."
 
-#: catalog/heap.c:2288
+#: catalog/heap.c:2293
 msgid "unsupported ON COMMIT and foreign key combination"
 msgstr ""
 
-#: catalog/heap.c:2289
+#: catalog/heap.c:2294
 #, c-format
 msgid ""
 "Table \"%s\" references \"%s\", but they do not have the same ON COMMIT "
 "setting."
 msgstr ""
 
-#: catalog/heap.c:2294
+#: catalog/heap.c:2299
 msgid "cannot truncate a table referenced in a foreign key constraint"
 msgstr ""
 
-#: catalog/heap.c:2295
+#: catalog/heap.c:2300
 #, fuzzy, c-format
 msgid "Table \"%s\" references \"%s\"."
 msgstr "ссылка на таблицу \"%s\" неоднозначна"
 
-#: catalog/heap.c:2297
+#: catalog/heap.c:2302
 #, c-format
 msgid "Truncate table \"%s\" at the same time, or use TRUNCATE ... CASCADE."
 msgstr ""
@@ -7915,9 +7286,9 @@ msgstr ""
 msgid "sort operator can only be specified for single-argument aggregates"
 msgstr ""
 
-#: catalog/pg_aggregate.c:315 commands/typecmds.c:1178
-#: commands/typecmds.c:1229 commands/typecmds.c:1260 commands/typecmds.c:1283
-#: commands/typecmds.c:1304 commands/typecmds.c:1331 commands/typecmds.c:1358
+#: catalog/pg_aggregate.c:315 commands/typecmds.c:1183
+#: commands/typecmds.c:1234 commands/typecmds.c:1265 commands/typecmds.c:1288
+#: commands/typecmds.c:1309 commands/typecmds.c:1336 commands/typecmds.c:1363
 #: parser/parse_func.c:222 parser/parse_func.c:1203
 #, c-format
 msgid "function %s does not exist"
@@ -7933,7 +7304,7 @@ msgstr "функция %s возвращает множество"
 msgid "function %s requires run-time type coercion"
 msgstr ""
 
-#: catalog/pg_constraint.c:618 commands/typecmds.c:2105
+#: catalog/pg_constraint.c:618 commands/typecmds.c:2110
 #, c-format
 msgid "constraint \"%s\" for domain \"%s\" already exists"
 msgstr ""
@@ -8092,21 +7463,21 @@ msgstr "SQL-функции не могут иметь аргументы типа %s"
 msgid "SQL function \"%s\""
 msgstr "SQL-функция \"%s\""
 
-#: catalog/pg_type.c:218
+#: catalog/pg_type.c:219
 #, c-format
 msgid "invalid type internal size %d"
 msgstr "неверный внутренний размер типа: %d"
 
-#: catalog/pg_type.c:224
+#: catalog/pg_type.c:225
 #, c-format
 msgid "internal size %d is invalid for passed-by-value type"
 msgstr ""
 
-#: catalog/pg_type.c:231
+#: catalog/pg_type.c:232
 msgid "fixed-size types must have storage PLAIN"
 msgstr "типы фиксированного размера обязаны иметь хранение PLAIN"
 
-#: catalog/pg_type.c:653
+#: catalog/pg_type.c:654
 #, fuzzy, c-format
 msgid "could not form array type name for type \"%s\""
 msgstr "тип массива для типа данных %s не найден"
@@ -8236,7 +7607,7 @@ msgid ""
 "rows; %d rows in sample, %.0f estimated total rows"
 msgstr ""
 
-#: commands/async.c:344
+#: commands/async.c:352
 msgid "cannot PREPARE a transaction that has executed LISTEN or UNLISTEN"
 msgstr ""
 
@@ -8374,8 +7745,8 @@ msgstr "таблица \"%s\" содержит более одного констрейнта с именем \"%s\""
 msgid "constraint \"%s\" for table \"%s\" does not exist"
 msgstr "констрейнт \"%s\" для таблицы \"%s\" не существует"
 
-#: commands/comment.c:1154 commands/conversioncmds.c:112
-#: commands/conversioncmds.c:146 commands/conversioncmds.c:202
+#: commands/comment.c:1154 commands/conversioncmds.c:126
+#: commands/conversioncmds.c:160 commands/conversioncmds.c:216
 #, c-format
 msgid "conversion \"%s\" does not exist"
 msgstr "конверсия \"%s\" не существует"
@@ -8437,22 +7808,22 @@ msgstr "нужно быть администратором для создания пользователей"
 msgid "must be superuser to comment on text search template"
 msgstr "Нужно быть администратором для создания tablespace."
 
-#: commands/conversioncmds.c:66
+#: commands/conversioncmds.c:67
 #, c-format
 msgid "source encoding \"%s\" does not exist"
 msgstr "исходная кодировка \"%s\" не существует"
 
-#: commands/conversioncmds.c:73
+#: commands/conversioncmds.c:74
 #, c-format
 msgid "destination encoding \"%s\" does not exist"
 msgstr "кодировка назначения \"%s\" не существует"
 
-#: commands/conversioncmds.c:118
+#: commands/conversioncmds.c:132
 #, fuzzy, c-format
 msgid "conversion \"%s\" does not exist, skipping"
 msgstr "конверсия \"%s\" не существует"
 
-#: commands/conversioncmds.c:164
+#: commands/conversioncmds.c:178
 #, c-format
 msgid "conversion \"%s\" already exists in schema \"%s\""
 msgstr "преобразование \"%s\" уже существует в схеме \"%s\""
@@ -9146,12 +8517,12 @@ msgid "function \"%s\" is already in schema \"%s\""
 msgstr "функция %s уже существует в схеме \"%s\""
 
 #: commands/functioncmds.c:1708 commands/tablecmds.c:6591
-#: commands/typecmds.c:2592
+#: commands/typecmds.c:2597
 msgid "cannot move objects into or out of temporary schemas"
 msgstr ""
 
 #: commands/functioncmds.c:1714 commands/tablecmds.c:6597
-#: commands/typecmds.c:2598
+#: commands/typecmds.c:2603
 msgid "cannot move objects into or out of TOAST schema"
 msgstr ""
 
@@ -10443,110 +9814,110 @@ msgstr "функция типа receive %s дожна возвращать тип %s"
 msgid "type send function %s must return type \"bytea\""
 msgstr "функция типа send %s дожна возвращать тип \"bytea\""
 
-#: commands/typecmds.c:664
+#: commands/typecmds.c:666
 #, c-format
 msgid "\"%s\" is not a valid base type for a domain"
 msgstr "\"%s\" не является верным базовым типом для домена"
 
-#: commands/typecmds.c:721 commands/typecmds.c:1762
+#: commands/typecmds.c:723 commands/typecmds.c:1767
 msgid "foreign key constraints not possible for domains"
 msgstr "внешние ключи не возможны для доменов"
 
-#: commands/typecmds.c:741
+#: commands/typecmds.c:743
 msgid "multiple default expressions"
 msgstr "многочисленные выражения по умолчанию"
 
-#: commands/typecmds.c:805 commands/typecmds.c:814
+#: commands/typecmds.c:807 commands/typecmds.c:816
 msgid "conflicting NULL/NOT NULL constraints"
 msgstr "конфликтующие констрейнты NULL/NOT NULL"
 
-#: commands/typecmds.c:833 commands/typecmds.c:1780
+#: commands/typecmds.c:835 commands/typecmds.c:1785
 msgid "unique constraints not possible for domains"
 msgstr "UNIQUE-констрейнты не возможны для доменов"
 
-#: commands/typecmds.c:839 commands/typecmds.c:1786
+#: commands/typecmds.c:841 commands/typecmds.c:1791
 msgid "primary key constraints not possible for domains"
 msgstr "первичные ключи не возможны для доменов"
 
-#: commands/typecmds.c:848 commands/typecmds.c:1795
+#: commands/typecmds.c:850 commands/typecmds.c:1800
 msgid "specifying constraint deferrability not supported for domains"
 msgstr ""
 
-#: commands/typecmds.c:978 commands/typecmds.c:2071
+#: commands/typecmds.c:981 commands/typecmds.c:2076
 #, c-format
 msgid "\"%s\" is not a domain"
 msgstr "\"%s\" не является доменом"
 
-#: commands/typecmds.c:1160
+#: commands/typecmds.c:1165
 #, c-format
 msgid "changing argument type of function %s from \"opaque\" to \"cstring\""
 msgstr "изменение типа аргумента функции %s из \"opaque\" на \"cstring\""
 
-#: commands/typecmds.c:1211
+#: commands/typecmds.c:1216
 #, c-format
 msgid "changing argument type of function %s from \"opaque\" to %s"
 msgstr "изменение типа аргумента функции %s из \"opaque\" на %s"
 
-#: commands/typecmds.c:1310
+#: commands/typecmds.c:1315
 #, fuzzy, c-format
 msgid "typmod_in function %s must return type \"integer\""
 msgstr "функция %s должна возвращать тип \"trigger\""
 
-#: commands/typecmds.c:1337
+#: commands/typecmds.c:1342
 #, fuzzy, c-format
 msgid "typmod_out function %s must return type \"cstring\""
 msgstr "функция типа output %s дожна возвращать тип \"cstring\""
 
-#: commands/typecmds.c:1364
+#: commands/typecmds.c:1369
 #, c-format
 msgid "type analyze function %s must return type \"boolean\""
 msgstr ""
 
-#: commands/typecmds.c:1393
+#: commands/typecmds.c:1398
 msgid "composite type must have at least one attribute"
 msgstr ""
 
-#: commands/typecmds.c:1621
+#: commands/typecmds.c:1626
 #, c-format
 msgid "column \"%s\" of table \"%s\" contains null values"
 msgstr "колонка \"%s\" таблицы \"%s\" содержит значения NULL"
 
-#: commands/typecmds.c:1866
+#: commands/typecmds.c:1871
 #, c-format
 msgid ""
 "column \"%s\" of table \"%s\" contains values that violate the new constraint"
 msgstr ""
 
-#: commands/typecmds.c:2146 commands/typecmds.c:2155
+#: commands/typecmds.c:2151 commands/typecmds.c:2160
 msgid "cannot use table references in domain check constraint"
 msgstr ""
 
-#: commands/typecmds.c:2385 commands/typecmds.c:2621
+#: commands/typecmds.c:2390 commands/typecmds.c:2626
 #, fuzzy, c-format
 msgid "%s is a table's row type"
 msgstr "\"%s\" не является таблицей или представлением"
 
-#: commands/typecmds.c:2387 commands/typecmds.c:2623
+#: commands/typecmds.c:2392 commands/typecmds.c:2628
 #, fuzzy
 msgid "Use ALTER TABLE instead."
 msgstr "Вместо этого используйте представления."
 
-#: commands/typecmds.c:2394 commands/typecmds.c:2535
+#: commands/typecmds.c:2399 commands/typecmds.c:2540
 #, fuzzy, c-format
 msgid "cannot alter array type %s"
 msgstr "нельзя поменять системную колонку \"%s\""
 
-#: commands/typecmds.c:2396 commands/typecmds.c:2537
+#: commands/typecmds.c:2401 commands/typecmds.c:2542
 #, c-format
 msgid "You can alter type %s, which will alter the array type as well."
 msgstr ""
 
-#: commands/typecmds.c:2584
+#: commands/typecmds.c:2589
 #, fuzzy, c-format
 msgid "type %s is already in schema \"%s\""
 msgstr "функция %s уже существует в схеме \"%s\""
 
-#: commands/typecmds.c:2607
+#: commands/typecmds.c:2612
 #, fuzzy, c-format
 msgid "type \"%s\" already exists in schema \"%s\""
 msgstr "преобразование \"%s\" уже существует в схеме \"%s\""
@@ -11285,12 +10656,12 @@ msgstr ""
 msgid "cannot open %s query as cursor"
 msgstr "нельзя удалить %s: этот объект нужен %s"
 
-#: executor/spi.c:1040 parser/analyze.c:1679
+#: executor/spi.c:1040 parser/analyze.c:1683
 #, fuzzy
 msgid "DECLARE SCROLL CURSOR ... FOR UPDATE/SHARE is not supported"
 msgstr "DECLARE CURSOR ... FOR UPDATE не поддерживается"
 
-#: executor/spi.c:1041 parser/analyze.c:1680
+#: executor/spi.c:1041 parser/analyze.c:1684
 #, fuzzy
 msgid "Scrollable cursors must be READ ONLY."
 msgstr "Курсоры должны быть READ ONLY."
@@ -11304,55 +10675,6 @@ msgstr "SQL-команда: \"%s\""
 #, c-format
 msgid "Cannot enlarge string buffer containing %d bytes by %d more bytes."
 msgstr ""
-
-#: storage/freespace/freespace.c:184 storage/freespace/freespace.c:202
-#: storage/freespace/freespace.c:221
-msgid "insufficient shared memory for free space map"
-msgstr ""
-
-#: storage/freespace/freespace.c:214
-#, c-format
-msgid "max_fsm_pages must exceed max_fsm_relations * %d"
-msgstr "параметр max_fsm_pages должен превышать max_fsm_relations * %d"
-
-#: storage/freespace/freespace.c:624
-#, c-format
-msgid "free space map contains %d pages in %d relations"
-msgstr ""
-
-#: storage/freespace/freespace.c:626
-#, c-format
-msgid ""
-"A total of %.0f page slots are in use (including overhead).\n"
-"%.0f page slots are required to track all free space.\n"
-"Current limits are:  %d page slots, %d relations, using %.0f kB."
-msgstr ""
-
-#: storage/freespace/freespace.c:644
-#, c-format
-msgid "max_fsm_relations(%d) equals the number of relations checked"
-msgstr ""
-
-#: storage/freespace/freespace.c:646
-#, fuzzy, c-format
-msgid ""
-"You have at least %d relations.  Consider increasing the configuration "
-"parameter \"max_fsm_relations\"."
-msgstr ""
-"Подумайте об увеличении параметра конфигурации \"checkpoint_segments\"."
-
-#: storage/freespace/freespace.c:651
-#, fuzzy, c-format
-msgid "number of page slots needed (%.0f) exceeds max_fsm_pages (%d)"
-msgstr "число размерностей массива (%d) превышает лимит (%d)"
-
-#: storage/freespace/freespace.c:653
-#, fuzzy, c-format
-msgid ""
-"Consider increasing the configuration parameter \"max_fsm_pages\" to a value "
-"over %.0f."
-msgstr ""
-"Подумайте об увеличении параметра конфигурации \"checkpoint_segments\"."
 
 #: storage/buffer/bufmgr.c:228
 #, fuzzy, c-format
@@ -11541,6 +10863,55 @@ msgstr ""
 msgid "corrupted item pointer: offset = %u, size = %u"
 msgstr ""
 
+#: storage/freespace/freespace.c:184 storage/freespace/freespace.c:202
+#: storage/freespace/freespace.c:221
+msgid "insufficient shared memory for free space map"
+msgstr ""
+
+#: storage/freespace/freespace.c:214
+#, c-format
+msgid "max_fsm_pages must exceed max_fsm_relations * %d"
+msgstr "параметр max_fsm_pages должен превышать max_fsm_relations * %d"
+
+#: storage/freespace/freespace.c:624
+#, c-format
+msgid "free space map contains %d pages in %d relations"
+msgstr ""
+
+#: storage/freespace/freespace.c:626
+#, c-format
+msgid ""
+"A total of %.0f page slots are in use (including overhead).\n"
+"%.0f page slots are required to track all free space.\n"
+"Current limits are:  %d page slots, %d relations, using %.0f kB."
+msgstr ""
+
+#: storage/freespace/freespace.c:644
+#, c-format
+msgid "max_fsm_relations(%d) equals the number of relations checked"
+msgstr ""
+
+#: storage/freespace/freespace.c:646
+#, fuzzy, c-format
+msgid ""
+"You have at least %d relations.  Consider increasing the configuration "
+"parameter \"max_fsm_relations\"."
+msgstr ""
+"Подумайте об увеличении параметра конфигурации \"checkpoint_segments\"."
+
+#: storage/freespace/freespace.c:651
+#, fuzzy, c-format
+msgid "number of page slots needed (%.0f) exceeds max_fsm_pages (%d)"
+msgstr "число размерностей массива (%d) превышает лимит (%d)"
+
+#: storage/freespace/freespace.c:653
+#, fuzzy, c-format
+msgid ""
+"Consider increasing the configuration parameter \"max_fsm_pages\" to a value "
+"over %.0f."
+msgstr ""
+"Подумайте об увеличении параметра конфигурации \"checkpoint_segments\"."
+
 #: storage/large_object/inv_api.c:536 storage/large_object/inv_api.c:727
 #, fuzzy, c-format
 msgid "large object %u was not opened for writing"
@@ -11605,13 +10976,13 @@ msgstr ""
 msgid "unrecognized locktag type %d"
 msgstr "нераспознанный тип привилегий: \"%s\""
 
-#: storage/lmgr/lock.c:583 storage/lmgr/lock.c:649 storage/lmgr/lock.c:2329
-#: storage/lmgr/lock.c:2394
+#: storage/lmgr/lock.c:584 storage/lmgr/lock.c:650 storage/lmgr/lock.c:2330
+#: storage/lmgr/lock.c:2395
 #, fuzzy
 msgid "You might need to increase max_locks_per_transaction."
 msgstr "Вам следует увеличить значение прамера max_locks_per_transaction."
 
-#: storage/lmgr/lock.c:2041
+#: storage/lmgr/lock.c:2042
 msgid "Not enough memory for reassigning the prepared transaction's locks."
 msgstr ""
 
@@ -11949,18 +11320,733 @@ msgstr ""
 msgid "%s: could not determine user name (GetUserName failed)\n"
 msgstr "%s: не удалось определить имя пользователя (ошибка GetUserName)\n"
 
-#: optimizer/plan/initsplan.c:560
-#, fuzzy
-msgid ""
-"SELECT FOR UPDATE/SHARE cannot be applied to the nullable side of an outer "
-"join"
-msgstr "нельзя применять SELECT FOR UPDATE к JOIN"
+#: libpq/auth.c:129
+#, c-format
+msgid "Kerberos initialization returned error %d"
+msgstr "ошибка Kerberos при инициализации: %d"
 
-#: optimizer/plan/planner.c:802 parser/analyze.c:1071 parser/analyze.c:1239
-#: parser/analyze.c:1740
+#: libpq/auth.c:139
+#, c-format
+msgid "Kerberos keytab resolving returned error %d"
+msgstr "ошибка Kerberos при обработке keytab %d"
+
+#: libpq/auth.c:163
+#, fuzzy, c-format
+msgid "Kerberos sname_to_principal(\"%s\", \"%s\") returned error %d"
+msgstr "ошибка Kerberos при инициализации: %d"
+
+#: libpq/auth.c:211
+#, c-format
+msgid "Kerberos recvauth returned error %d"
+msgstr "ошибка Kerberos recvauth %d"
+
+#: libpq/auth.c:234
+#, c-format
+msgid "Kerberos unparse_name returned error %d"
+msgstr "ошибка Kerberos unparse_name %d"
+
+#: libpq/auth.c:285
+#, c-format
+msgid ""
+"unexpected Kerberos user name received from client (received \"%s\", "
+"expected \"%s\")"
+msgstr ""
+"неожиданное имя пользователя Kerberos получено от клиента (получено \"%s\", "
+"ожидалось \"%s\")"
+
+#: libpq/auth.c:305
+msgid "Kerberos 5 not implemented on this server"
+msgstr "Kerberos 5 не реализован в этом сервере"
+
+#: libpq/auth.c:378
+#, c-format
+msgid "%s: %s"
+msgstr "%s: %s"
+
+#: libpq/auth.c:404
 #, fuzzy
-msgid "SELECT FOR UPDATE/SHARE is not allowed with UNION/INTERSECT/EXCEPT"
-msgstr "нельзя использовать SELECT FOR UPDATE в UNION/INTERSECT/EXCEPT"
+msgid "GSSAPI is not supported in protocol version 2"
+msgstr "оператор %s не поддерживает строчные выражения"
+
+#: libpq/auth.c:459
+#, fuzzy, c-format
+msgid "expected GSS response, got message type %d"
+msgstr "ожидался ответ с паролем, но вместо него получено сообщение типа %d"
+
+#: libpq/auth.c:522
+msgid "accepting GSS security context failed"
+msgstr "ошибка получения контекста безопасности GSS"
+
+#: libpq/auth.c:548
+msgid "retrieving GSS user name failed"
+msgstr "ошибка извлечения имени пользователя GSS"
+
+#: libpq/auth.c:619
+#, fuzzy
+msgid "GSSAPI not implemented on this server"
+msgstr "Kerberos 4 не реализован в этом сервере"
+
+#: libpq/auth.c:644
+#, fuzzy, c-format
+msgid "SSPI error %x"
+msgstr "ошибка SSL: %s"
+
+#: libpq/auth.c:648
+#, c-format
+msgid "%s (%x)"
+msgstr "%s (%x)"
+
+#: libpq/auth.c:688
+#, fuzzy
+msgid "SSPI is not supported in protocol version 2"
+msgstr "оператор %s не поддерживает строчные выражения"
+
+#: libpq/auth.c:704
+msgid "could not acquire SSPI credentials handle"
+msgstr "не удалось получить дескриптор мандата SSPI"
+
+#: libpq/auth.c:721
+#, fuzzy, c-format
+msgid "expected SSPI response, got message type %d"
+msgstr "ожидался ответ с паролем, но вместо него получено сообщение типа %d"
+
+#: libpq/auth.c:793
+#, fuzzy
+msgid "could not accept SSPI security context"
+msgstr "не удалось создать контекст SSL: %s"
+
+#: libpq/auth.c:849
+#, fuzzy
+msgid "could not get security token from context"
+msgstr "не удалось создать контекст SSL: %s"
+
+#: libpq/auth.c:924
+#, fuzzy
+msgid "SSPI not implemented on this server"
+msgstr "Kerberos 4 не реализован в этом сервере"
+
+#: libpq/auth.c:964
+#, c-format
+msgid "authentication failed for user \"%s\": host rejected"
+msgstr "ошибка аутентификации пользователя \"%s\": узел отвергнут"
+
+#: libpq/auth.c:967
+#, c-format
+msgid "Kerberos 5 authentication failed for user \"%s\""
+msgstr "ошибка аутентификации Kerberos 5 пользователя \"%s\""
+
+#: libpq/auth.c:970
+#, fuzzy, c-format
+msgid "GSSAPI authentication failed for user \"%s\""
+msgstr ""
+"ошибка при аутентификации для пользователя \"%s\": не верный метод "
+"аутентификации"
+
+#: libpq/auth.c:973
+#, fuzzy, c-format
+msgid "SSPI authentication failed for user \"%s\""
+msgstr ""
+"ошибка при аутентификации для пользователя \"%s\": не верный метод "
+"аутентификации"
+
+#: libpq/auth.c:976
+#, c-format
+msgid "\"trust\" authentication failed for user \"%s\""
+msgstr "ошибка \"trust\" аутентификации пользователя \"%s\""
+
+#: libpq/auth.c:979
+#, c-format
+msgid "Ident authentication failed for user \"%s\""
+msgstr "ошибка Ident аутентификации пользователя \"%s\""
+
+#: libpq/auth.c:984
+#, c-format
+msgid "password authentication failed for user \"%s\""
+msgstr "ошибка аутентификации по паролю пользователя \"%s\""
+
+#: libpq/auth.c:988
+#, c-format
+msgid "PAM authentication failed for user \"%s\""
+msgstr "ошибка PAM аутентификации пользователя \"%s\""
+
+#: libpq/auth.c:993
+#, fuzzy, c-format
+msgid "LDAP authentication failed for user \"%s\""
+msgstr ""
+"ошибка при аутентификации для пользователя \"%s\": не верный метод "
+"аутентификации"
+
+#: libpq/auth.c:997
+#, c-format
+msgid "authentication failed for user \"%s\": invalid authentication method"
+msgstr ""
+"ошибка при аутентификации для пользователя \"%s\": не верный метод "
+"аутентификации"
+
+#: libpq/auth.c:1026
+msgid "missing or erroneous pg_hba.conf file"
+msgstr "отсутствует или ошибочный файл pg_hba.conf"
+
+#: libpq/auth.c:1027
+msgid "See server log for details."
+msgstr "Смотрите подробности в журнале сервера."
+
+#: libpq/auth.c:1055
+msgid "SSL on"
+msgstr "SSL вкл."
+
+#: libpq/auth.c:1055
+msgid "SSL off"
+msgstr "SSL выкл."
+
+#: libpq/auth.c:1053
+#, c-format
+msgid "no pg_hba.conf entry for host \"%s\", user \"%s\", database \"%s\", %s"
+msgstr ""
+"отсутствует запись в pg_hba.conf для хоста \"%s\", пользователя \"%s\", базы "
+"\"%s\", %s"
+
+#: libpq/auth.c:1059
+#, c-format
+msgid "no pg_hba.conf entry for host \"%s\", user \"%s\", database \"%s\""
+msgstr ""
+"отсутствует запись в pg_hba.conf для хоста \"%s\", пользователя \"%s\", базы "
+"\"%s\""
+
+#: libpq/auth.c:1103
+#, c-format
+msgid "could not enable credential reception: %m"
+msgstr "не удалось включить получение ident сокета: %m"
+
+#: libpq/auth.c:1214
+#, c-format
+msgid "error from underlying PAM layer: %s"
+msgstr "ошибка базового уровня PAM: %s"
+
+#: libpq/auth.c:1219
+#, c-format
+msgid "unsupported PAM conversation %d/%s"
+msgstr "неподдерживаемый диалог PAM %d/%s"
+
+#: libpq/auth.c:1251
+msgid "empty password returned by client"
+msgstr "возвращёт пустой пароль от клиента"
+
+#: libpq/auth.c:1311
+#, c-format
+msgid "could not create PAM authenticator: %s"
+msgstr "не удалось создать аутентификатор PAM: %s"
+
+#: libpq/auth.c:1322
+#, c-format
+msgid "pam_set_item(PAM_USER) failed: %s"
+msgstr "ошибка pam_set_item(PAM_USER): %s"
+
+#: libpq/auth.c:1333
+#, c-format
+msgid "pam_set_item(PAM_CONV) failed: %s"
+msgstr "ошибка pam_set_item(PAM_CONV): %s"
+
+#: libpq/auth.c:1344
+#, c-format
+msgid "pam_authenticate failed: %s"
+msgstr "ошибка pam_authenticate: %s"
+
+#: libpq/auth.c:1355
+#, c-format
+msgid "pam_acct_mgmt failed: %s"
+msgstr "ошибка pam_acct_mgmt: %s"
+
+#: libpq/auth.c:1366
+#, c-format
+msgid "could not release PAM authenticator: %s"
+msgstr "не удалось удалить аутентификатор PAM: %s"
+
+#: libpq/auth.c:1397
+#, fuzzy
+msgid "LDAP configuration URL not specified"
+msgstr "не указано тело функции"
+
+#: libpq/auth.c:1449
+#, fuzzy, c-format
+msgid "invalid LDAP URL: \"%s\""
+msgstr "неверное значение cidr: \"%s\""
+
+#: libpq/auth.c:1465 libpq/auth.c:1469
+#, fuzzy, c-format
+msgid "could not initialize LDAP: error code %d"
+msgstr "не удалось инициализировать SSL-подсоединение: %s"
+
+#: libpq/auth.c:1479
+#, c-format
+msgid "could not set LDAP protocol version: error code %d"
+msgstr "не удалось установить версию протокола LDAP: код ошибки %d"
+
+#: libpq/auth.c:1508
+msgid "could not load wldap32.dll"
+msgstr "не удалось загрузить wldap32.dll"
+
+#: libpq/auth.c:1516
+msgid "could not load function _ldap_start_tls_sA in wldap32.dll"
+msgstr "не удалось подключить функцию _ldap_start_tls_sA из wldap32.dll"
+
+#: libpq/auth.c:1517
+#, fuzzy
+msgid "LDAP over SSL is not supported on this platform."
+msgstr "tablespaces  не поддерживаются на этой платформе"
+
+#: libpq/auth.c:1532
+#, c-format
+msgid "could not start LDAP TLS session: error code %d"
+msgstr "не получилось начать LDAP TLS сессию: код ошибки %d"
+
+#: libpq/auth.c:1547
+#, c-format
+msgid "LDAP login failed for user \"%s\" on server \"%s\": error code %d"
+msgstr ""
+"ошибка начала сеанса LDAP для пользователя \"%s\" на сервере \"%s\": код "
+"ошибки %d"
+
+#: libpq/auth.c:1583
+#, c-format
+msgid "expected password response, got message type %d"
+msgstr "ожидался ответ с паролем, но вместо него получено сообщение типа %d"
+
+#: libpq/auth.c:1611
+msgid "invalid password packet size"
+msgstr "неверный размер пакета с паролем"
+
+#: libpq/auth.c:1615
+msgid "received password packet"
+msgstr "получент пакет с паролем"
+
+#: libpq/be-fsstubs.c:125 libpq/be-fsstubs.c:155 libpq/be-fsstubs.c:170
+#: libpq/be-fsstubs.c:195 libpq/be-fsstubs.c:242 libpq/be-fsstubs.c:469
+#, c-format
+msgid "invalid large-object descriptor: %d"
+msgstr "неверный дескриптор большого объекта: %d"
+
+#: libpq/be-fsstubs.c:175
+#, c-format
+msgid "large object descriptor %d was not opened for writing"
+msgstr "дескриптор большого объекта %d не открыт для записи"
+
+#: libpq/be-fsstubs.c:335
+msgid "must be superuser to use server-side lo_import()"
+msgstr "нужно быть администратором для использования server-side lo_import()"
+
+#: libpq/be-fsstubs.c:336
+msgid "Anyone can use the client-side lo_import() provided by libpq."
+msgstr ""
+"Каждый может использовать на стороне клиента lo_import() предоставляемую "
+"libpq."
+
+#: libpq/be-fsstubs.c:353
+#, c-format
+msgid "could not open server file \"%s\": %m"
+msgstr "не получилось отктрыть файл сервера \"%s\": %m"
+
+#: libpq/be-fsstubs.c:375
+#, c-format
+msgid "could not read server file \"%s\": %m"
+msgstr "не получилось считать файл сервера \"%s\": %m"
+
+#: libpq/be-fsstubs.c:405
+msgid "must be superuser to use server-side lo_export()"
+msgstr "нужно быть администратором для использования server-side lo_export()"
+
+#: libpq/be-fsstubs.c:406
+msgid "Anyone can use the client-side lo_export() provided by libpq."
+msgstr ""
+"Каждый может использовать на стороне клиента lo_export() предоставляемую "
+"libpq."
+
+#: libpq/be-fsstubs.c:434
+#, c-format
+msgid "could not create server file \"%s\": %m"
+msgstr "не получилось создать файл сервера \"%s\": %m"
+
+#: libpq/be-fsstubs.c:446
+#, c-format
+msgid "could not write server file \"%s\": %m"
+msgstr "не получилось записать файл сервера \"%s\": %m"
+
+#: libpq/be-secure.c:299 libpq/be-secure.c:393
+#, c-format
+msgid "SSL error: %s"
+msgstr "ошибка SSL: %s"
+
+#: libpq/be-secure.c:308 libpq/be-secure.c:402 libpq/be-secure.c:919
+#, c-format
+msgid "unrecognized SSL error code: %d"
+msgstr "нераспознанный код ошибки SSL: %d"
+
+#: libpq/be-secure.c:347 libpq/be-secure.c:351 libpq/be-secure.c:361
+msgid "SSL renegotiation failure"
+msgstr "ошибка пересогласования SSL"
+
+#: libpq/be-secure.c:355
+msgid "SSL failed to send renegotiation request"
+msgstr "ошибка отправки запроса на пересогласование SSL"
+
+#: libpq/be-secure.c:724
+#, c-format
+msgid "could not create SSL context: %s"
+msgstr "не удалось создать контекст SSL: %s"
+
+#: libpq/be-secure.c:735
+#, c-format
+msgid "could not load server certificate file \"%s\": %s"
+msgstr "не удалось загрузить сертификат сервера \"%s\": %s"
+
+#: libpq/be-secure.c:741
+#, c-format
+msgid "could not access private key file \"%s\": %m"
+msgstr "не удалось получить доступ к файлу \"%s\" с секретным ключом: %m"
+
+#: libpq/be-secure.c:757
+#, c-format
+msgid "unsafe permissions on private key file \"%s\""
+msgstr "небезопасные права доступа у файла секретного ключа \"%s\""
+
+#: libpq/be-secure.c:759
+msgid ""
+"File must be owned by the database user and must have no permissions for "
+"\"group\" or \"other\"."
+msgstr ""
+"Владельцем файла должен быть владелец сервера и у \"группа\" и \"другие\" не "
+"должно быть прав доступа."
+
+#: libpq/be-secure.c:766
+#, c-format
+msgid "could not load private key file \"%s\": %s"
+msgstr "не удалось загрузить секретный ключ из файла \"%s\": %s"
+
+#: libpq/be-secure.c:771
+#, c-format
+msgid "check of private key failed: %s"
+msgstr "ошибка проверки секретного ключа: %s"
+
+#: libpq/be-secure.c:790
+#, c-format
+msgid "could not load root certificate file \"%s\": %s"
+msgstr "не получилось загрузить файл корневых сертификатов \"%s\": %s"
+
+#: libpq/be-secure.c:792
+msgid "Will not verify client certificates."
+msgstr "Сертификаты клиентов проверяться не будут"
+
+#: libpq/be-secure.c:813
+#, c-format
+msgid "SSL certificate revocation list file \"%s\" ignored"
+msgstr "файл \"%s\" со списком отозванных сертификатов SSL проигнорирован"
+
+#: libpq/be-secure.c:815
+msgid "SSL library does not support certificate revocation lists."
+msgstr "библиотека SSL не поддерживает списки отозванных сертификатов"
+
+#: libpq/be-secure.c:821
+#, c-format
+msgid "SSL certificate revocation list file \"%s\" not found, skipping: %s"
+msgstr ""
+"файл \"%s\" со списком отозванных сертификатов SSL не найден, "
+"проигнорировано: %s"
+
+#: libpq/be-secure.c:823
+msgid "Certificates will not be checked against revocation list."
+msgstr "Сертификаты не будут проверяться по списку отозванных сертификатов"
+
+#: libpq/be-secure.c:864
+#, c-format
+msgid "could not initialize SSL connection: %s"
+msgstr "не удалось инициализировать SSL-подсоединение: %s"
+
+#: libpq/be-secure.c:873
+#, c-format
+msgid "could not set SSL socket: %s"
+msgstr "не удалось создать SSL-сокет: %s"
+
+#: libpq/be-secure.c:899
+#, c-format
+msgid "could not accept SSL connection: %m"
+msgstr "не получилось принять SSL подсоединение: %m"
+
+#: libpq/be-secure.c:903 libpq/be-secure.c:914
+msgid "could not accept SSL connection: EOF detected"
+msgstr "не получилось принять SSL подсоединение: обнаружен конец файла (EOF)"
+
+#: libpq/be-secure.c:908
+#, c-format
+msgid "could not accept SSL connection: %s"
+msgstr "не получилось принять SSL подсоединение: %s"
+
+#: libpq/be-secure.c:946
+#, c-format
+msgid "SSL connection from \"%s\""
+msgstr "SSL подсоединение от \"%s\""
+
+#: libpq/be-secure.c:990
+#, fuzzy
+msgid "no SSL error reported"
+msgstr "нераспознанный код ошибки SSL: %d"
+
+#: libpq/be-secure.c:994
+#, fuzzy, c-format
+msgid "SSL error code %lu"
+msgstr "ошибка SSL: %s"
+
+#: libpq/crypt.c:60
+msgid ""
+"cannot use authentication method \"crypt\" because password is MD5-encrypted"
+msgstr ""
+"невозможно использовать метод аутентификации \"crypt\" потому что пароль "
+"зашифрован MD5"
+
+#: libpq/hba.c:160
+#, c-format
+msgid "authentication file token too long, skipping: \"%s\""
+msgstr "слово в файле аутентификации слишком длинное, проигнорировано: \"%s\""
+
+#: libpq/hba.c:349
+#, c-format
+msgid "could not open secondary authentication file \"@%s\" as \"%s\": %m"
+msgstr ""
+"не удалось открыть вторичный файл аутентификации \"@%s\" как \"%s\": %m"
+
+#: libpq/hba.c:771
+#, c-format
+msgid "invalid IP address \"%s\" in file \"%s\" line %d: %s"
+msgstr "неверный IP адрес \"%s\" в файле \"%s\" строка %d: %s"
+
+#: libpq/hba.c:807
+#, c-format
+msgid "invalid IP mask \"%s\" in file \"%s\" line %d: %s"
+msgstr "неверная IP маска \"%s\" в файле \"%s\" строка %d: %s"
+
+#: libpq/hba.c:822
+#, c-format
+msgid "IP address and mask do not match in file \"%s\" line %d"
+msgstr "IP адрес и маска не совпадают в файле \"%s\" строка %d"
+
+#: libpq/hba.c:880
+#, c-format
+msgid "invalid entry in file \"%s\" at line %d, token \"%s\""
+msgstr "неверный элемент в файле \"%s\" на строке %d, слово \"%s\""
+
+#: libpq/hba.c:886
+#, c-format
+msgid "missing field in file \"%s\" at end of line %d"
+msgstr "пропущено поле в файле \"%s\" в конце строки %d"
+
+#: libpq/hba.c:1099
+#, c-format
+msgid "missing entry in file \"%s\" at end of line %d"
+msgstr "пропущен элемент в файле \"%s\" в конце строки %d"
+
+#: libpq/hba.c:1129
+msgid "cannot use Ident authentication without usermap field"
+msgstr ""
+"невозможно использовать Ident аутентификацию без поля задающего трансляцию "
+"имён пользователей"
+
+#: libpq/hba.c:1175
+#, c-format
+msgid "could not open Ident usermap file \"%s\": %m"
+msgstr "не удалось открыть файл трансляции Ident имён пользователей \"%s\": %m"
+
+#: libpq/hba.c:1349
+#, c-format
+msgid "could not create socket for Ident connection: %m"
+msgstr "не получилось создать сокет для Ident-подсоединения: %m"
+
+#: libpq/hba.c:1364
+#, c-format
+msgid "could not bind to local address \"%s\": %m"
+msgstr "не удалось привязать сокет к локальному адресу \"%s\": %m"
+
+#: libpq/hba.c:1376
+#, c-format
+msgid "could not connect to Ident server at address \"%s\", port %s: %m"
+msgstr ""
+"не получилось подсоединиться к Ident-серверу с адресом \"%s\", порт %s: %m"
+
+#: libpq/hba.c:1396
+#, c-format
+msgid "could not send query to Ident server at address \"%s\", port %s: %m"
+msgstr ""
+"не получилось отправить запрос к Ident-серверу с адресом \"%s\", порт %s: %m"
+
+#: libpq/hba.c:1411
+#, c-format
+msgid ""
+"could not receive response from Ident server at address \"%s\", port %s: %m"
+msgstr ""
+"не удалось получить ответ от Ident сервера с адреса \"%s\", порт %s: %m"
+
+#: libpq/hba.c:1421
+#, c-format
+msgid "invalidly formatted response from Ident server: \"%s\""
+msgstr "формат ответа от Ident сервера содержит ошибки: \"%s\""
+
+#: libpq/hba.c:1456 libpq/hba.c:1486 libpq/hba.c:1553
+#, c-format
+msgid "could not get peer credentials: %m"
+msgstr "не удалось получить ident сокета: %m"
+
+#: libpq/hba.c:1465 libpq/hba.c:1495 libpq/hba.c:1564
+#, c-format
+msgid "local user with ID %d does not exist"
+msgstr "локальный пользователь с ID %d не существует"
+
+#: libpq/hba.c:1575
+msgid ""
+"Ident authentication is not supported on local connections on this platform"
+msgstr ""
+"Ident аутентификация не поддерживается для локальных подключений на этой "
+"платформе"
+
+#: libpq/hba.c:1621
+#, c-format
+msgid "Ident protocol identifies remote user as \"%s\""
+msgstr "Ident протокол идентифицирует внешнего пользователя как \"%s\""
+
+#: libpq/pqcomm.c:289
+#, c-format
+msgid "could not translate host name \"%s\", service \"%s\" to address: %s"
+msgstr "не получилось перевести имя узла \"%s\" и службы \"%s\" в адрес: %s"
+
+#: libpq/pqcomm.c:293
+#, c-format
+msgid "could not translate service \"%s\" to address: %s"
+msgstr "не удалось перевести имя службы \"%s\" в адрес: %s"
+
+#: libpq/pqcomm.c:320
+#, c-format
+msgid "could not bind to all requested addresses: MAXLISTEN (%d) exceeded"
+msgstr ""
+"не удалось привязаться ко всем требуемым адресам: MAXLISTEN (%d) превышено"
+
+#: libpq/pqcomm.c:329
+msgid "IPv4"
+msgstr "IPv4"
+
+#: libpq/pqcomm.c:333
+msgid "IPv6"
+msgstr "IPv6"
+
+#: libpq/pqcomm.c:338
+msgid "Unix"
+msgstr "Unix"
+
+#: libpq/pqcomm.c:343
+#, c-format
+msgid "unrecognized address family %d"
+msgstr "нераспознанное семейство адресов %d"
+
+#. translator: %s is IPv4, IPv6, or Unix
+#: libpq/pqcomm.c:354
+#, c-format
+msgid "could not create %s socket: %m"
+msgstr "не получилось создать сокет %s: %m"
+
+#: libpq/pqcomm.c:379
+#, c-format
+msgid "setsockopt(SO_REUSEADDR) failed: %m"
+msgstr "setsockopt(SO_REUSEADDR) не удался: %m"
+
+#: libpq/pqcomm.c:394
+#, c-format
+msgid "setsockopt(IPV6_V6ONLY) failed: %m"
+msgstr "setsockopt(IPV6_V6ONLY) не удался: %m"
+
+#. translator: %s is IPv4, IPv6, or Unix
+#: libpq/pqcomm.c:413
+#, c-format
+msgid "could not bind %s socket: %m"
+msgstr "не получилось привязать %s сокет: %m"
+
+#: libpq/pqcomm.c:416
+#, c-format
+msgid ""
+"Is another postmaster already running on port %d? If not, remove socket file "
+"\"%s\" and retry."
+msgstr ""
+"Возможно другой postmaster уже запущен на порту %d? Если нет, удалите файл "
+"сокета \"%s\" и попробуйте снова."
+
+#: libpq/pqcomm.c:419
+#, c-format
+msgid ""
+"Is another postmaster already running on port %d? If not, wait a few seconds "
+"and retry."
+msgstr ""
+"Возможно другой postmaster уже запущен на порту %d? Если нет, подождите "
+"несколько секунд и попробуйте снова."
+
+#. translator: %s is IPv4, IPv6, or Unix
+#: libpq/pqcomm.c:452
+#, c-format
+msgid "could not listen on %s socket: %m"
+msgstr "не удалось начать слушать на %s сокете: %m"
+
+#: libpq/pqcomm.c:532
+#, c-format
+msgid "group \"%s\" does not exist"
+msgstr "группа \"%s\" не существует"
+
+#: libpq/pqcomm.c:542
+#, c-format
+msgid "could not set group of file \"%s\": %m"
+msgstr "не получилось установить группу файла \"%s\": %m"
+
+#: libpq/pqcomm.c:553
+#, c-format
+msgid "could not set permissions of file \"%s\": %m"
+msgstr "не получилось установить права доступа для файла \"%s\": %m"
+
+#: libpq/pqcomm.c:583
+#, c-format
+msgid "could not accept new connection: %m"
+msgstr "не получилось принять новое подсоединение: %m"
+
+#: libpq/pqcomm.c:769
+#, c-format
+msgid "could not receive data from client: %m"
+msgstr "не удалось получить данные от клиента: %m"
+
+#: libpq/pqcomm.c:956
+msgid "unexpected EOF within message length word"
+msgstr "нержиданный конец файла (EOF) в слове длины сообщения"
+
+#: libpq/pqcomm.c:967
+msgid "invalid message length"
+msgstr "неверная длина сообщения"
+
+#: libpq/pqcomm.c:989 libpq/pqcomm.c:999
+msgid "incomplete message from client"
+msgstr "неполное сообщение от клиента"
+
+#: libpq/pqcomm.c:1108
+#, c-format
+msgid "could not send data to client: %m"
+msgstr "не получилось послать данные клиенту: %m"
+
+#: libpq/pqformat.c:463
+msgid "no data left in message"
+msgstr "не осталось данных в сообщении"
+
+#: libpq/pqformat.c:529
+#, fuzzy
+msgid "binary value is out of range for type bigint"
+msgstr "значение \"%s\" вне диапазона для типа bigint"
+
+#: libpq/pqformat.c:691
+msgid "invalid string in message"
+msgstr "неверная строка в сообщении"
+
+#: libpq/pqformat.c:707
+msgid "invalid message format"
+msgstr "неверный формат сообщения"
 
 #: optimizer/util/clauses.c:3337
 #, c-format
@@ -11972,74 +12058,87 @@ msgstr ""
 msgid "SELECT FOR UPDATE/SHARE is not allowed in subqueries"
 msgstr "SELECT FOR UPDATE не позволен в подзапросах"
 
+#: optimizer/plan/initsplan.c:560
+#, fuzzy
+msgid ""
+"SELECT FOR UPDATE/SHARE cannot be applied to the nullable side of an outer "
+"join"
+msgstr "нельзя применять SELECT FOR UPDATE к JOIN"
+
+#: optimizer/plan/planner.c:802 parser/analyze.c:1075 parser/analyze.c:1243
+#: parser/analyze.c:1744
+#, fuzzy
+msgid "SELECT FOR UPDATE/SHARE is not allowed with UNION/INTERSECT/EXCEPT"
+msgstr "нельзя использовать SELECT FOR UPDATE в UNION/INTERSECT/EXCEPT"
+
 #: optimizer/path/allpaths.c:277
 #, fuzzy
 msgid "SELECT FOR UPDATE/SHARE is not supported for inheritance queries"
 msgstr "SELECT FOR UPDATE не позволен в подзапросах"
 
-#: parser/analyze.c:440
+#: parser/analyze.c:444
 #, fuzzy
 msgid "INSERT ... SELECT cannot specify INTO"
 msgstr "INSERT ... SELECT не могут указывать INTO"
 
-#: parser/analyze.c:528 parser/analyze.c:868
+#: parser/analyze.c:532 parser/analyze.c:872
 msgid "VALUES lists must all be the same length"
 msgstr ""
 
-#: parser/analyze.c:547 parser/analyze.c:968
+#: parser/analyze.c:551 parser/analyze.c:972
 msgid "VALUES must not contain table references"
 msgstr ""
 
-#: parser/analyze.c:559 parser/analyze.c:980
+#: parser/analyze.c:563 parser/analyze.c:984
 msgid "VALUES must not contain OLD or NEW references"
 msgstr ""
 
-#: parser/analyze.c:560 parser/analyze.c:981
+#: parser/analyze.c:564 parser/analyze.c:985
 msgid "Use SELECT ... UNION ALL ... instead."
 msgstr ""
 
-#: parser/analyze.c:654 parser/analyze.c:991
+#: parser/analyze.c:658 parser/analyze.c:995
 #, fuzzy
 msgid "cannot use aggregate function in VALUES"
 msgstr "нельзя использовать агрегатную функцию в параметре к EXECUTE"
 
-#: parser/analyze.c:684
+#: parser/analyze.c:688
 msgid "INSERT has more expressions than target columns"
 msgstr "INSERT содержит больше выражений чем колонок назначения"
 
-#: parser/analyze.c:689
+#: parser/analyze.c:693
 msgid "INSERT has more target columns than expressions"
 msgstr "INSERT содержит больше колонок назначения чем выражений"
 
-#: parser/analyze.c:881
+#: parser/analyze.c:885
 msgid "DEFAULT can only appear in a VALUES list within INSERT"
 msgstr ""
 
-#: parser/analyze.c:949 parser/analyze.c:1861
+#: parser/analyze.c:953 parser/analyze.c:1865
 #, fuzzy
 msgid "SELECT FOR UPDATE/SHARE cannot be applied to VALUES"
 msgstr "нельзя применять SELECT FOR UPDATE к JOIN"
 
-#: parser/analyze.c:1179
+#: parser/analyze.c:1183
 msgid "invalid UNION/INTERSECT/EXCEPT ORDER BY clause"
 msgstr ""
 
-#: parser/analyze.c:1180
+#: parser/analyze.c:1184
 msgid "Only result column names can be used, not expressions or functions."
 msgstr ""
 
-#: parser/analyze.c:1181
+#: parser/analyze.c:1185
 msgid ""
 "Add the expression/function to every SELECT, or move the UNION into a FROM "
 "clause."
 msgstr ""
 
-#: parser/analyze.c:1234
+#: parser/analyze.c:1238
 msgid "INTO is only allowed on first SELECT of UNION/INTERSECT/EXCEPT"
 msgstr ""
 "INTO можно использовать только в первом SELECT'е в UNION/INTERSECT/EXCEPT"
 
-#: parser/analyze.c:1290
+#: parser/analyze.c:1294
 #, fuzzy
 msgid ""
 "UNION/INTERSECT/EXCEPT member statement cannot refer to other relations of "
@@ -12048,100 +12147,100 @@ msgstr ""
 "команда, состоящая в UNION/INTERSECT/EXCEPT не может ссылаться на другие "
 "отношения на том же уровне запросов"
 
-#: parser/analyze.c:1348
+#: parser/analyze.c:1352
 #, c-format
 msgid "each %s query must have the same number of columns"
 msgstr "каждый запрос %s должен иметь одинаковое число колонок"
 
-#: parser/analyze.c:1465
+#: parser/analyze.c:1469
 msgid "CREATE TABLE AS specifies too many column names"
 msgstr "CREATE TABLE AS указывает слишком много имён для колонки"
 
-#: parser/analyze.c:1514
+#: parser/analyze.c:1518
 #, fuzzy
 msgid "cannot use aggregate function in UPDATE"
 msgstr "нельзя использовать агрегатную функцию в параметре к EXECUTE"
 
-#: parser/analyze.c:1611
+#: parser/analyze.c:1615
 #, fuzzy
 msgid "cannot use aggregate function in RETURNING"
 msgstr "нельзя использовать агрегатную функцию в параметре к EXECUTE"
 
-#: parser/analyze.c:1617
+#: parser/analyze.c:1621
 #, fuzzy
 msgid "RETURNING cannot contain references to other relations"
 msgstr "условие правила WHERE не может содержать ссылки на другие отношения"
 
-#: parser/analyze.c:1653
+#: parser/analyze.c:1657
 msgid "cannot specify both SCROLL and NO SCROLL"
 msgstr "нельзя указывать оба SCROLL и NO SCROLL"
 
-#: parser/analyze.c:1666
+#: parser/analyze.c:1670
 #, fuzzy
 msgid "DECLARE CURSOR cannot specify INTO"
 msgstr "DECLARE CURSOR не может указывать INTO"
 
-#: parser/analyze.c:1672
+#: parser/analyze.c:1676
 #, fuzzy
 msgid "DECLARE CURSOR WITH HOLD ... FOR UPDATE/SHARE is not supported"
 msgstr "DECLARE CURSOR ... FOR UPDATE не поддерживается"
 
-#: parser/analyze.c:1673
+#: parser/analyze.c:1677
 #, fuzzy
 msgid "Holdable cursors must be READ ONLY."
 msgstr "Курсоры должны быть READ ONLY."
 
-#: parser/analyze.c:1686
+#: parser/analyze.c:1690
 #, fuzzy
 msgid "DECLARE INSENSITIVE CURSOR ... FOR UPDATE/SHARE is not supported"
 msgstr "DECLARE CURSOR ... FOR UPDATE не поддерживается"
 
-#: parser/analyze.c:1687
+#: parser/analyze.c:1691
 #, fuzzy
 msgid "Insensitive cursors must be READ ONLY."
 msgstr "Курсоры должны быть READ ONLY."
 
-#: parser/analyze.c:1744
+#: parser/analyze.c:1748
 #, fuzzy
 msgid "SELECT FOR UPDATE/SHARE is not allowed with DISTINCT clause"
 msgstr "нельзя использовать SELECT FOR UPDATE с выражением DISTINCT"
 
-#: parser/analyze.c:1748
+#: parser/analyze.c:1752
 #, fuzzy
 msgid "SELECT FOR UPDATE/SHARE is not allowed with GROUP BY clause"
 msgstr "нельзя использовать SELECT FOR UPDATE с выражением GROUP BY"
 
-#: parser/analyze.c:1752
+#: parser/analyze.c:1756
 #, fuzzy
 msgid "SELECT FOR UPDATE/SHARE is not allowed with HAVING clause"
 msgstr "нельзя использовать SELECT FOR UPDATE с выражением DISTINCT"
 
-#: parser/analyze.c:1756
+#: parser/analyze.c:1760
 #, fuzzy
 msgid "SELECT FOR UPDATE/SHARE is not allowed with aggregate functions"
 msgstr "нельзя использовать SELECT FOR UPDATE с агрегатными функциями"
 
-#: parser/analyze.c:1846
+#: parser/analyze.c:1850
 #, fuzzy
 msgid "SELECT FOR UPDATE/SHARE cannot be applied to a join"
 msgstr "нельзя применять SELECT FOR UPDATE к JOIN"
 
-#: parser/analyze.c:1851
+#: parser/analyze.c:1855
 #, fuzzy
 msgid "SELECT FOR UPDATE/SHARE cannot be applied to NEW or OLD"
 msgstr "нельзя применять SELECT FOR UPDATE к NEW или OLD"
 
-#: parser/analyze.c:1856
+#: parser/analyze.c:1860
 #, fuzzy
 msgid "SELECT FOR UPDATE/SHARE cannot be applied to a function"
 msgstr "SELECT FOR UPDATE: нельзя применять к функции"
 
-#: parser/analyze.c:1874
+#: parser/analyze.c:1878
 #, fuzzy, c-format
 msgid "relation \"%s\" in FOR UPDATE/SHARE clause not found in FROM clause"
 msgstr "отношение \"%s\" в выражении FOR UPDATE не найдено в выражении FROM"
 
-#: parser/analyze.c:1940 parser/parse_coerce.c:250 parser/parse_expr.c:561
+#: parser/analyze.c:1944 parser/parse_coerce.c:250 parser/parse_expr.c:561
 #: parser/parse_expr.c:567
 #, c-format
 msgid "there is no parameter $%d"
@@ -12852,7 +12951,7 @@ msgstr ""
 "UPDATE илм DELETE"
 
 #: parser/parse_utilcmd.c:1546 parser/parse_utilcmd.c:1616
-#: rewrite/rewriteManip.c:821 rewrite/rewriteHandler.c:417
+#: rewrite/rewriteHandler.c:417 rewrite/rewriteManip.c:821
 msgid "conditional UNION/INTERSECT/EXCEPT statements are not implemented"
 msgstr "условные команды UNION/INTERSECT/EXCEPT не реализованы"
 
@@ -13090,21 +13189,6 @@ msgstr "многочисленные выражения OFFSET не дозволены"
 msgid "multiple LIMIT clauses not allowed"
 msgstr "многочисленные выражения LIMIT не дозволены"
 
-#: port/win32/signal.c:189
-#, c-format
-msgid "could not create signal listener pipe for pid %d: error code %d"
-msgstr ""
-
-#: port/win32/signal.c:269
-#, c-format
-msgid "could not create signal listener pipe: error code %d; retrying\n"
-msgstr ""
-
-#: port/win32/signal.c:282
-#, c-format
-msgid "could not create signal dispatch thread: error code %d\n"
-msgstr ""
-
 #: port/win32/security.c:43
 #, c-format
 msgid "could not open process token: error code %d\n"
@@ -13120,55 +13204,20 @@ msgstr ""
 msgid "could not get SID for PowerUsers group: error code %d\n"
 msgstr ""
 
-#: port/sysv_sema.c:114 port/pg_sema.c:114
+#: port/win32/signal.c:189
 #, c-format
-msgid "could not create semaphores: %m"
-msgstr "не получилось создать семафоры: %m"
-
-#: port/sysv_sema.c:115 port/pg_sema.c:115
-#, c-format
-msgid "Failed system call was semget(%lu, %d, 0%o)."
+msgid "could not create signal listener pipe for pid %d: error code %d"
 msgstr ""
 
-#: port/sysv_sema.c:119 port/pg_sema.c:119
+#: port/win32/signal.c:269
 #, c-format
-msgid ""
-"This error does *not* mean that you have run out of disk space.\n"
-"It occurs when either the system limit for the maximum number of semaphore "
-"sets (SEMMNI), or the system wide maximum number of semaphores (SEMMNS), "
-"would be exceeded.  You need to raise the respective kernel parameter.  "
-"Alternatively, reduce PostgreSQL's consumption of semaphores by reducing its "
-"max_connections parameter (currently %d).\n"
-"The PostgreSQL documentation contains more information about configuring "
-"your system for PostgreSQL."
+msgid "could not create signal listener pipe: error code %d; retrying\n"
 msgstr ""
 
-#: port/sysv_sema.c:148 port/pg_sema.c:148
+#: port/win32/signal.c:282
 #, c-format
-msgid ""
-"You possibly need to raise your kernel's SEMVMX value to be at least %d.  "
-"Look into the PostgreSQL documentation for details."
+msgid "could not create signal dispatch thread: error code %d\n"
 msgstr ""
-
-#: port/win32_sema.c:94
-#, fuzzy, c-format
-msgid "could not create semaphore: error code %d"
-msgstr "не получилось создать семафоры: %m"
-
-#: port/win32_sema.c:161
-#, fuzzy, c-format
-msgid "could not lock semaphore: error code %d"
-msgstr "не получилось создать семафоры: %m"
-
-#: port/win32_sema.c:174
-#, fuzzy, c-format
-msgid "could not unlock semaphore: error code %d"
-msgstr "не получилось создать семафоры: %m"
-
-#: port/win32_sema.c:203
-#, fuzzy, c-format
-msgid "could not try-lock semaphore: error code %d"
-msgstr "не получилось создать семафоры: %m"
 
 #: port/sysv_shmem.c:99 port/pg_shmem.c:99
 #, c-format
@@ -13253,6 +13302,56 @@ msgstr ""
 
 #: port/win32_shmem.c:205
 msgid "Failed system call was MapViewOfFileEx."
+msgstr ""
+
+#: port/win32_sema.c:94
+#, fuzzy, c-format
+msgid "could not create semaphore: error code %d"
+msgstr "не получилось создать семафоры: %m"
+
+#: port/win32_sema.c:161
+#, fuzzy, c-format
+msgid "could not lock semaphore: error code %d"
+msgstr "не получилось создать семафоры: %m"
+
+#: port/win32_sema.c:174
+#, fuzzy, c-format
+msgid "could not unlock semaphore: error code %d"
+msgstr "не получилось создать семафоры: %m"
+
+#: port/win32_sema.c:203
+#, fuzzy, c-format
+msgid "could not try-lock semaphore: error code %d"
+msgstr "не получилось создать семафоры: %m"
+
+#: port/sysv_sema.c:114 port/pg_sema.c:114
+#, c-format
+msgid "could not create semaphores: %m"
+msgstr "не получилось создать семафоры: %m"
+
+#: port/sysv_sema.c:115 port/pg_sema.c:115
+#, c-format
+msgid "Failed system call was semget(%lu, %d, 0%o)."
+msgstr ""
+
+#: port/sysv_sema.c:119 port/pg_sema.c:119
+#, c-format
+msgid ""
+"This error does *not* mean that you have run out of disk space.\n"
+"It occurs when either the system limit for the maximum number of semaphore "
+"sets (SEMMNI), or the system wide maximum number of semaphores (SEMMNS), "
+"would be exceeded.  You need to raise the respective kernel parameter.  "
+"Alternatively, reduce PostgreSQL's consumption of semaphores by reducing its "
+"max_connections parameter (currently %d).\n"
+"The PostgreSQL documentation contains more information about configuring "
+"your system for PostgreSQL."
+msgstr ""
+
+#: port/sysv_sema.c:148 port/pg_sema.c:148
+#, c-format
+msgid ""
+"You possibly need to raise your kernel's SEMVMX value to be at least %d.  "
+"Look into the PostgreSQL documentation for details."
 msgstr ""
 
 #: postmaster/autovacuum.c:356
@@ -13885,7 +13984,7 @@ msgstr "не получилось принять SSL подсоединение: %s"
 msgid "select() failed in logger process: %m"
 msgstr "ошибка select() в логгере: %m"
 
-#: postmaster/syslogger.c:396 postmaster/syslogger.c:959
+#: postmaster/syslogger.c:396 postmaster/syslogger.c:960
 #, c-format
 msgid "could not read from logger pipe: %m"
 msgstr ""
@@ -13899,7 +13998,7 @@ msgstr "остановка логгера"
 msgid "could not create pipe for syslog: %m"
 msgstr ""
 
-#: postmaster/syslogger.c:513 postmaster/syslogger.c:996
+#: postmaster/syslogger.c:513 postmaster/syslogger.c:997
 #, c-format
 msgid "could not create log file \"%s\": %m"
 msgstr ""
@@ -13919,17 +14018,17 @@ msgstr ""
 msgid "could not redirect stderr: %m"
 msgstr ""
 
-#: postmaster/syslogger.c:924
+#: postmaster/syslogger.c:925
 #, fuzzy, c-format
 msgid "could not write to log file: %s\n"
 msgstr "не получилось записать в файл COPY: %m"
 
-#: postmaster/syslogger.c:1071 postmaster/syslogger.c:1133
+#: postmaster/syslogger.c:1072 postmaster/syslogger.c:1134
 #, c-format
 msgid "could not open new log file \"%s\": %m"
 msgstr ""
 
-#: postmaster/syslogger.c:1083 postmaster/syslogger.c:1145
+#: postmaster/syslogger.c:1084 postmaster/syslogger.c:1146
 msgid "disabling automatic rotation (use SIGHUP to reenable)"
 msgstr ""
 
@@ -14067,15 +14166,6 @@ msgstr ""
 msgid "RETURNING list has too few entries"
 msgstr ""
 
-#: rewrite/rewriteManip.c:809
-msgid "conditional utility statements are not implemented"
-msgstr ""
-
-#: rewrite/rewriteManip.c:1004
-#, fuzzy
-msgid "WHERE CURRENT OF on a view is not implemented"
-msgstr "UNION JOIN не реализован"
-
 #: rewrite/rewriteRemove.c:64
 #, fuzzy, c-format
 msgid "rule \"%s\" for relation \"%s\" does not exist, skipping"
@@ -14151,6 +14241,15 @@ msgstr "нельзя удалить из представления"
 #: rewrite/rewriteHandler.c:1863
 msgid "You need an unconditional ON DELETE DO INSTEAD rule."
 msgstr "Вам нужно безусловное правило ON DELETE DO INSTEAD."
+
+#: rewrite/rewriteManip.c:809
+msgid "conditional utility statements are not implemented"
+msgstr ""
+
+#: rewrite/rewriteManip.c:1004
+#, fuzzy
+msgid "WHERE CURRENT OF on a view is not implemented"
+msgstr "UNION JOIN не реализован"
 
 #: snowball/dict_snowball.c:183
 #, c-format
