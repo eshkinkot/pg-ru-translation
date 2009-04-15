@@ -26,7 +26,7 @@ msgstr ""
 "Project-Id-Version: PostgreSQL 8.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-04-15 21:20+0000\n"
-"PO-Revision-Date: 2009-04-05 08:09+0400\n"
+"PO-Revision-Date: 2009-04-16 03:49+0400\n"
 "Last-Translator: Serguei A. Mokhov <mokhov@cs.concordia.ca>\n"
 "Language-Team: pgsql-ru-general <pgsql-ru-general@postgresql.org>\n"
 "MIME-Version: 1.0\n"
@@ -2687,11 +2687,11 @@ msgstr "\"RN\" не поддерживается"
 
 #: utils/adt/genfile.c:61
 msgid "reference to parent directory (\"..\") not allowed"
-msgstr ""
+msgstr "ссылка на родительскую директорию (\"..\") запрещена"
 
 #: utils/adt/genfile.c:75
 msgid "absolute path not allowed"
-msgstr ""
+msgstr "абсолютный путь запрещён"
 
 #: utils/adt/genfile.c:102
 #, fuzzy
@@ -2765,7 +2765,7 @@ msgstr "неверный входной синтаксис для типа path: \"%s\""
 
 #: utils/adt/geo_ops.c:1464
 msgid "invalid number of points in external \"path\" value"
-msgstr ""
+msgstr "неверное количество точек в полученном значении типа \"path\""
 
 #: utils/adt/geo_ops.c:1805
 #, c-format
@@ -2787,7 +2787,7 @@ msgstr "функция \"close_lb\" не реализована"
 
 #: utils/adt/geo_ops.c:3416
 msgid "cannot create bounding box for empty polygon"
-msgstr ""
+msgstr "нельзя создать ограничивающую рамку для пустого многоугольника"
 
 #: utils/adt/geo_ops.c:3440 utils/adt/geo_ops.c:3452
 #, c-format
@@ -2796,7 +2796,7 @@ msgstr "неверный входной синтаксис для типа polygon: \"%s\""
 
 #: utils/adt/geo_ops.c:3492
 msgid "invalid number of points in external \"polygon\" value"
-msgstr ""
+msgstr "неверное количество точек в полученном значении типа \"polygon\""
 
 #: utils/adt/geo_ops.c:3878
 msgid "function \"poly_distance\" not implemented"
@@ -2808,7 +2808,7 @@ msgstr "функция \"path_center\" не реализована"
 
 #: utils/adt/geo_ops.c:4207
 msgid "open path cannot be converted to polygon"
-msgstr ""
+msgstr "открытый путь нельзя преобразовывать в многоугольник"
 
 #: utils/adt/geo_ops.c:4374 utils/adt/geo_ops.c:4384 utils/adt/geo_ops.c:4399
 #: utils/adt/geo_ops.c:4405
@@ -2822,7 +2822,7 @@ msgstr "не получилось отформатировать значение \"circle\""
 
 #: utils/adt/geo_ops.c:4462
 msgid "invalid radius in external \"circle\" value"
-msgstr ""
+msgstr "неверный радиус в полученном значении типа \"circle\""
 
 #: utils/adt/geo_ops.c:4983
 msgid "cannot convert circle with radius zero to polygon"
@@ -2830,7 +2830,7 @@ msgstr "нельзя сконвертировать круг с нулевым радиусом в полигон"
 
 #: utils/adt/geo_ops.c:4988
 msgid "must request at least 2 points"
-msgstr ""
+msgstr "нужно указать как минимум две точки"
 
 #: utils/adt/geo_ops.c:5032 utils/adt/geo_ops.c:5055
 msgid "cannot convert empty polygon to circle"
