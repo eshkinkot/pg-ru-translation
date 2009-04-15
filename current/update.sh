@@ -5,7 +5,7 @@ if ! pushd org; then
   exit
 fi
 
-CMD="wget -N"
+CMD="wget"
 URL="http://babel.postgresql.org/po-current/"
 #F="ecpg ecpglib initdb libpq pg_config pg_controldata pg_ctl pg_dump pg_resetxlog pgscripts "\
 F="ecpg initdb libpq pg_config pg_controldata pg_ctl pg_dump pg_resetxlog pgscripts "\
@@ -13,7 +13,7 @@ F="ecpg initdb libpq pg_config pg_controldata pg_ctl pg_dump pg_resetxlog pgscri
 
 for a in $F; do
 #    echo $CMD $URL$a.pot
-    $CMD $URL$a-ru.po
+    $CMD -O $a-ru.po $URL$a-ru.po
 done;
 
 md5sum -c ../org.md5
@@ -21,5 +21,6 @@ md5sum -c ../org.md5
 popd
 
 for a in $F; do
-    msgmerge --update --backup=numbered dev/$a-ru.po org/$a-ru.po
+# -C импорт и новых переведённых сообщений
+    msgmerge --update --backup=numbered -C org/$a-ru.po dev/$a-ru.po org/$a-ru.po
 done;
