@@ -26,7 +26,7 @@ msgstr ""
 "Project-Id-Version: PostgreSQL 8.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-04-15 21:20+0000\n"
-"PO-Revision-Date: 2009-04-16 03:49+0400\n"
+"PO-Revision-Date: 2009-04-20 02:02+0400\n"
 "Last-Translator: Serguei A. Mokhov <mokhov@cs.concordia.ca>\n"
 "Language-Team: pgsql-ru-general <pgsql-ru-general@postgresql.org>\n"
 "MIME-Version: 1.0\n"
@@ -2877,11 +2877,11 @@ msgstr "OID вне диапазона"
 
 #: utils/adt/like_match.c:286 utils/adt/regexp.c:708
 msgid "invalid escape string"
-msgstr ""
+msgstr "неверная экранирующая строка"
 
 #: utils/adt/like_match.c:287 utils/adt/regexp.c:709
 msgid "Escape string must be empty or one character."
-msgstr ""
+msgstr "Строка экранирования должна быть пустой или содержать только один символ."
 
 #: utils/adt/mac.c:65
 #, c-format
@@ -2891,11 +2891,11 @@ msgstr "неверный входной синтаксис для типа macaddr: \"%s\""
 #: utils/adt/mac.c:72
 #, c-format
 msgid "invalid octet value in \"macaddr\" value: \"%s\""
-msgstr ""
+msgstr "неверный октет в значении типа \"macaddr\": \"%s\""
 
 #: utils/adt/misc.c:83
 msgid "must be superuser to signal other server processes"
-msgstr ""
+msgstr "нужно быть администратором для отправки сигнала другому серверному процессу"
 
 #: utils/adt/misc.c:92
 #, c-format
@@ -2905,12 +2905,11 @@ msgstr "PID %d не является PostgreSQL сервером"
 #: utils/adt/misc.c:105 storage/lmgr/proc.c:920
 #, c-format
 msgid "could not send signal to process %d: %m"
-msgstr ""
+msgstr "не удалось отправить сигнал процессу %d: %m"
 
 #: utils/adt/misc.c:123
-#, fuzzy
 msgid "must be superuser to signal the postmaster"
-msgstr "нужно быть администратором для создания пользователей"
+msgstr "нужно быть администратором для отправки сигнала процессу postmaster"
 
 #: utils/adt/misc.c:128
 #, fuzzy, c-format
@@ -2924,16 +2923,16 @@ msgstr "нужно быть администратором для создания пользователей"
 
 #: utils/adt/misc.c:150
 msgid "rotation not possible because log collection not active"
-msgstr ""
+msgstr "ротация невозможна потому что протоколирование не активно"
 
 #: utils/adt/misc.c:202
 msgid "global tablespace never has databases"
-msgstr ""
+msgstr "глобальное tablespace никогда не содержит баз данных"
 
 #: utils/adt/misc.c:222
 #, c-format
 msgid "%u is not a tablespace OID"
-msgstr ""
+msgstr "%u не является tablespace OID"
 
 #: utils/adt/nabstime.c:164
 #, c-format
@@ -2942,15 +2941,15 @@ msgstr "неверное имя временной зоны: \"%s\""
 
 #: utils/adt/nabstime.c:510 utils/adt/nabstime.c:583
 msgid "cannot convert abstime \"invalid\" to timestamp"
-msgstr ""
+msgstr "нельзя конвертировать значение \"invalid\" типа abstime в тип timestamp"
 
 #: utils/adt/nabstime.c:795
 msgid "invalid status in external \"tinterval\" value"
-msgstr ""
+msgstr "неверное состояние (status) в полученном значении типа \"tinterval\""
 
 #: utils/adt/nabstime.c:877
 msgid "cannot convert reltime \"invalid\" to interval"
-msgstr ""
+msgstr "нельзя конвертировать значение \"invalid\" типа reltime в тип interval"
 
 #: utils/adt/nabstime.c:1564
 #, c-format
@@ -2964,7 +2963,7 @@ msgstr "неверное значение cidr: \"%s\""
 
 #: utils/adt/network.c:119 utils/adt/network.c:249
 msgid "Value has bits set to right of mask."
-msgstr ""
+msgstr "Значение содержит установленные биты справа от маски сети"
 
 #: utils/adt/network.c:160 utils/adt/network.c:614 utils/adt/network.c:645
 #: utils/adt/network.c:677
@@ -3047,7 +3046,7 @@ msgstr "масштаб NUMERIC %d должен быть между 0 и точностью %d"
 
 #: utils/adt/numeric.c:580
 msgid "invalid NUMERIC type modifier"
-msgstr ""
+msgstr "неверный модификатор типа для типа NUMERIC"
 
 #: utils/adt/numeric.c:1567 utils/adt/numeric.c:3320
 msgid "value overflows numeric format"
