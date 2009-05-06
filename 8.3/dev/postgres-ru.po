@@ -26,7 +26,7 @@ msgstr ""
 "Project-Id-Version: PostgreSQL 8.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-04-15 21:20+0000\n"
-"PO-Revision-Date: 2009-04-20 02:02+0400\n"
+"PO-Revision-Date: 2009-05-06 03:59+0400\n"
 "Last-Translator: Serguei A. Mokhov <mokhov@cs.concordia.ca>\n"
 "Language-Team: pgsql-ru-general <pgsql-ru-general@postgresql.org>\n"
 "MIME-Version: 1.0\n"
@@ -3079,7 +3079,7 @@ msgstr "переполнение поля numeric"
 msgid ""
 "A field with precision %d, scale %d must round to an absolute value less "
 "than %s%d."
-msgstr ""
+msgstr "Поле с точностью %d, масштабом %d должно округляться к абсолютному значению меньше чем %s%d."
 
 #: utils/adt/numeric.c:4567
 msgid "argument for function \"exp\" too big"
@@ -3127,19 +3127,19 @@ msgstr "неверная запись контрольной точки"
 #: utils/adt/oracle_compat.c:196 tsearch/ts_locale.c:93
 #: tsearch/ts_locale.c:122
 msgid "invalid multibyte character for locale"
-msgstr ""
+msgstr "неверный многобайтовый символ для локали"
 
 #: utils/adt/oracle_compat.c:103 utils/adt/oracle_compat.c:197
 #: tsearch/ts_locale.c:94 tsearch/ts_locale.c:123
 msgid ""
 "The server's LC_CTYPE locale is probably incompatible with the database "
 "encoding."
-msgstr ""
+msgstr "Локаль LC_CTYPE сервера вероятно не совместима с кодировкой базы данных."
 
 #: utils/adt/oracle_compat.c:221 utils/adt/oracle_compat.c:231
 #, c-format
 msgid "UTF-16 to UTF-8 translation failed: %lu"
-msgstr ""
+msgstr "ошибка преобразования UTF-16 в UTF-8: %lu"
 
 #: utils/adt/oracle_compat.c:1329
 #, fuzzy
