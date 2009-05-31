@@ -26,7 +26,7 @@ msgstr ""
 "Project-Id-Version: PostgreSQL 8.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-04-15 21:20+0000\n"
-"PO-Revision-Date: 2009-05-06 03:59+0400\n"
+"PO-Revision-Date: 2009-05-31 06:04+0400\n"
 "Last-Translator: Serguei A. Mokhov <mokhov@cs.concordia.ca>\n"
 "Language-Team: pgsql-ru-general <pgsql-ru-general@postgresql.org>\n"
 "MIME-Version: 1.0\n"
@@ -3142,14 +3142,13 @@ msgid "UTF-16 to UTF-8 translation failed: %lu"
 msgstr "ошибка преобразования UTF-16 в UTF-8: %lu"
 
 #: utils/adt/oracle_compat.c:1329
-#, fuzzy
 msgid "requested character too large"
-msgstr "запрошенная длина слишком велика"
+msgstr "запрошенный символ слишком широк"
 
 #: utils/adt/oracle_compat.c:1375 utils/adt/oracle_compat.c:1429
 #, c-format
 msgid "requested character too large for encoding: %d"
-msgstr ""
+msgstr "запрошенный символ слишком широк для кодировки: %d"
 
 #: utils/adt/oracle_compat.c:1422
 #, fuzzy
@@ -3250,7 +3249,7 @@ msgstr "неверное регулярное выражение: %s"
 
 #: utils/adt/regexp.c:891
 msgid "regexp_split does not support the global option"
-msgstr ""
+msgstr "regexp_split не поддерживает опцию g (global)"
 
 #: utils/adt/regproc.c:121 utils/adt/regproc.c:141
 #, c-format
@@ -3274,7 +3273,7 @@ msgstr "отсутствует аргумент"
 
 #: utils/adt/regproc.c:634 gram.y:4426
 msgid "Use NONE to denote the missing argument of a unary operator."
-msgstr ""
+msgstr "Используйте NONE для обозначения отсутствующего аргумента унарного оператора."
 
 #: utils/adt/regproc.c:638 utils/adt/regproc.c:1498 utils/adt/ruleutils.c:4338
 #: utils/adt/ruleutils.c:4366
@@ -3333,11 +3332,11 @@ msgstr "выражение MATCH PARTIAL ещё не реализовано"
 #: utils/adt/ri_triggers.c:3451 utils/adt/ri_triggers.c:3488
 #, c-format
 msgid "insert or update on table \"%s\" violates foreign key constraint \"%s\""
-msgstr ""
+msgstr "вставка или изменение для таблицы \"%s\" нарушает ограничение внешнего ключа \"%s\""
 
 #: utils/adt/ri_triggers.c:403 utils/adt/ri_triggers.c:2798
 msgid "MATCH FULL does not allow mixing of null and nonnull key values."
-msgstr ""
+msgstr "MATCH FULL не допускает смешивание NULL и не NULL значений ключа."
 
 #: utils/adt/ri_triggers.c:2995
 #, c-format

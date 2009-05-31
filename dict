@@ -3,6 +3,7 @@
 * API (application programming interface) - программный интерфейс приложения (можно оставлять без перевода: API)
 * assertions ???
 * ACL (access control list) - список прав доступа, аббревиатуру оставлять без перевода (ACL array - массив ACL)
+* absolute path (file) - абсолютный путь (файла)
 
 === B ===
 * backend - серверный процесс; серверная часть системы; бакенд(???), процесс сервера баз данных, обслуживающий клиентов, работающих с базой данных // имеется в виду серверная часть системы архитектуры "клиент-сервер", сервер=backend, клиент=frontend
@@ -12,6 +13,7 @@
 * bootstrap - начальная инициализация (bootstrap transaction log file: журнал транзакций при начальной инициализации)
 * binary - двоичный (binary input function - функция двоичного ввода)
 * binary operator - бинарный оператор, оператор двух аргументов
+* bounding box - ограничивающая рамка (геометрические типы)
 
 === C ===
 * checkpoint -- контрольная точка // (момент, когда данные в памяти синхронизируются с данными на диске)
@@ -30,6 +32,7 @@
 * connect (network) - подключение
 * core (file, produce core files) - core-файл (генерировать core-файлы)
 * control file (pg_control) - файл управления (оставлять без перевода: "не получилось открыть файл pg_control")
+* convert - преобразовывать
 
 === D ===
 * DB, database - БД, база данных
@@ -126,6 +129,7 @@
 * programming interfaces --программные интерфейсы
 * PSM (Persistent Stored Modules)
 * privileges (setting privileges on built-in objects) - права доступа (установка прав доступа для встроенных объектов)
+* polygon - многоугольник (геометрические типы)
 
 === Q ===
 * queue - очередь (структура для хранения данных, использующая принцип FIFO)
@@ -159,6 +163,7 @@
 * system-wide (e.g. system-wide configuration files) - общесистемный (пример: общесистемные конфигурационные файлы)
 * subtransactions - подтранзакции
 * savepoint - точка сохранения
+* superuser - администратор (права доступа)
 
 === T ===
 * table - таблица
@@ -168,6 +173,7 @@
 * tuple - кортеж (строка на физическом уровне)
 * two-phase (e.g. two-phase transaction, two-phase protocol, TPC) - двухфазный (примеры: двухфазная транзакция, двухфазный протокол, TPC)
 * timeline history file [http://www.postgresql.org/docs/8.3/static/continuous-archiving.html#BACKUP-TIMELINES] - файл хронологии восстановления
+* tablespace - tablespace, оставлять без перевода (место, путь в файловой системе, где хранятся файлы таблиц, индексов)
 
 === U ===
 * union - операция объединения (SQL)
